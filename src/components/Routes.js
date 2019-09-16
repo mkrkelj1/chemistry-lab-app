@@ -8,8 +8,7 @@ import Experiment from './Experiment'
 // Route matching
 // if /courses --> return all
 // if /courses/:id --> return course, etc.
-
-const CourseRoutes = () => (
+const Routes = () => (
   <Switch>
     <Route exact path='/courses' component={CoursesList}/>
     <Route exact path='/courses/:id' component={Course}/>
@@ -19,4 +18,4 @@ const CourseRoutes = () => (
 )
 
 
-export default CourseRoutes
+export default Routes
