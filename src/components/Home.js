@@ -5,10 +5,10 @@ import ImagePlaceholders from './ImagePlaceholders'
 import VideoTutorialText from './VideoTutorialText'
 import SeeAllVideosButton from './SeeAllVideosButton'
 
+//<CourseLinkButtons />
 const Home = () => (
 	<React.Fragment>
 	    <HeadingTextHomePage />
-    	<CourseLinkButtons />
     	<VideoTutorialText />
     	<ImagePlaceholders />
     	<SeeAllVideosButton />
