@@ -7,19 +7,27 @@ import Nav from "react-bootstrap/Nav";
 const NavigationBar = () => (
   <Nav justify fill variant="tabs">
     <Nav.Item>
-    	<Nav.Link href="/">Home</Nav.Link>
+    	<Nav.Link>
+    		<Link to='/'>Home</Link>
+    	</Nav.Link>   
     </Nav.Item>
 
     <Nav.Item>
-    	<Nav.Link href="/courses">Courses</Nav.Link>
+    	<Nav.Link>
+    		<Link to='/courses'>Courses</Link>
+    	</Nav.Link>
     </Nav.Item>
 
     <Nav.Item>
-    	<Nav.Link href="/">Videos</Nav.Link>
-	</Nav.Item>
+    	<Nav.Link>
+    		<Link to='/'>Videos</Link>
+    	</Nav.Link>   
+    </Nav.Item>
 
     <Nav.Item>
-    	<Nav.Link href="/">Safety</Nav.Link>
+    	<Nav.Link>
+    		<Link to='/'>Safety</Link>
+    	</Nav.Link>   
     </Nav.Item>
   </Nav>
 );
