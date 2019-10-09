@@ -3,7 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
 // Exports to Experiments.js
-const TheoreticalBackground = () => (
+const TheoreticalBackgroundCard = () => (
 		<Card>
 			<Accordion.Toggle as={Card.Header} eventKey="1">
 				Theoretical Background
@@ -20,4 +20,4 @@ const TheoreticalBackground = () => (
 		</Card>
 );
 
-export default TheoreticalBackground;
+export default TheoreticalBackgroundCard;

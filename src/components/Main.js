@@ -7,8 +7,8 @@ import Routes from './Routes'
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route path='/courses' component={Routes}/>
+      <Route exact path='/' component = {Home}/>
+      <Route path='/courses' component = {Routes}/>
     </Switch>
   </main>
 )

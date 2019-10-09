@@ -2,10 +2,11 @@ import React from "react";
 import { CoursesAPI } from "../api";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import ExperimentSchedule from "./ExperimentSchedule";
-import LabNotebooksAndReports from "./LabNotebooksAndReports";
+import Accordion from "react-bootstrap/Accordion";
 
-import LabRegulations from "./LabRegulations";
+import CourseExperimentScheduleCard from "./CourseExperimentScheduleCard";
+import CourseLabNotebooksAndReports from "./CourseLabNotebooksAndReports";
+import CourseLabRegulations from "./CourseLabRegulations";
 
 const Course = props => {
   // Parse number/week/id from pathname.
@@ -16,12 +17,14 @@ const Course = props => {
   const id_ = course.id;
   return (
     <Container className="p-3">
-      <h3>{course.name} </h3>
-      <h4>Instructor: {course.instructor}</h4>
+      <h3> {course.name} </h3>
+      <h5>Instructor: {course.instructor}</h5>
       <p> Welcome to {course.name}! </p>
-      <ExperimentSchedule />
-      <LabNotebooksAndReports />
-      <LabRegulations />
+      <Accordion>
+        <CourseExperimentScheduleCard />
+        <CourseLabNotebooksAndReports />
+        <CourseLabRegulations />
+      </Accordion>
       <br />
       <Link to={`${id_}/experiments`}>Experiments</Link>
     </Container>

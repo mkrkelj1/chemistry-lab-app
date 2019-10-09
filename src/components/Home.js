@@ -1,17 +1,16 @@
 import React from 'react'
-import CourseLinkButtons from './CourseLinkButtons'
-import HeadingTextHomePage from './HeadingTextHomePage'
-import ImagePlaceholders from './ImagePlaceholders'
-import VideoTutorialText from './VideoTutorialText'
-import SeeAllVideosButton from './SeeAllVideosButton'
+import HomeHeading from './HomeHeading'
+import HomeImagePlaceholders from './HomeImagePlaceholders'
+import HomeVideoTutorials from './HomeVideoTutorials'
+import HomeSeeAllVideosButton from './HomeSeeAllVideosButton'
 
 //<CourseLinkButtons />
 const Home = () => (
 	<React.Fragment>
-	    <HeadingTextHomePage />
-    	<VideoTutorialText />
-    	<ImagePlaceholders />
-    	<SeeAllVideosButton />
+	    <HomeHeading />
+    	<HomeVideoTutorials />
+    	<HomeImagePlaceholders />
+    	<HomeSeeAllVideosButton />
     </React.Fragment>
 )
 

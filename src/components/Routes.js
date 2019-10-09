@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import CoursesList from './CoursesList'
-import ExperimentsList from './ExperimentsList'
+import Courses from './Courses'
+import Experiments from './Experiments'
 import Course from './Course'
 import Experiment from './Experiment'
 
@@ -10,12 +10,11 @@ import Experiment from './Experiment'
 // if /courses/:id --> return course, etc.
 const Routes = () => (
   <Switch>
-    <Route exact path='/courses' component={CoursesList}/>
-    <Route exact path='/courses/:id' component={Course}/>
-    <Route exact path='/courses/:id/experiments' component={ExperimentsList}/>
-    <Route exact path='/courses/:id/experiments/:week' component={Experiment}/>
+    <Route exact path='/courses' component={ Courses }/>
+    <Route exact path='/courses/:id' component={ Course }/>
+    <Route exact path='/courses/:id/experiments' component={ Experiments }/>
+    <Route exact path='/courses/:id/experiments/:week' component={ Experiment }/>
   </Switch>
 )
-
 
 export default Routes

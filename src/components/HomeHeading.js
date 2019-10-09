@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 
 // Export to Home.js
-const HeadingTextHomePage = () => (
+const HomeHeading = () => (
 	<Container className="p-3">
 		<h1>Barnard Organic Chemistry Laboratory</h1>
 		<p>Welcome Text goes here. Lorem Impsum dolor amet kickstarter before</p>
@@ -12,4 +12,4 @@ const HeadingTextHomePage = () => (
 	</Container>
 );
 
-export default HeadingTextHomePage;
+export default HomeHeading;
