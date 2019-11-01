@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/chemistry-lab-app/static/css/main.34de6062.chunk.css",
-    "main.js": "/chemistry-lab-app/static/js/main.d0037af4.chunk.js",
-    "main.js.map": "/chemistry-lab-app/static/js/main.d0037af4.chunk.js.map",
+    "main.js": "/chemistry-lab-app/static/js/main.bff4951e.chunk.js",
+    "main.js.map": "/chemistry-lab-app/static/js/main.bff4951e.chunk.js.map",
     "runtime~main.js": "/chemistry-lab-app/static/js/runtime~main.e9f9f155.js",
     "runtime~main.js.map": "/chemistry-lab-app/static/js/runtime~main.e9f9f155.js.map",
     "static/css/2.266e55a5.chunk.css": "/chemistry-lab-app/static/css/2.266e55a5.chunk.css",
-    "static/js/2.eb032235.chunk.js": "/chemistry-lab-app/static/js/2.eb032235.chunk.js",
-    "static/js/2.eb032235.chunk.js.map": "/chemistry-lab-app/static/js/2.eb032235.chunk.js.map",
+    "static/js/2.ed7132e3.chunk.js": "/chemistry-lab-app/static/js/2.ed7132e3.chunk.js",
+    "static/js/2.ed7132e3.chunk.js.map": "/chemistry-lab-app/static/js/2.ed7132e3.chunk.js.map",
     "index.html": "/chemistry-lab-app/index.html",
-    "precache-manifest.d65147f258269494cb606378798eae29.js": "/chemistry-lab-app/precache-manifest.d65147f258269494cb606378798eae29.js",
+    "precache-manifest.ec0eb81a15179f92e53bf4633c936f4f.js": "/chemistry-lab-app/precache-manifest.ec0eb81a15179f92e53bf4633c936f4f.js",
     "service-worker.js": "/chemistry-lab-app/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/chemistry-lab-app/static/css/2.266e55a5.chunk.css.map",
     "static/css/main.34de6062.chunk.css.map": "/chemistry-lab-app/static/css/main.34de6062.chunk.css.map"
