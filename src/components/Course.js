@@ -16,7 +16,7 @@ const Course = props => {
     return <div>Sorry, course not found.</div>;
   }
 
-  const _courseID = course.id;
+  const _courseId = course.id;
 
   return (
     <Container className="p-3">
@@ -24,9 +24,9 @@ const Course = props => {
       <h5> Instructor: {course.instructor} </h5>
       <p> Welcome to {course.name}! </p>
       <Accordion>
-        <CourseExperimentSchedule courseID = { _courseID } />
-        <CourseNotebooksReports courseID = { _courseID } />
-        <CourseLabRegulations />
+        <CourseExperimentSchedule courseID = { _courseId } />
+        <CourseNotebooksReports courseID = { _courseId } />
+        <CourseLabRegulations courseId = {_courseId } />
       </Accordion>
       <br />
       {/* <Link to={`${_courseID}/experiments`}>Experiments</Link> */}

@@ -4,7 +4,7 @@ import Collapse from "react-bootstrap/Collapse";
 import Button from "react-bootstrap/Button"
 import ReactMarkdown from "react-markdown/with-html";
 import { ProceduresAPI } from "../api";
-import ProcedureButtons from "./ProcedureButtons"
+import ExperimentProcedureButtons from "./ExperimentProcedureButtons"
 
 const ExperimentProceduresCard = ({ experimentID }) => {
   const cardID = "procedure-card-body";
@@ -23,7 +23,7 @@ const ExperimentProceduresCard = ({ experimentID }) => {
       </Card.Header>
       <Collapse in={openCard}>
         <Card.Body id={cardID}>
-          <ProcedureButtons procedureIds = {procedureIds} experimentID = {experimentID} />
+          <ExperimentProcedureButtons procedureIds = {procedureIds} experimentID = {experimentID} />
         </Card.Body>
       </Collapse>
     </Card>

@@ -4,14 +4,15 @@ import Button from "react-bootstrap/Button"
 import ReactMarkdown from "react-markdown/with-html";
 import Container from "react-bootstrap/Container";
 
-const ProcedureButtons = ({ procedureIds, experimentID }) => {
-  const procedureRange = Array.from({length: procedureIds.length}, (v, k) => k + 1); 
+const ExperimentProcedureButtons = ({ procedureIds, experimentID }) => {
+  //const procedureRange = Array.from({length: procedureIds.length}, (v, k) => k + 1); 
   const [markdown, setValue] = useState([]);
 
 
   useEffect(() => {
     async function fetchData() {
-      const root_path = "/../markdown/procedures/" + experimentID + "_experiment_procedure/";
+      const experimentDir = experimentID + "_experiment"
+      const root_path = "/../markdown/experiments/" + experimentDir + "/procedure/"
       const files = procedureIds.map(id => `${root_path + id}_procedure.md`)
       const promises = await files.map(file =>  fetch(file).then(res => res.text()));
 
@@ -47,6 +48,6 @@ const ProcedureButtons = ({ procedureIds, experimentID }) => {
   return <RenderButtons procedureIds={procedureIds} />;
 };
 
-export default ProcedureButtons;
+export default ExperimentProcedureButtons;
 
  

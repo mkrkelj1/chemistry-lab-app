@@ -13,7 +13,9 @@ const ExperimentBackgroundCard = ({ experimentID }) => {
 
   useEffect(() => {
     async function fetchData() {
-      const path = "/../markdown/backgrounds/" + experimentID + "_background.md";
+      const experimentDir = experimentID + "_experiment"
+      const root_path = "/../markdown/experiments/" + experimentDir + "/background/"
+      const path = root_path + experimentID + "_background.md";
       const markdown = await fetch(path).then(res => res.text());
       setValue(markdown);
     }

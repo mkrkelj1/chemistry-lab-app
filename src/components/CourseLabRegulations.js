@@ -5,12 +5,15 @@ import ReactMarkdown from "react-markdown/with-html"
 
 
 // Exports to Course.js
-const CourseLabRegulations = () => {
+const CourseLabRegulations = ({ courseId }) => {
   const [markdown, setValue] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const path = "/../markdown/lab_regs.md";
+      const courseDir = courseId + "_course"
+      const root_path = "/../markdown/courses/" + courseDir + "/regulations/"
+      const file_name = "regulations.md"
+      const path = root_path + file_name
       const markdown = await fetch(path).then(res => res.text());
       setValue(markdown);
     }
