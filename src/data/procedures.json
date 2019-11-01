@@ -1,0 +1,19 @@
+[
+  {
+    "procedureID": 1,
+    "experimentID": 1
+    
+  },
+  {
+    "procedureID": 2,
+    "experimentID": 2
+  },
+  {
+    "procedureID": 3,
+    "experimentID": 2
+  },
+  {
+    "procedureID": 4,
+    "experimentID": 2
+  }
+]

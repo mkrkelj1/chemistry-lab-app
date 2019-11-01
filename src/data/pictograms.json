@@ -1,0 +1,52 @@
+[
+	{
+		"pictogramID": 1,
+		"name": "Exploding bomb",
+		"filename": "GHS_01_Explosive.png"
+	},
+	{
+		"pictogramID": 2,
+		"name": "Flame",
+		"filename": "GHS_02_Flammable.png"
+	},
+	{
+		"pictogramID": 3,
+		"name": "Flame over circle",
+		"filename": "GHS_03_Oxidising.png"
+	},
+	{
+		"pictogramID": 4,
+		"name": "Gas cylinder",
+		"filename": "GHS_04_Compressed.png"
+	},
+	{
+		"pictogramID": 5,
+		"name": "Corrosion",
+		"filename": "GHS_05_Corrosion.png"
+	},
+	{
+		"pictogramID": 6,
+		"name": "Skulls and crossbones",
+		"filename": "GHS_06_Skull.png"
+	},
+	{
+		"pictogramID": 7,
+		"name": "Exclamation mark",
+		"filename": "GHS_07_Exclamation.png"
+	},
+	{
+		"pictogramID": 8,
+		"name": "Health hazard",
+		"filename": "GHS_08_Health-Hazard.png"
+	},
+	{
+		"pictogramID": 9,
+		"name": "Environment",
+		"filename": "GHS_09_Environment.png"
+	},
+	{
+		"pictogramID": 10,
+		"name": "",
+		"filename": ""
+	}
+]

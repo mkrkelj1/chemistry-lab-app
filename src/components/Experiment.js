@@ -1,32 +1,46 @@
-import React from "react";
+//import React from "react";
+import React, { useState } from "react";
 import { ExperimentsAPI, ChemicalsAPI, PictogramsAPI } from "../api";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import Accordion from "react-bootstrap/Accordion";
-import TheoreticalBackgroundCard from "./TheoreticalBackgroundCard";
-import ChemicalsCard from "./ChemicalsCard"
+import ExperimentBackgroundCard from "./ExperimentBackgroundCard";
+import ExperimentChemicalsCard from "./ExperimentChemicalsCard"
+import ExperimentProceduresCard from "./ExperimentProceduresCard"
 
 
 const Experiment = props => {
+  const [open, setOpen] = useState(false);
   const _courseID = parseInt(props.match.params.id, 10);
-  const _week = parseInt(props.match.params.week, 10);
-  const _experiment = ExperimentsAPI.get(_courseID, _week);
-  const _chemicals = ChemicalsAPI.filtered(_experiment.chemical_ids)
-  const _pictogramMap = PictogramsAPI.pictogramMap(_chemicals)
+  const _experimentID = parseInt(props.match.params.experimentID, 10);
+  const _experiment = ExperimentsAPI.get(_courseID, _experimentID);
+  const _chemicals = ChemicalsAPI.filtered(_experiment.chemical_ids);
+  const _pictogramMap = PictogramsAPI.pictogramMap(_chemicals);
 
   if (!_experiment) {
     return <div>Sorry, experiment not found.</div>;
   }
 
   return (
-    <Container className="p-3">
-      <h3> Week {_experiment.week}: {_experiment.name} </h3>
-      <Accordion>
-        <ChemicalsCard chemicals = { _chemicals } _pictogramMap = { _pictogramMap } />
-        <TheoreticalBackgroundCard />
-      </Accordion>
-      <Link to="/">Back</Link>
-    </Container>
+      <Container>
+        <Container className="p-1">
+          <h3> Week {_experiment.week}: {_experiment.name} </h3>
+        </Container>
+        
+        <Container className="p-1">
+          <ExperimentChemicalsCard chemicals={_chemicals} pictogramMap={_pictogramMap} />
+        </Container>
+
+        <Container className="p-1">
+          <ExperimentBackgroundCard experimentID={_experimentID} />
+        </Container>
+        <Container className="p-1">
+          <ExperimentProceduresCard experimentID={_experimentID} />
+        </Container>
+
+        <Container className="p-1">
+          <Link to="/">Back</Link>{" "}
+        </Container>
+      </Container>
   );
 };
 

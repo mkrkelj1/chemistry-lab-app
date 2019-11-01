@@ -4,6 +4,7 @@ import HomeImagePlaceholders from './HomeImagePlaceholders'
 import HomeVideoTutorials from './HomeVideoTutorials'
 import HomeSeeAllVideosButton from './HomeSeeAllVideosButton'
 
+
 //<CourseLinkButtons />
 const Home = () => (
 	<React.Fragment>

@@ -13,7 +13,7 @@ const Routes = () => (
     <Route exact path='/courses' component={ Courses }/>
     <Route exact path='/courses/:id' component={ Course }/>
     <Route exact path='/courses/:id/experiments' component={ Experiments }/>
-    <Route exact path='/courses/:id/experiments/:week' component={ Experiment }/>
+    <Route exact path='/courses/:id/experiments/:experimentID' component={ Experiment }/>
   </Switch>
 )
 
