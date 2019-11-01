@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import ReactMarkdown from "react-markdown/with-html"
-
+import Collapse from "react-bootstrap/Collapse";
 
 // Exports to Course.js
 const CourseLabRegulations = ({ courseId }) => {
+  const cardId = 'lab-regulations-card-body'
   const [markdown, setValue] = useState([]);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
@@ -22,14 +24,17 @@ const CourseLabRegulations = ({ courseId }) => {
 
   return (
     <Card>
-      <Accordion.Toggle as={Card.Header} eventKey="2">
+      <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
         Lab Regulations
-      </Accordion.Toggle>
-      <Accordion.Collapse eventKey="2">
+      </Card.Header>
+
+      <Collapse in = { open } >
+      <div>
         <Card.Body>
-          <ReactMarkdown source={markdown} escapeHtml={false} />
+          <ReactMarkdown source={ markdown } escapeHtml={false} />
         </Card.Body>
-      </Accordion.Collapse>
+      </div>
+      </Collapse>
     </Card>
   );
 };

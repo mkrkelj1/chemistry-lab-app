@@ -22,9 +22,11 @@ const ExperimentProceduresCard = ({ experimentID }) => {
         Procedure
       </Card.Header>
       <Collapse in={openCard}>
-        <Card.Body id={cardID}>
-          <ExperimentProcedureButtons procedureIds = {procedureIds} experimentID = {experimentID} />
-        </Card.Body>
+        <div>
+          <Card.Body id={cardID}>
+            <ExperimentProcedureButtons procedureIds = {procedureIds} experimentID = {experimentID} />
+          </Card.Body>
+        </div>
       </Collapse>
     </Card>
   );

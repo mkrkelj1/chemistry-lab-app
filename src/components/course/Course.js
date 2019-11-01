@@ -7,9 +7,8 @@ import CourseExperimentSchedule from "./CourseExperimentSchedule";
 import CourseNotebooksReports from "./CourseNotebooksReports";
 import CourseLabRegulations from "./CourseLabRegulations";
 
-
+// Exports: Routes.js
 const Course = props => {
-  // Parse number/week/id from pathname.
   const course = CoursesAPI.get(parseInt(props.match.params.id, 10));
 
   if (!course) {
@@ -19,15 +18,25 @@ const Course = props => {
   const _courseId = course.id;
 
   return (
-    <Container className="p-3">
-      <h3> {course.name} </h3>
-      <h5> Instructor: {course.instructor} </h5>
-      <p> Welcome to {course.name}! </p>
-      <Accordion>
-        <CourseExperimentSchedule courseId = { _courseId } />
-        <CourseNotebooksReports courseId = { _courseId } />
-        <CourseLabRegulations courseId = {_courseId } />
-      </Accordion>
+    <Container>
+      <Container className="p-1">
+        <h3> {course.name} </h3>
+        <h5> Instructor: {course.instructor} </h5>
+        <p> Welcome to {course.name}! </p>
+      </Container>
+
+      <Container className="p-1">
+        <CourseExperimentSchedule courseId={_courseId} />
+      </Container>
+
+      <Container className="p-1">
+        <CourseNotebooksReports courseId={_courseId} />
+      </Container>
+
+      <Container className="p-1">
+        <CourseLabRegulations courseId={_courseId} />
+      </Container>
+
       <br />
       {/* <Link to={`${_courseID}/experiments`}>Experiments</Link> */}
     </Container>

@@ -34,7 +34,9 @@ const ExperimentProcedureButtons = ({ procedureIds, experimentID }) => {
             <br/><br/>
 
             <Collapse in={open}>
-              <ReactMarkdown source={props.markdown} escapeHtml={false} />
+              <div>
+                <ReactMarkdown source={props.markdown} escapeHtml={false} />
+              </div>
             </Collapse>
         </Container>
     );

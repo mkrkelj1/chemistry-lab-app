@@ -3,9 +3,15 @@ import React, { useState } from "react";
 import { ExperimentsAPI, ChemicalsAPI, PictogramsAPI } from "../../api";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
+
+import ExperimentPreLabAsgmt from "./ExperimentPreLabAsgmt"
 import ExperimentBackgroundCard from "./ExperimentBackgroundCard";
 import ExperimentChemicalsCard from "./ExperimentChemicalsCard"
 import ExperimentProceduresCard from "./ExperimentProceduresCard"
+import ExperimentResultsCard from "./ExperimentResultsCard"
+import ExperimentWasteDisposal from "./ExperimentWasteDisposal"
+import ExperimentStudyQuestions from "./ExperimentStudyQuestions"
+import ExperimentDiscussion from "./ExperimentDiscussion"
 
 
 const Experiment = props => {
@@ -31,11 +37,38 @@ const Experiment = props => {
         </Container>
 
         <Container className="p-1">
+          <ExperimentPreLabAsgmt experimentID={_experimentID} />
+        </Container>
+
+        <Container className="p-1">
           <ExperimentBackgroundCard experimentID={_experimentID} />
         </Container>
         <Container className="p-1">
           <ExperimentProceduresCard experimentID={_experimentID} />
         </Container>
+
+        <Container className="p-1">
+          <ExperimentResultsCard experimentID={_experimentID} />
+        </Container>
+
+        <Container className="p-1">
+          <ExperimentStudyQuestions experimentID={_experimentID} />
+        </Container>
+
+
+        <Container className="p-1">
+          <ExperimentDiscussion experimentID={_experimentID} />
+        </Container>
+
+
+        <Container className="p-1">
+          <ExperimentWasteDisposal experimentID={_experimentID} />
+        </Container>
+
+
+
+
+
 
         <Container className="p-1">
           <Link to="/">Back</Link>{" "}

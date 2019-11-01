@@ -6,16 +6,16 @@ import ReactMarkdown from "react-markdown/with-html"
 
 
 // Exports: Experiment.js
-const ExperimentBackgroundCard = ({ experimentID }) => {
-  const cardId = 'theoretical-background-card-body'
+const ExperimentDiscussion = ({ experimentID }) => {
+  const cardId = 'discussion-card-body'
   const [markdown, setValue] = useState([]);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
       const experimentDir = experimentID + "_experiment"
-      const root_path = "/../markdown/experiments/" + experimentDir + "/background/"
-      const path = root_path + experimentID + "_background.md";
+      const root_path = "/../markdown/experiments/" + experimentDir + "/discussion/"
+      const path = root_path + experimentID + "_discussion.md";
       const markdown = await fetch(path).then(res => res.text());
       setValue(markdown);
     }
@@ -25,7 +25,7 @@ const ExperimentBackgroundCard = ({ experimentID }) => {
   return (
     <Card>
       <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
-        Theoretical Background
+        Discussion
       </Card.Header>
       <Collapse in = { open } >
         <div>
@@ -38,7 +38,4 @@ const ExperimentBackgroundCard = ({ experimentID }) => {
   );
 };
 
-export default ExperimentBackgroundCard;
-
-
-
+export default ExperimentDiscussion;

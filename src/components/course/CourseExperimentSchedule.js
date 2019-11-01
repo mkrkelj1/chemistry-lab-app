@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ExperimentsAPI }  from '../../api'
-import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
+import Collapse from "react-bootstrap/Collapse";
 import { Link } from "react-router-dom";
 
 
 // Exports to Course.js
 const CourseExperimentSchedule = ({ courseId }) => {
+  const cardId = 'experiment-schedule-card-body'
+  const [markdown, setValue] = useState([]);
+  const [open, setOpen] = useState(false);
+
 
   const schedule = () => {
     return ExperimentsAPI.filtered(courseId).map(e => (
@@ -21,16 +25,18 @@ const CourseExperimentSchedule = ({ courseId }) => {
   
   return (
     <Card >
-      <Accordion.Toggle as={Card.Header} eventKey="0">
+      <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
         Experiment Schedule
-      </Accordion.Toggle>
-      <Accordion.Collapse eventKey="0">
-        <Card.Body>
+      </Card.Header>
+      <Collapse in = { open } >
+        <div>
+        <Card.Body id = { cardId }>
           <ul>
             {schedule()}
           </ul>
         </Card.Body>
-      </Accordion.Collapse>
+        </div>
+      </Collapse>
     </Card>
   );
 };
