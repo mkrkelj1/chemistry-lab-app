@@ -1,9 +1,10 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Courses from './Courses'
-import Experiments from './Experiments'
-import Course from './Course'
-import Experiment from './Experiment'
+import Courses from './course/Courses'
+import Course from './course/Course'
+import Experiments from './experiment/Experiments'
+import Experiment from './experiment/Experiment'
+
 
 // Route matching
 // if /courses --> return all

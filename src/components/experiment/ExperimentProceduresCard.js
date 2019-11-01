@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import Button from "react-bootstrap/Button"
 import ReactMarkdown from "react-markdown/with-html";
-import { ProceduresAPI } from "../api";
+import { ProceduresAPI } from "../../api";
 import ExperimentProcedureButtons from "./ExperimentProcedureButtons"
 
 const ExperimentProceduresCard = ({ experimentID }) => {

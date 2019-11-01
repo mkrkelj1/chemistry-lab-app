@@ -5,14 +5,19 @@ import ReactMarkdown from "react-markdown/with-html"
 
 
 // Exports to Course.js
-const CourseNotebooksReports = ({ courseID }) => {
+const CourseNotebooksReports = ({ courseId }) => {
 	const [markdown, setValue] = useState([]);
-
+	
 	  useEffect(() => {
 	    async function fetchData() {
-	      const path = "/../markdown/notebooks/" + courseID + "_notebook.md";
-	      const markdown = await fetch(path).then(res => res.text());
-	      setValue(markdown);
+	    	const courseDir = courseId + "_course"
+	    	const root_path = "/../markdown/courses/" + courseDir + "/notebook/"
+	    	const file_name = "notebook.md"
+	      	const path = root_path + file_name
+	      	const markdown = await fetch(path).then(res => res.text());
+
+	      	console.log(path)
+	      	setValue(markdown);
 	    }
 	    fetchData();
 	  }, []);

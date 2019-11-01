@@ -1,19 +1,19 @@
 import React from "react";
-import { ExperimentsAPI }  from '../api'
+import { ExperimentsAPI }  from '../../api'
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 
 
 // Exports to Course.js
-const CourseExperimentSchedule = ({courseID}) => {
+const CourseExperimentSchedule = ({ courseId }) => {
 
   const schedule = () => {
-    return ExperimentsAPI.filtered(courseID).map(e => (
+    return ExperimentsAPI.filtered(courseId).map(e => (
       <React.Fragment>
         <li key={e.experimentID}>
           Week {e.week}: &nbsp;
-          <Link to={`${courseID}/experiments/${e.week}`}>{e.name}</Link>
+          <Link to={`${courseId}/experiments/${e.week}`}>{e.name}</Link>
         </li>
       </React.Fragment>
     ));

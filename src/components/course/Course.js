@@ -1,5 +1,5 @@
 import React from "react";
-import { CoursesAPI } from "../api";
+import { CoursesAPI } from "../../api";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Accordion from "react-bootstrap/Accordion";
@@ -24,8 +24,8 @@ const Course = props => {
       <h5> Instructor: {course.instructor} </h5>
       <p> Welcome to {course.name}! </p>
       <Accordion>
-        <CourseExperimentSchedule courseID = { _courseId } />
-        <CourseNotebooksReports courseID = { _courseId } />
+        <CourseExperimentSchedule courseId = { _courseId } />
+        <CourseNotebooksReports courseId = { _courseId } />
         <CourseLabRegulations courseId = {_courseId } />
       </Accordion>
       <br />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { CoursesAPI }  from '../api'
+import { CoursesAPI }  from '../../api'
 import { Link } from 'react-router-dom'
 
 

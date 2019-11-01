@@ -1,6 +1,6 @@
 //import React from "react";
 import React, { useState } from "react";
-import { ExperimentsAPI, ChemicalsAPI, PictogramsAPI } from "../api";
+import { ExperimentsAPI, ChemicalsAPI, PictogramsAPI } from "../../api";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import ExperimentBackgroundCard from "./ExperimentBackgroundCard";

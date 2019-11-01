@@ -1,5 +1,5 @@
 import React from 'react'
-import { ExperimentsAPI }  from '../api'
+import { ExperimentsAPI }  from '../../api'
 import { Link } from 'react-router-dom'
 
 
