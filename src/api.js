@@ -1,8 +1,19 @@
+import cards from './data/cards.json';
 import chemicals from './data/chemicals.json';
 import courses from './data/courses.json';
 import experiments from './data/experiments.json'
 import pictograms from './data/pictograms.json'
 import procedures from './data/procedures.json'
+
+
+const CardsAPI = {
+  cards: cards,
+  
+  all: function() {
+    return this.cards;
+  }
+
+};
 
 
 const ChemicalsAPI = {
@@ -127,7 +138,7 @@ const ScheduleAPI = {
 
 
 
-export {CoursesAPI, ExperimentsAPI, ProceduresAPI, ChemicalsAPI, PictogramsAPI }
+export { CardsAPI, CoursesAPI, ExperimentsAPI, ProceduresAPI, ChemicalsAPI, PictogramsAPI }
 
 
 

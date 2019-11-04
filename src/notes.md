@@ -14,5 +14,11 @@
 	- study_questions
 - Should these keys be stored as JSON as well, with the accompanying APIs?
 
+##### NavBar
+ - Remove redundancies
+
 ##### Style
  - Standardize naming conventions (mixed use of xID & xId, etc.)
+
+
+ 

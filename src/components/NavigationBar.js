@@ -1,34 +1,28 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 
 // Exports to Header.js
+
+const navObj = {
+    "/": "Home",
+    "/courses": "Courses",
+    "/videos": "Videos",
+    "/safety": "Safety"
+};
+
+const navs = Object.keys(navObj).map(nav => (
+    <Nav.Item>
+        <Nav.Link>
+            <Link to={nav}> {navObj[nav]} </Link>
+        </Nav.Link>
+    </Nav.Item>
+));
+
 const NavigationBar = () => (
-  <Nav justify fill variant="tabs">
-    <Nav.Item>
-    	<Nav.Link>
-    		<Link to='/'>Home</Link>
-    	</Nav.Link>   
-    </Nav.Item>
-
-    <Nav.Item>
-    	<Nav.Link>
-    		<Link to='/courses'>Courses</Link>
-    	</Nav.Link>
-    </Nav.Item>
-
-    <Nav.Item>
-    	<Nav.Link>
-    		<Link to='/'>Videos</Link>
-    	</Nav.Link>   
-    </Nav.Item>
-
-    <Nav.Item>
-    	<Nav.Link>
-    		<Link to='/'>Safety</Link>
-    	</Nav.Link>   
-    </Nav.Item>
-  </Nav>
+    <Nav justify fill variant="tabs">
+        {navs}
+    </Nav>
 );
 
-export default NavigationBar
+export default NavigationBar;

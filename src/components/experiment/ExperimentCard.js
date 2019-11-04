@@ -6,31 +6,36 @@ import ReactMarkdown from "react-markdown/with-html"
 
 
 // Exports: Experiment.js
-const ExperimentResultsCard = ({ experimentID }) => {
-  const cardId = 'results-card-body'
+const ExperimentCard = ({ header, experimentID, cardId, location, filename }) => {  
   const [markdown, setValue] = useState([]);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
       const experimentDir = experimentID + "_experiment"
-      const root_path = "/../markdown/experiments/" + experimentDir + "/results/"
-      const path = root_path + experimentID + "_results.md";
+      const root_path = "/../markdown/experiments/" + experimentDir + location 
+      const path = root_path + experimentID + filename
       const markdown = await fetch(path).then(res => res.text());
       setValue(markdown);
     }
     fetchData();
   }, []);
 
+
+
   return (
     <Card>
-      <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
-        Results
+      <Card.Header 
+        onClick={ () => setOpen(!open) } 
+        aria-controls = {cardId} 
+        aria-expanded={ open } 
+      >
+        { header }
       </Card.Header>
       <Collapse in = { open } >
         <div>
           <Card.Body id = { cardId } >
-            <ReactMarkdown source={markdown} escapeHtml={false} />
+            <ReactMarkdown source={ markdown } escapeHtml={false} />
           </Card.Body>
         </div>
       </Collapse>
@@ -38,4 +43,4 @@ const ExperimentResultsCard = ({ experimentID }) => {
   );
 };
 
-export default ExperimentResultsCard;
+export default ExperimentCard;
