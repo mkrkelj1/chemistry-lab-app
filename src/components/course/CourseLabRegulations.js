@@ -23,19 +23,21 @@ const CourseLabRegulations = ({ courseId }) => {
   }, []);
 
   return (
-    <Card>
-      <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
-        Lab Regulations
-      </Card.Header>
+    <div className="p-1">
+      <Card>
+        <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
+          Lab Regulations
+        </Card.Header>
 
-      <Collapse in = { open } >
-      <div>
-        <Card.Body>
-          <ReactMarkdown source={ markdown } escapeHtml={false} />
-        </Card.Body>
-      </div>
-      </Collapse>
-    </Card>
+        <Collapse in = { open } >
+        <div>
+          <Card.Body>
+            <ReactMarkdown source={ markdown } escapeHtml={false} />
+          </Card.Body>
+        </div>
+        </Collapse>
+      </Card>
+    </div>
   );
 };
 

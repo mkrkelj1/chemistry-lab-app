@@ -17,27 +17,27 @@ const CourseNotebooksReports = ({ courseId }) => {
       const file_name = "notebook.md";
       const path = root_path + file_name;
       const markdown = await fetch(path).then(res => res.text());
-
-      console.log(path);
       setValue(markdown);
     }
     fetchData();
   }, []);
 
   return (
-    <Card>
-      <Card.Header onClick={() => setOpen(!open)} aria-controls={cardId} aria-expanded={open} >
-        Notebooks and Reports
-      </Card.Header>
+    <div className="p-1">
+      <Card>
+        <Card.Header onClick={() => setOpen(!open)} aria-controls={cardId} aria-expanded={open} >
+          Notebooks and Reports
+        </Card.Header>
 
-      <Collapse in={open}>
-      <div>
-        <Card.Body id={cardId}>
-          <ReactMarkdown source={markdown} escapeHtml={false} />
-        </Card.Body>
-        </div>
-      </Collapse>
-    </Card>
+        <Collapse in={open}>
+        <div>
+          <Card.Body id={cardId}>
+            <ReactMarkdown source={markdown} escapeHtml={false} />
+          </Card.Body>
+          </div>
+        </Collapse>
+      </Card>
+    </div>
   );
 };
 

@@ -11,7 +11,6 @@ const CourseExperimentSchedule = ({ courseId }) => {
   const [markdown, setValue] = useState([]);
   const [open, setOpen] = useState(false);
 
-
   const schedule = () => {
     return ExperimentsAPI.filtered(courseId).map(e => (
       <React.Fragment>
@@ -24,20 +23,22 @@ const CourseExperimentSchedule = ({ courseId }) => {
   };
   
   return (
-    <Card >
-      <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
-        Experiment Schedule
-      </Card.Header>
-      <Collapse in = { open } >
-        <div>
-        <Card.Body id = { cardId }>
-          <ul>
-            {schedule()}
-          </ul>
-        </Card.Body>
-        </div>
-      </Collapse>
-    </Card>
+    <div className="p-1">
+      <Card >
+        <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
+          Experiment Schedule
+        </Card.Header>
+        <Collapse in = { open } >
+          <div>
+          <Card.Body id = { cardId }>
+            <ul>
+              {schedule()}
+            </ul>
+          </Card.Body>
+          </div>
+        </Collapse>
+      </Card>
+    </div>
   );
 };
 

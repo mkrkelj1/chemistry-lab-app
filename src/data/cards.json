@@ -3,42 +3,36 @@
       "Id":1,
       "header":"Prelab Assignment",
       "cardId":"pre-lab-assignment-body",
-      "location":"/prelab_assignment/",
-      "filename":"_prelab_assignment.md"
+      "location":"prelab_assignment"
    },
    { 
       "Id":2,
       "header":"Theoretical Background",
       "cardId":"theoretical-background-body",
-      "location":"/background/",
-      "filename":"_background.md"
+      "location":"background"
    },
    { 
       "Id":3,
       "header":"Results",
       "cardId":"results-body",
-      "location":"/results/",
-      "filename":"_results.md"
+      "location":"results"
    },
    { 
       "Id":4,
       "header":"Study Questions",
       "cardId":"study-questions-body",
-      "location":"/study_questions/",
-      "filename":"_study_questions.md"
+      "location":"study_questions"
    },
    { 
       "Id":5,
       "header":"Discussion",
       "cardId":"discussion-body",
-      "location":"/discussion/",
-      "filename":"_discussion.md"
+      "location":"discussion"
    },
    { 
       "Id":6,
       "header":"Waste Disposal",
       "cardId":"waste-disposal-body",
-      "location":"/waste_disposal/",
-      "filename":"_waste_disposal.md"
+      "location":"waste_disposal"
    }
 ]

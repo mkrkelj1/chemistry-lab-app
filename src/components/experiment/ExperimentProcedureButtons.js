@@ -5,9 +5,7 @@ import ReactMarkdown from "react-markdown/with-html";
 import Container from "react-bootstrap/Container";
 
 const ExperimentProcedureButtons = ({ procedureIds, experimentID }) => {
-  //const procedureRange = Array.from({length: procedureIds.length}, (v, k) => k + 1); 
   const [markdown, setValue] = useState([]);
-
 
   useEffect(() => {
     async function fetchData() {
@@ -15,7 +13,6 @@ const ExperimentProcedureButtons = ({ procedureIds, experimentID }) => {
       const root_path = "/../markdown/experiments/" + experimentDir + "/procedure/"
       const files = procedureIds.map(id => `${root_path + id}_procedure.md`)
       const promises = await files.map(file =>  fetch(file).then(res => res.text()));
-
             Promise.all(promises).then(results => { 
               const markdownMap = {}
               procedureIds.forEach((key, i) => markdownMap[key] = results[i]);
@@ -31,8 +28,7 @@ const ExperimentProcedureButtons = ({ procedureIds, experimentID }) => {
     return (
         <Container className="p-1" id = "ProcedureButtons">
             <Button variant="outline-info" onClick={() => setOpen(!open)}>Step: {props.step}</Button>
-            <br/><br/>
-
+            
             <Collapse in={open}>
               <div>
                 <ReactMarkdown source={props.markdown} escapeHtml={false} />

@@ -5,69 +5,138 @@
     "week": 1,
     "name": "Identification of an Unknown Compound using Mixed Melting Point Method",
     "chemical_ids": [13,14,9,7,1,27],
-    "theoretical_background": ""
+    "experimentDir": "1_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   },
   {
     "experimentID": 2,
     "courseID": 1,
     "week": 2,
     "name": "Extraction and Recrystallization of Trimyristin from Nutmeg I",
-    "chemical_ids": [10,16,20,32,34,35,38,24]
+    "chemical_ids": [10,16,20,32,34,35,38,24],
+    "experimentDir": "2_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   },
   {
     "experimentID": 3,
     "courseID": 1,
     "week": 3,
     "name": "Extraction and Recrystallization of Trimyristin from Nutmeg II",
-    "chemical_ids": [10,16,20,32,34,35,38,24]
+    "chemical_ids": [10,16,20,32,34,35,38,24],
+    "experimentDir": "3_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   },
   {
     "experimentID": 4,
     "courseID": 1,
     "week": 3,
     "name": "Column Chromatography",
-    "chemical_ids": [11,12,17,18,23,21]
+    "chemical_ids": [11,12,17,18,23,21],
+    "experimentDir": "4_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   },
   {
     "experimentID": 5,
     "courseID": 1,
     "week": 4,
     "name": "Extraction of the Components from an Unknown Mixture",
-    "chemical_ids": [10,13,14,6,4,5,17,19,28,30,29,31]
+    "chemical_ids": [10,13,14,6,4,5,17,19,28,30,29,31],
+    "experimentDir": "5_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   },
   {
     "experimentID": 6,
     "courseID": 1,
     "week": 5,
     "name": "Fractional Distillation of 1:1 mixture of 1-Butanol and Ethyl acetate",
-    "chemical_ids": [10,2,17,21]
+    "chemical_ids": [10,2,17,21],
+    "experimentDir": "6_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   },
   {
     "experimentID": 7,
     "courseID": 1,
     "week": 6,
     "name": "Dehydration of 2-Methylcyclohexanol",
-    "chemical_ids": [15,33,3,8,22,25,26,21]
+    "chemical_ids": [15,33,3,8,22,25,26,21],
+    "experimentDir": "7_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   },
   {
     "experimentID": 8,
     "courseID": 2,
     "week": 1,
     "name": "Spectroscopy Experiment 1",
-    "chemical_ids": [1,2,3]
+    "chemical_ids": [1,2,3],
+    "experimentDir": "8_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   },
   {
     "experimentID": 9,
     "courseID": 2,
     "week": 2,
     "name": "Spectroscopy Experiment 2",
-    "chemical_ids": [3]
+    "chemical_ids": [3],
+    "experimentDir": "8_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   },
   {
     "experimentID": 10,
     "courseID": 2,
     "week": 3,
     "name": "Spectroscopy Experiment 3",
-    "chemical_ids": [1,3]
+    "chemical_ids": [1,3],
+    "experimentDir": "9_experiment",
+    "background_filename": "",
+    "discussion_filename": "",
+    "prelab_assignment_filename": "",
+    "results_filename": "",
+    "study_questions_filename": "",
+    "waste_disposal_filename": ""
   }
 ]

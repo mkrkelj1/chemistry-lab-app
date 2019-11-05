@@ -12,7 +12,6 @@ const CardsAPI = {
   all: function() {
     return this.cards;
   }
-
 };
 
 
@@ -122,6 +121,10 @@ const PictogramsAPI = {
 
 const ScheduleAPI = {
   // https://stackoverflow.com/questions/16590500/javascript-calculate-date-from-week-number
+
+  schedule: [{'id': 1, 'dateStart': '1/22', 'dateEnd': '1'}],
+
+
   get_date: function (w, y) {
     var simple = new Date(Date.UTC(y, 0, 1 + (w - 1) * 7));
     var dow = simple.getDay();
