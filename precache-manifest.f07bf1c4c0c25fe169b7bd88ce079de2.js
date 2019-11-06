@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "010e952d5aed4e80611dcadc6e5bc106",
+    "revision": "f5d0b870b7444c47e37d538da3196ad4",
     "url": "/chemistry-lab-app/index.html"
   },
   {
-    "revision": "65dce3c888b096e628d3",
+    "revision": "b6576ed801e2471c5d5e",
     "url": "/chemistry-lab-app/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "736d8c23a2d0282ae13f",
+    "revision": "b647d08ee1d1e15c6174",
     "url": "/chemistry-lab-app/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "65dce3c888b096e628d3",
-    "url": "/chemistry-lab-app/static/js/2.654f4c9e.chunk.js"
+    "revision": "b6576ed801e2471c5d5e",
+    "url": "/chemistry-lab-app/static/js/2.46cc2696.chunk.js"
   },
   {
-    "revision": "736d8c23a2d0282ae13f",
-    "url": "/chemistry-lab-app/static/js/main.472f13ab.chunk.js"
+    "revision": "b647d08ee1d1e15c6174",
+    "url": "/chemistry-lab-app/static/js/main.4d313a03.chunk.js"
   },
   {
     "revision": "f2991d8b8eea07680d14",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9b2f9b34332047d2f20ef078286c1169",
     "url": "/chemistry-lab-app/static/media/1_prelab_assignment.9b2f9b34.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/1_procedure.618f5148.md"
   },
   {
     "revision": "a437bc5efd4a2fc5c92254fb6471614e",
@@ -56,12 +60,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chemistry-lab-app/static/media/2_background.88ebd7f2.md"
   },
   {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/2_discussion.618f5148.md"
+  },
+  {
+    "revision": "9b2f9b34332047d2f20ef078286c1169",
+    "url": "/chemistry-lab-app/static/media/2_prelab_assignment.9b2f9b34.md"
+  },
+  {
     "revision": "56b5d0d80ffde82fb5b46201c4da9440",
     "url": "/chemistry-lab-app/static/media/2_procedure.56b5d0d8.md"
   },
   {
+    "revision": "9b2f9b34332047d2f20ef078286c1169",
+    "url": "/chemistry-lab-app/static/media/2_results.9b2f9b34.md"
+  },
+  {
+    "revision": "9b2f9b34332047d2f20ef078286c1169",
+    "url": "/chemistry-lab-app/static/media/2_study_questions.9b2f9b34.md"
+  },
+  {
+    "revision": "9b2f9b34332047d2f20ef078286c1169",
+    "url": "/chemistry-lab-app/static/media/2_waste_disposal.9b2f9b34.md"
+  },
+  {
     "revision": "88ebd7f2299bb1362a867e10bd051bc0",
     "url": "/chemistry-lab-app/static/media/3_background.88ebd7f2.md"
+  },
+  {
+    "revision": "88ebd7f2299bb1362a867e10bd051bc0",
+    "url": "/chemistry-lab-app/static/media/3_discussion.88ebd7f2.md"
   },
   {
     "revision": "56b5d0d80ffde82fb5b46201c4da9440",
@@ -72,12 +100,56 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chemistry-lab-app/static/media/4_background.88ebd7f2.md"
   },
   {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/4_discussion.618f5148.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/4_prelab_assignment.618f5148.md"
+  },
+  {
     "revision": "56b5d0d80ffde82fb5b46201c4da9440",
     "url": "/chemistry-lab-app/static/media/4_procedure.56b5d0d8.md"
   },
   {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/4_procedure.618f5148.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/4_results.618f5148.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/4_study_questions.618f5148.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/4_waste_disposal.618f5148.md"
+  },
+  {
     "revision": "88ebd7f2299bb1362a867e10bd051bc0",
     "url": "/chemistry-lab-app/static/media/5_background.88ebd7f2.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/5_discussion.618f5148.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/5_prelab_assignment.618f5148.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/5_results.618f5148.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/5_study_questions.618f5148.md"
+  },
+  {
+    "revision": "618f514895b090818f2349038ae3916b",
+    "url": "/chemistry-lab-app/static/media/5_waste_disposal.618f5148.md"
   },
   {
     "revision": "88ebd7f2299bb1362a867e10bd051bc0",
