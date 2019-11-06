@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/chemistry-lab-app/static/css/main.34de6062.chunk.css",
-    "main.js": "/chemistry-lab-app/static/js/main.277bf57c.chunk.js",
-    "main.js.map": "/chemistry-lab-app/static/js/main.277bf57c.chunk.js.map",
+    "main.js": "/chemistry-lab-app/static/js/main.95488f37.chunk.js",
+    "main.js.map": "/chemistry-lab-app/static/js/main.95488f37.chunk.js.map",
     "runtime~main.js": "/chemistry-lab-app/static/js/runtime~main.e9f9f155.js",
     "runtime~main.js.map": "/chemistry-lab-app/static/js/runtime~main.e9f9f155.js.map",
     "static/css/2.266e55a5.chunk.css": "/chemistry-lab-app/static/css/2.266e55a5.chunk.css",
-    "static/js/2.aa52ddbc.chunk.js": "/chemistry-lab-app/static/js/2.aa52ddbc.chunk.js",
-    "static/js/2.aa52ddbc.chunk.js.map": "/chemistry-lab-app/static/js/2.aa52ddbc.chunk.js.map",
+    "static/js/2.a055e8ac.chunk.js": "/chemistry-lab-app/static/js/2.a055e8ac.chunk.js",
+    "static/js/2.a055e8ac.chunk.js.map": "/chemistry-lab-app/static/js/2.a055e8ac.chunk.js.map",
     "index.html": "/chemistry-lab-app/index.html",
-    "precache-manifest.fc59fa0ca21b4b52f1704b55f6b5778b.js": "/chemistry-lab-app/precache-manifest.fc59fa0ca21b4b52f1704b55f6b5778b.js",
+    "precache-manifest.da203740f9ea7af4cff9949e972f6979.js": "/chemistry-lab-app/precache-manifest.da203740f9ea7af4cff9949e972f6979.js",
     "service-worker.js": "/chemistry-lab-app/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/chemistry-lab-app/static/css/2.266e55a5.chunk.css.map",
     "static/css/main.34de6062.chunk.css.map": "/chemistry-lab-app/static/css/main.34de6062.chunk.css.map",
@@ -41,6 +41,8 @@
     "static/media/beakers1.jpg": "/chemistry-lab-app/static/media/beakers1.97912d7c.jpg",
     "static/media/beakers2.jpg": "/chemistry-lab-app/static/media/beakers2.97912d7c.jpg",
     "static/media/molecule1.jpg": "/chemistry-lab-app/static/media/molecule1.2cdf56dd.jpg",
-    "static/media/molecule2.jpg": "/chemistry-lab-app/static/media/molecule2.2cdf56dd.jpg"
+    "static/media/molecule2.jpg": "/chemistry-lab-app/static/media/molecule2.2cdf56dd.jpg",
+    "static/media/notebook.md": "/chemistry-lab-app/static/media/notebook.09185b2f.md",
+    "static/media/regulations.md": "/chemistry-lab-app/static/media/regulations.56b5d0d8.md"
   }
 }
