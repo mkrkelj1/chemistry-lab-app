@@ -1,9 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import ReactMarkdown from "react-markdown/with-html"
+import loadable from '@loadable/component'
 
 const path = require('path');
+
+const cache = {};
+function importAll (r) {
+  r.keys().forEach(key => cache[key] = r(key));
+}
+importAll(require.context("../../assets/markdown/experiments/", true, /\.md$/));
+
 
 // Exports: Experiment.js
 const ExperimentCard = ({ header, experimentId, experimentDir, cardId, location }) => {  
@@ -12,11 +20,11 @@ const ExperimentCard = ({ header, experimentId, experimentDir, cardId, location 
 
   useEffect(() => {
     async function fetchData() {
+      const file_root = "./" + experimentId + "_" + "experiment" + "/"
       const filename = experimentId + '_' + location + '.md'
-      const file_path = path.join(experimentDir, location, filename);
-      const root_path = "/../markdown/experiments/"
-      const _path = root_path + file_path
-      const markdown = await fetch(_path).then(res => res.text());
+      const filepath = file_root + location + "/" + filename
+      const path = cache[filepath]
+      const markdown = await fetch(path).then(res => res.text());
       setValue(markdown);
     }
     fetchData();
@@ -34,7 +42,7 @@ const ExperimentCard = ({ header, experimentId, experimentDir, cardId, location 
       <Collapse in = { open } >
         <div>
           <Card.Body id = { cardId } >
-            <ReactMarkdown source={ markdown } escapeHtml={false} />
+              <ReactMarkdown source={ markdown } escapeHtml={false} />
           </Card.Body>
         </div>
       </Collapse>

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 
 // Exports to Header.js
-
 const navObj = {
     "/": "Home",
     "/courses": "Courses",

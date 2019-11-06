@@ -11,7 +11,7 @@ const Experiments = props => {
       <ul>
         {ExperimentsAPI.filtered(_courseID).map(e => (
           <li key={e.experimentID}>
-            <Link to={`experiments/${e.week}`}>{e.name}</Link>
+            <Link to={`experiments/${e.experimentID}`}>{e.name}</Link>
           </li>
         ))}
       </ul>

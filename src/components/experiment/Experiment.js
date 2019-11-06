@@ -29,6 +29,7 @@ const Experiment = props => {
         experimentDir={_experimentDir}
         cardId={card.cardId}
         location={card.location}
+  
       />
     </Container>
   ));
@@ -41,7 +42,7 @@ const Experiment = props => {
 
   const ExpProcCard = (
     <Container className="p-1">
-      <ExperimentProceduresCard experimentID={_experimentId} />
+      <ExperimentProceduresCard experimentId={_experimentId} />
     </Container>
   );
 
@@ -52,7 +53,7 @@ const Experiment = props => {
     <Container>
       <Container className="p-1">
         <h3>
-          Week {_experiment.week}: {_experiment.name}{" "}
+          {_experiment.name}
         </h3>
       </Container>
 

@@ -5,7 +5,6 @@ import Collapse from "react-bootstrap/Collapse";
 
 
 const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
-	const root_path = "/../pictograms/";
 	const image_style = { height: "3rem" };
 	const cardID = "chemicals-card-body";
 	const [open, setOpen] = useState(false);
@@ -16,7 +15,10 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 	    return null;
 	  }
 	  return pictograms.map(pictogram => (
-	    <Card.Img variant="buttom" src={root_path + pictogram.filename} style={image_style} />
+	    <Card.Img 
+	    	variant="buttom"
+	    	src={ require('../../assets/pictograms/' + pictogram.filename ) }
+	    	style={image_style} />
 	  ));
 	};
 

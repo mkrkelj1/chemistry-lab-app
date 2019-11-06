@@ -1,21 +1,15 @@
 #### Notes:
 
-##### Consolidate card components
-- Experiment cards should be one component (maybe two, due to some differences) that takes as props the data it needs.
-- Likewise for Courses
+##### Components
+- notebook and regulations should have ids? 
 
-##### API / Data Updates
 
-- Add keys *experiments.json*:
-	- Backgrounds
-	- discussion
-	- results
-	- waste_disposal
-	- study_questions
-- Should these keys be stored as JSON as well, with the accompanying APIs?
 
-##### NavBar
- - Remove redundancies
+##### Deploying
+- Change <HashRouter> back to <BrowserRouter>
+	
+[Home page deployment bug](https://stackoverflow.com/questions/46056414/getting-404-for-links-with-create-react-app-deployed-to-github-pages)
+[More info from Github](https://github.com/rafrex/spa-github-pages)
 
 ##### Style
  - Standardize naming conventions (mixed use of xID & xId, etc.)

@@ -4,14 +4,20 @@ import Button from "react-bootstrap/Button"
 import ReactMarkdown from "react-markdown/with-html";
 import Container from "react-bootstrap/Container";
 
-const ExperimentProcedureButtons = ({ procedureIds, experimentID }) => {
+const cache = {};
+function importAll (r) {
+  r.keys().forEach(key => cache[key] = r(key));
+}
+importAll(require.context("../../assets/markdown/experiments/", true, /\.md$/));
+
+const ExperimentProcedureButtons = ({ procedureIds, experimentId }) => {
   const [markdown, setValue] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const experimentDir = experimentID + "_experiment"
-      const root_path = "/../markdown/experiments/" + experimentDir + "/procedure/"
-      const files = procedureIds.map(id => `${root_path + id}_procedure.md`)
+      // Building path: ./1_experiment/procedure/1_procedure.md
+      const root_path = "./" + experimentId + "_experiment" + '/procedure/'
+      const files = procedureIds.map(id => cache[`${root_path + id}_procedure.md`])
       const promises = await files.map(file =>  fetch(file).then(res => res.text()));
             Promise.all(promises).then(results => { 
               const markdownMap = {}

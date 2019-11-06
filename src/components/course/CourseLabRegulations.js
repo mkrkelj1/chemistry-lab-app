@@ -4,18 +4,25 @@ import Card from "react-bootstrap/Card";
 import ReactMarkdown from "react-markdown/with-html"
 import Collapse from "react-bootstrap/Collapse";
 
+const cache = {};
+function importAll (r) {
+  r.keys().forEach(key => cache[key] = r(key));
+}
+importAll(require.context("../../assets/markdown/courses/", true, /\.md$/));
+
+
 // Exports to Course.js
-const CourseLabRegulations = ({ courseId }) => {
+const CourseLabRegulations = ({ courseId, location }) => {
   const cardId = 'lab-regulations-card-body'
   const [markdown, setValue] = useState([]);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
-      const courseDir = courseId + "_course"
-      const root_path = "/../markdown/courses/" + courseDir + "/regulations/"
-      const file_name = "regulations.md"
-      const path = root_path + file_name
+      const file_root = "./" + courseId + "_" + "course" + "/"
+      const filename = location + '.md'
+      const filepath = file_root + location + "/" + filename
+      const path = cache[filepath]
       const markdown = await fetch(path).then(res => res.text());
       setValue(markdown);
     }

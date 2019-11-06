@@ -19,27 +19,16 @@ const Course = props => {
   }
 
   const _courseId = _course.id;
-
-  //https://stackoverflow.com/questions/16080378/check-if-one-date-is-between-two-dates-javascript
-  // Supported formats:
-  // mm/dd/yyyy
-
-  //if (check.getTime() <= to.getTime() && check.getTime() >= from.getTime())
-  //alert("date contained");
-
-
-  //const time = Date.now()
-  // alert(time)
-
+  
   return (
     <Container className="p-1">
       <CourseHeading course = { _course } />
-      <CourseCurrent />
+      <CourseCurrent courseId = { _courseId } />
       <CourseCanvasButtons />
       <div className="p-1"></div>
-      <CourseExperimentSchedule courseId={ _courseId } />
-      <CourseNotebooksReports courseId={ _courseId } />
-      <CourseLabRegulations courseId={ _courseId } />
+      <CourseExperimentSchedule courseId = { _courseId } />
+      <CourseNotebooksReports courseId = { _courseId } location = {"notebook"} />
+      <CourseLabRegulations courseId = { _courseId } location = {"regulations"} />
 
       <br />
       {/* <Link to={`${_courseID}/experiments`}>Experiments</Link> */}

@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import { Link } from "react-router-dom";
 
+import dayjs from 'dayjs'
 
 // Exports to Course.js
 const CourseExperimentSchedule = ({ courseId }) => {
@@ -11,12 +12,14 @@ const CourseExperimentSchedule = ({ courseId }) => {
   const [markdown, setValue] = useState([]);
   const [open, setOpen] = useState(false);
 
+  const renderDate = date => (dayjs(date).format("MM/DD"))
+
   const schedule = () => {
     return ExperimentsAPI.filtered(courseId).map(e => (
       <React.Fragment>
         <li key={e.experimentID}>
-          Week {e.week}: &nbsp;
-          <Link to={`${courseId}/experiments/${e.week}`}>{e.name}</Link>
+          {renderDate(e.startDate)}-{renderDate(e.endDate)}: &nbsp;
+          <Link to={`${courseId}/experiments/${e.experimentID}`}>{e.name}</Link>
         </li>
       </React.Fragment>
     ));

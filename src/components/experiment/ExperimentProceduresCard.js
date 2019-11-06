@@ -6,9 +6,10 @@ import ReactMarkdown from "react-markdown/with-html";
 import { ProceduresAPI } from "../../api";
 import ExperimentProcedureButtons from "./ExperimentProcedureButtons"
 
-const ExperimentProceduresCard = ({ experimentID }) => {
+
+const ExperimentProceduresCard = ({ experimentId }) => {
   const cardID = "procedure-card-body";
-  const procedures = ProceduresAPI.filtered(experimentID);
+  const procedures = ProceduresAPI.filtered(experimentId);
   const procedureIds = procedures.map(procedure => procedure.procedureID);
   const [openCard, setOpenCard] = useState(false);
   
@@ -24,7 +25,7 @@ const ExperimentProceduresCard = ({ experimentID }) => {
       <Collapse in={openCard}>
         <div>
           <Card.Body id={cardID}>
-            <ExperimentProcedureButtons procedureIds = {procedureIds} experimentID = {experimentID} />
+            <ExperimentProcedureButtons procedureIds = {procedureIds} experimentId = {experimentId} />
           </Card.Body>
         </div>
       </Collapse>

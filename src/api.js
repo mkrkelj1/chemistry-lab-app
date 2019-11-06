@@ -64,8 +64,8 @@ const ExperimentsAPI = {
     return this.experiments.filter(e => e.courseID === courseID);
   },
 
-  get: function(courseID, week) {
-    const isExperiment = e => e.week === week && e.courseID === courseID;
+  get: function(courseId, experimentId) {
+    const isExperiment = e => e.experimentID === experimentId && e.courseID === courseId;
     return this.experiments.find(isExperiment);
   }
 };
