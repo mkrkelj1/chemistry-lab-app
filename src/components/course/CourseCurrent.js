@@ -1,18 +1,12 @@
 import React from "react";
 import { ExperimentsAPI } from "../../api";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import dayjs from "dayjs";
 import isBetween from "dayjs/plugin/isBetween";
 import Alert from "react-bootstrap/Alert";
 dayjs.extend(isBetween);
+// Exports: Course.js
 
- //   <div class="bs-callout">
- //      <h4>Success Callout</h4>
- //         This is a success callout.
- //   </div>
-
-// <Alert variant = "warning" style = {style}>
-const style = {"border-left": "2px solid #038391"}
 
 const getCurrent = (startDate, endDate) => {
   const _today = dayjs();
@@ -21,7 +15,7 @@ const getCurrent = (startDate, endDate) => {
   return _today.isBetween(_start, _end);
 };
 
-// Exports: Course.js
+
 const CourseCurrent = ({ courseId }) => {
   const experiments = ExperimentsAPI.filtered(courseId);
   const between = experiments.map(e => getCurrent(e.startDate, e.endDate));
@@ -31,13 +25,18 @@ const CourseCurrent = ({ courseId }) => {
 
   return (
     <div className="p-1">
-      <em> currently happening:</em>
-      <br />
-      <strong>Experiment #{order}</strong>
-      <br />      
-      <Link to={`${courseId}/experiments/${currentExperiment.experimentID}`}>
-        {currentExperiment.name}
-      </Link>
+      <Alert className = "call-out" >
+        <em className = "call-out-em"> currently happening:</em>
+        <br />
+        <div className = "call-out-experiment">Experiment #{order}</div>
+        <br />      
+        <NavLink 
+          className = "call-out-link" 
+          to = {`${courseId}/experiments/${currentExperiment.experimentID}`}
+        > 
+          {currentExperiment.name}
+        </NavLink>
+      </Alert>
     </div>
   );
 };

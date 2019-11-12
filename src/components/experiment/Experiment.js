@@ -7,7 +7,6 @@ import ExperimentCards from "./ExperimentCards"
 
 
 const Experiment = props => {
-  const _cards = CardsAPI.all();
   const _courseId = parseInt(props.match.params.id, 10);
   const _course = CoursesAPI.get(_courseId)
   const _experimentId = parseInt(props.match.params.experimentID, 10);

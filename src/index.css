@@ -49,6 +49,40 @@ a:hover {
   text-decoration: none;
 }
 
+.alert-warning {
+  width: 90%;
+  max-width: 750px;
+  height: auto;
+  border-left: 2px solid #038391;
+}
+
+
+.call-out {
+  width: 90%;
+  max-width: 750px;
+  height: auto;
+  border-left: 2px solid #038391;
+  background-color: #FAF5F7; 
+}
+
+.call-out-em {
+  font-family: Arial;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.call-out-experiment {
+  display: inline;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.call-out-link {
+  font-weight: 600;
+  font-size: 13px;
+}
+
 .card {
   border: solid 1px #038391;
   border-radius: 15px;
