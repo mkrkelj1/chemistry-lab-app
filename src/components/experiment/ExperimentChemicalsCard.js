@@ -4,6 +4,7 @@ import Image from "react-bootstrap/Image";
 import Collapse from "react-bootstrap/Collapse";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+// Exports to: ExperimentsCards.js
 
 
 const iconToggle = (state) => {
@@ -25,17 +26,17 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 	  }
 	  return pictograms.map(pictogram => (
 	    <Card.Img 
-	    	variant="buttom"
-	    	src={ require('../../assets/pictograms/' + pictogram.filename ) }
-	    	style={image_style} />
+	    	variant = "buttom"
+	    	src = { require('../../assets/pictograms/' + pictogram.filename ) }
+	    	style = {image_style} />
 	  ));
 	};
 
 	const chemicalCard = chemicals.map((chemical, i) =>
 		<React.Fragment>
-			<Card.Title > { chemical.name } </Card.Title>
-			<Card.Subtitle className="mb-2 text-muted"> CAS { chemical.cas } </Card.Subtitle>
-			<Card.Text> { chemical.safety_guideline } </Card.Text>
+			<Card.Title > {chemical.name} </Card.Title>
+			<Card.Subtitle className="mb-2 text-muted"> CAS {chemical.cas} </Card.Subtitle>
+			<Card.Text> {chemical.safety_guideline} </Card.Text>
 			{imageElements(chemical.chemicalID)}
 			<hr />
 		</React.Fragment>
@@ -44,9 +45,9 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 	return (
 		<Card>
 			<Card.Header 
-				onClick={() => setOpen(!open)} 
-				aria-controls={ cardID } 
-				aria-expanded={ open } 
+				onClick = {() => setOpen(!open)} 
+				aria-controls = {cardID} 
+				aria-expanded = {open} 
 				as = "h2"
           		className = "bg-transparent"
 			>
@@ -54,10 +55,10 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 				{iconToggle(open)}
 			</Card.Header>
 
-			<Collapse in={ open } >
+			<Collapse in = {open} >
 				<div>
-					<Card.Body id={ cardID } >
-						{ chemicalCard }
+					<Card.Body id = {cardID} >
+						{chemicalCard}
 					</Card.Body>
 				</div>
 			</Collapse>

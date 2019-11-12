@@ -8,7 +8,7 @@ import CourseCanvasButtons from "./CourseCanvasButtons"
 import CourseExperimentSchedule from "./CourseExperimentSchedule";
 import CourseNotebooksReports from "./CourseNotebooksReports";
 import CourseLabRegulations from "./CourseLabRegulations";
-
+import CourseBreadcrumb from "./CourseBreadcrumb"
 
 // Exports: Routes.js
 const Course = props => {
@@ -19,20 +19,22 @@ const Course = props => {
   }
 
   const _courseId = _course.id;
-  
   return (
-    <Container className="p-1">
-      <CourseHeading course = { _course } />
-      <CourseCurrent courseId = { _courseId } />
-      <CourseCanvasButtons />
-      <div className="p-1"></div>
-      <CourseExperimentSchedule courseId = { _courseId } />
-      <CourseNotebooksReports courseId = { _courseId } location = {"notebook"} />
-      <CourseLabRegulations courseId = { _courseId } location = {"regulations"} />
+    <React.Fragment>
+        <CourseBreadcrumb course = {_course} />
+        <Container className="p-1">
+          <CourseHeading course = { _course } />
+          <CourseCurrent courseId = { _courseId } />
+          <CourseCanvasButtons />
+          <div className="p-1"></div>
+          <CourseExperimentSchedule courseId = { _courseId } />
+          <CourseNotebooksReports courseId = { _courseId } location = {"notebook"} />
+          <CourseLabRegulations courseId = { _courseId } location = {"regulations"} />
+          <br />
+          {/* <Link to={`${_courseID}/experiments`}>Experiments</Link> */}
+        </Container>
 
-      <br />
-      {/* <Link to={`${_courseID}/experiments`}>Experiments</Link> */}
-    </Container>
+    </React.Fragment>
   );
 };
 

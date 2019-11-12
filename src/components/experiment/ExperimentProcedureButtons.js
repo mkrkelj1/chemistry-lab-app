@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button"
 import ReactMarkdown from "react-markdown/with-html";
 import Container from "react-bootstrap/Container";
 
-// test commit
 const cache = {};
 function importAll (r) {
   r.keys().forEach(key => cache[key] = r(key));
@@ -21,6 +20,7 @@ const ExperimentProcedureButtons = ({ procedureIds, experimentId }) => {
       const root_path = "./" + experimentId + "_experiment" + '/procedure/'
       const files = procedureIds.map(id => cache[`${root_path + id}_procedure.md`])
       const promises = await files.map(file =>  fetch(file).then(res => res.text()));
+            
             Promise.all(promises).then(results => { 
               const markdownMap = {}
               procedureIds.forEach((key, i) => markdownMap[key] = results[i]);
@@ -34,12 +34,12 @@ const ExperimentProcedureButtons = ({ procedureIds, experimentId }) => {
     const [open, setOpen] = React.useState(false);
 
     return (
-        <Container className="p-1" id = "ProcedureButtons">
-            <Button variant="outline-info" onClick={() => setOpen(!open)}>Step: {props.step}</Button>
+        <Container className = "p-1" id = "ProcedureButtons">
+            <Button variant = "outline-info" onClick = {() => setOpen(!open)}>Step: {props.step}</Button>
             
-            <Collapse in={open}>
+            <Collapse in = {open}>
               <div>
-                <ReactMarkdown source={props.markdown} escapeHtml={false} />
+                <ReactMarkdown source = {props.markdown} escapeHtml = {false} />
               </div>
             </Collapse>
         </Container>
@@ -48,10 +48,10 @@ const ExperimentProcedureButtons = ({ procedureIds, experimentId }) => {
 
   const RenderButtons = ({ procedureIds }) => {
     return procedureIds.map((id, i) => 
-      <ProcedureButton key={ id } markdown = { markdown[id] } step = { i + 1 } />);
+      <ProcedureButton key = { id } markdown = { markdown[id] } step = { i + 1 } />);
   };
 
-  return <RenderButtons procedureIds={procedureIds} />;
+  return <RenderButtons procedureIds = {procedureIds} />;
 };
 
 export default ExperimentProcedureButtons;

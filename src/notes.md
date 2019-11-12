@@ -2,8 +2,7 @@
 
 ##### Components
 - notebook and regulations should have ids? 
-- custom CSS: https://stackoverflow.com/questions/40738484/how-to-customise-react-bootstrap-components
-
+- Consolidate CourseBreadcrumb and ExperimentBreadcrumb
 
 ##### Deploying
 - Change <HashRouter> back to <BrowserRouter>

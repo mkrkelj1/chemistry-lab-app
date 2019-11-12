@@ -5,16 +5,24 @@ import ReactMarkdown from "react-markdown/with-html"
 import loadable from '@loadable/component'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-// Exports: Experiment.js
 
 const path = require('path');
-
 const cache = {};
 function importAll (r) {
   r.keys().forEach(key => cache[key] = r(key));
 }
 importAll(require.context("../../assets/markdown/experiments/", true, /\.md$/));
 
+/*
+Exports to: ExperimentsCards.js
+Creates Cards: 
+ - Prelab Assignment 
+ - Theoretical Background, 
+ - Results
+ - Study Questions
+ - Discussion
+ - Waste Disposal
+*/
 
 const iconToggle = (state) => {
   const iconDown = <FontAwesomeIcon icon={faChevronDown} />
@@ -23,7 +31,12 @@ const iconToggle = (state) => {
 };
 
 
-const ExperimentCard = ({ header, experimentId, experimentDir, cardId, location }) => {  
+const ExperimentCard = ({ card, experiment }) => {
+  const header = card.header
+  const cardId = card.cardId
+  const location = card.location
+  const experimentId = experiment.experimentID
+  const experimentDir = experiment.experimentDir
   const [markdown, setValue] = useState([]);
   const [open, setOpen] = useState(false);
 
@@ -42,9 +55,9 @@ const ExperimentCard = ({ header, experimentId, experimentDir, cardId, location 
   return (
     <Card>
       <Card.Header 
-        onClick={ () => setOpen(!open) } 
+        onClick = {() => setOpen(!open)} 
         aria-controls = {cardId} 
-        aria-expanded={ open } 
+        aria-expanded = {open} 
         as = "h2"
         className = "bg-transparent"
       >
@@ -54,7 +67,7 @@ const ExperimentCard = ({ header, experimentId, experimentDir, cardId, location 
       <Collapse in = { open } >
         <div>
           <Card.Body id = { cardId } >
-              <ReactMarkdown source={ markdown } escapeHtml={false} />
+              <ReactMarkdown source = { markdown } escapeHtml = {false} />
           </Card.Body>
         </div>
       </Collapse>

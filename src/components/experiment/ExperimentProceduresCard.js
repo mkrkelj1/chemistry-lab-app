@@ -7,6 +7,7 @@ import { ProceduresAPI } from "../../api";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import ExperimentProcedureButtons from "./ExperimentProcedureButtons"
+// Exports to: ExperimentsCards.js
 
 
 const iconToggle = (state) => {
@@ -25,18 +26,18 @@ const ExperimentProceduresCard = ({ experimentId }) => {
   return (
     <Card>
       <Card.Header
-        onClick={() => setOpenCard(!openCard)}
-        aria-controls={cardID}
-        aria-expanded={openCard}
+        onClick = {() => setOpenCard(!openCard)}
+        aria-controls = {cardID}
+        aria-expanded = {openCard}
         as = "h2"
         className = "bg-transparent"
       >
         Procedure
         {iconToggle(openCard)}
       </Card.Header>
-      <Collapse in={openCard}>
+      <Collapse in = {openCard}>
         <div>
-          <Card.Body id={cardID}>
+          <Card.Body id = {cardID}>
             <ExperimentProcedureButtons procedureIds = {procedureIds} experimentId = {experimentId} />
           </Card.Body>
         </div>
