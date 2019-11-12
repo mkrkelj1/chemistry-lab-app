@@ -44,7 +44,7 @@ a {
   text-decoration: underline;
 }
 
-a: hover {
+a:hover {
   color: #025C66; 
   text-decoration: none;
 }
@@ -70,7 +70,6 @@ a: hover {
   width: auto;
   margin: 15px;
   background-color: purple;
-  color: white;
   background-color: #130A40;
   border-radius: 12px;
   font-family: Arial, 
