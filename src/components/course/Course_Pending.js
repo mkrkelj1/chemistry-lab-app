@@ -25,7 +25,6 @@ const Course = props => {
   const optional_texts = course.optional_texts
 
 
-
   return (
     <Container>
       <Container className="p-1">

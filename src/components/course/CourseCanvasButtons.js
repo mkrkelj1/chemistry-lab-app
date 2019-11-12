@@ -4,18 +4,18 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 
-// Exports: Course.js
+const sections = [1, 2, 3, 4, 5, 6]
+
+const cols = sections.map(section => (
+  <Col xs={4} md={2}><Button variant = "primary"  >Section {section}</Button></Col>
+));
+
 const CourseCanvasButtons = () => {
   return (
       <div className="p-1">
-        <div><strong>Canvas Pages</strong></div>
+        <strong>Canvas Pages</strong>
         <Row>
-          <Col xs={4} md={2}><Button variant="outline-info">Section 1</Button></Col>
-          <Col xs={4} md={2}><Button variant="outline-info">Section 2</Button></Col>
-          <Col xs={4} md={2}><Button variant="outline-info">Section 3</Button></Col>
-          <Col xs={4} md={2}><Button variant="outline-info">Section 4</Button></Col>
-          <Col xs={4} md={2}><Button variant="outline-info">Section 5</Button></Col>
-          <Col xs={4} md={2}><Button variant="outline-info">Section 6</Button></Col>
+            {cols}
         </Row>
       </div>
   );

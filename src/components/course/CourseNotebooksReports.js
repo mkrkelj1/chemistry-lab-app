@@ -3,15 +3,23 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import ReactMarkdown from "react-markdown/with-html"
 import Collapse from "react-bootstrap/Collapse";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 const cache = {};
 
 function importAll (r) {
   r.keys().forEach(key => cache[key] = r(key));
 }
-
 importAll(require.context("../../assets/markdown/courses/", true, /\.md$/));
+
+
+const iconToggle = (state) => {
+  const iconDown = <FontAwesomeIcon icon={faChevronDown} />
+  const iconUp = <FontAwesomeIcon icon={faChevronUp} />
+  return state ? iconUp : iconDown
+};
+
 
 // Exports to Course.js
 const CourseNotebooksReports = ({ courseId, location }) => {
@@ -34,8 +42,15 @@ const CourseNotebooksReports = ({ courseId, location }) => {
   return (
     <div className="p-1">
       <Card>
-        <Card.Header onClick={() => setOpen(!open)} aria-controls={cardId} aria-expanded={open} >
+        <Card.Header 
+          onClick={() => setOpen(!open)} 
+          aria-controls={cardId} 
+          aria-expanded={open} 
+          as = "h2"
+          className = "bg-transparent"
+        >
           Notebooks and Reports
+          {iconToggle(open)}
         </Card.Header>
 
         <Collapse in={open}>

@@ -3,6 +3,9 @@ import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import ReactMarkdown from "react-markdown/with-html"
 import loadable from '@loadable/component'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+// Exports: Experiment.js
 
 const path = require('path');
 
@@ -13,7 +16,13 @@ function importAll (r) {
 importAll(require.context("../../assets/markdown/experiments/", true, /\.md$/));
 
 
-// Exports: Experiment.js
+const iconToggle = (state) => {
+  const iconDown = <FontAwesomeIcon icon={faChevronDown} />
+  const iconUp = <FontAwesomeIcon icon={faChevronUp} />
+  return state ? iconUp : iconDown
+};
+
+
 const ExperimentCard = ({ header, experimentId, experimentDir, cardId, location }) => {  
   const [markdown, setValue] = useState([]);
   const [open, setOpen] = useState(false);
@@ -36,8 +45,11 @@ const ExperimentCard = ({ header, experimentId, experimentDir, cardId, location 
         onClick={ () => setOpen(!open) } 
         aria-controls = {cardId} 
         aria-expanded={ open } 
+        as = "h2"
+        className = "bg-transparent"
       >
         { header }
+        {iconToggle(open)}
       </Card.Header>
       <Collapse in = { open } >
         <div>

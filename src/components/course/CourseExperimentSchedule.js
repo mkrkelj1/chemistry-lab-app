@@ -3,10 +3,18 @@ import { ExperimentsAPI }  from '../../api'
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import dayjs from 'dayjs'
-
 // Exports to Course.js
+
+
+const iconToggle = (state) => {
+  const iconDown = <FontAwesomeIcon icon={faChevronDown} />
+  const iconUp = <FontAwesomeIcon icon={faChevronUp} />
+  return state ? iconUp : iconDown
+};
+
 const CourseExperimentSchedule = ({ courseId }) => {
   const cardId = 'experiment-schedule-card-body'
   const [markdown, setValue] = useState([]);
@@ -28,8 +36,17 @@ const CourseExperimentSchedule = ({ courseId }) => {
   return (
     <div className="p-1">
       <Card >
-        <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
+        <Card.Header 
+          onClick={ () => setOpen(!open) } 
+          aria-controls = {cardId} 
+          aria-expanded = {open} 
+          as = "h2"
+          className = "bg-transparent"
+        >
           Experiment Schedule
+
+          {iconToggle(open)}
+        
         </Card.Header>
         <Collapse in = { open } >
           <div>

@@ -61,12 +61,25 @@ const ExperimentsAPI = {
   },
 
   filtered: function(courseID) {
-    return this.experiments.filter(e => e.courseID === courseID);
+    const _experiments = this.experiments.filter(e => e.courseID === courseID);
+    const _experimentsOrdered = _experiments.sort(function(a, b) {
+      return new Date(a.startDate) - new Date(b.startDate);
+    });
+    return _experimentsOrdered.map((obj, i) => ({ ...obj, order: i + 1 }))
   },
 
   get: function(courseId, experimentId) {
     const isExperiment = e => e.experimentID === experimentId && e.courseID === courseId;
     return this.experiments.find(isExperiment);
+  },
+
+  ordered: function(courseID) {
+    const _experiments = this.experiments.filter(e => e.courseID === courseID);
+    const _experimentsOrdered = _experiments.sort(function(a, b) {
+      return new Date(b.endDate) - new Date(a.endDate);
+    });
+    const ordered = _experimentsOrdered.map((obj, i) => ({ ...obj, order: i + 1 }))
+    return ordered
   }
 };
 

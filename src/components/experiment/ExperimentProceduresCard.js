@@ -4,7 +4,16 @@ import Collapse from "react-bootstrap/Collapse";
 import Button from "react-bootstrap/Button"
 import ReactMarkdown from "react-markdown/with-html";
 import { ProceduresAPI } from "../../api";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import ExperimentProcedureButtons from "./ExperimentProcedureButtons"
+
+
+const iconToggle = (state) => {
+  const iconDown = <FontAwesomeIcon icon={faChevronDown} />
+  const iconUp = <FontAwesomeIcon icon={faChevronUp} />
+  return state ? iconUp : iconDown
+};
 
 
 const ExperimentProceduresCard = ({ experimentId }) => {
@@ -19,8 +28,11 @@ const ExperimentProceduresCard = ({ experimentId }) => {
         onClick={() => setOpenCard(!openCard)}
         aria-controls={cardID}
         aria-expanded={openCard}
+        as = "h2"
+        className = "bg-transparent"
       >
         Procedure
+        {iconToggle(openCard)}
       </Card.Header>
       <Collapse in={openCard}>
         <div>

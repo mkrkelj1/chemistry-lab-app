@@ -4,7 +4,7 @@ import React from "react";
 const CourseHeading = ({ course }) => {
   return (
     <div className="p-1">
-      <h4> {course.name} </h4>
+      <h1> {course.name} </h1>
       <p>Some text can go here to help with context</p>
     </div>
   );

@@ -3,6 +3,9 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import ReactMarkdown from "react-markdown/with-html"
 import Collapse from "react-bootstrap/Collapse";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+// Exports to Course.js
 
 const cache = {};
 function importAll (r) {
@@ -11,7 +14,13 @@ function importAll (r) {
 importAll(require.context("../../assets/markdown/courses/", true, /\.md$/));
 
 
-// Exports to Course.js
+const iconToggle = (state) => {
+  const iconDown = <FontAwesomeIcon icon={faChevronDown} />
+  const iconUp = <FontAwesomeIcon icon={faChevronUp} />
+  return state ? iconUp : iconDown
+};
+
+
 const CourseLabRegulations = ({ courseId, location }) => {
   const cardId = 'lab-regulations-card-body'
   const [markdown, setValue] = useState([]);
@@ -32,8 +41,15 @@ const CourseLabRegulations = ({ courseId, location }) => {
   return (
     <div className="p-1">
       <Card>
-        <Card.Header onClick={ () => setOpen(!open) } aria-controls = {cardId} aria-expanded={ open } >
+        <Card.Header
+          onClick={ () => setOpen(!open) } 
+          aria-controls = {cardId} 
+          aria-expanded={ open } 
+          as = "h2"
+          className = "bg-transparent"
+        >
           Lab Regulations
+          {iconToggle(open)}
         </Card.Header>
 
         <Collapse in = { open } >

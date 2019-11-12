@@ -21,7 +21,7 @@ const imgCol = imagesArr.map(image => (
 ));
 
 const HomeImagePlaceholders = () => (
-  <Container className="p-3">
+  <Container className="p-1">
     <Row>{imgCol}</Row>
   </Container>
 );

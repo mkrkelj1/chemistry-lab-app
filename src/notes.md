@@ -2,7 +2,7 @@
 
 ##### Components
 - notebook and regulations should have ids? 
-
+- custom CSS: https://stackoverflow.com/questions/40738484/how-to-customise-react-bootstrap-components
 
 
 ##### Deploying
@@ -13,6 +13,7 @@
 
 ##### Style
  - Standardize naming conventions (mixed use of xID & xId, etc.)
+
 
 
  

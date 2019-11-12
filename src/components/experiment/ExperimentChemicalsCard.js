@@ -2,6 +2,15 @@ import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import Collapse from "react-bootstrap/Collapse";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+
+
+const iconToggle = (state) => {
+  const iconDown = <FontAwesomeIcon icon={faChevronDown} />
+  const iconUp = <FontAwesomeIcon icon={faChevronUp} />
+  return state ? iconUp : iconDown
+};
 
 
 const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
@@ -34,13 +43,22 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 
 	return (
 		<Card>
-			<Card.Header onClick={() => setOpen(!open)} aria-controls={ cardID } aria-expanded={ open } >
+			<Card.Header 
+				onClick={() => setOpen(!open)} 
+				aria-controls={ cardID } 
+				aria-expanded={ open } 
+				as = "h2"
+          		className = "bg-transparent"
+			>
 				Chemicals
+				{iconToggle(open)}
 			</Card.Header>
 
 			<Collapse in={ open } >
 				<div>
-					<Card.Body id={ cardID } >{ chemicalCard }</Card.Body>
+					<Card.Body id={ cardID } >
+						{ chemicalCard }
+					</Card.Body>
 				</div>
 			</Collapse>
 		</Card>
@@ -48,3 +66,10 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 }
 
 export default ExperimentChemicalsCard;
+
+
+
+
+
+
+
