@@ -21,7 +21,7 @@ const ExperimentBreadcrumb = ({experiment, course}) => {
   const name = experiment.name
 
   return (
-    <Breadcrumb>
+    <Breadcrumb >
       <Breadcrumb.Item >
           <Link to={"/courses"}>Courses</Link> 
       </Breadcrumb.Item>
