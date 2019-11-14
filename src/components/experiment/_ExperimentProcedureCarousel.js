@@ -6,18 +6,16 @@ import ReactMarkdown from "react-markdown/with-html";
 import { ProceduresAPI } from "../../api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft,  faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import _ExperimentProcedureButtons from "./_ExperimentProcedureButtons";
-import _lorem from "./_lorem";
 import Carousel from "react-bootstrap/Carousel";
+import _lorem from "./_lorem";
+
 
 const iconLeft = <FontAwesomeIcon icon={faChevronLeft} />;
 const iconRight = <FontAwesomeIcon icon={faChevronRight} />;
 
-const ExperimentProcedureCarousel = ({ experimentId, markdown }) => {
+const _ExperimentProcedureCarousel = ({ procedureIds, markdown }) => {
   const cardID = "procedure-card-body";
-  const procedures = ProceduresAPI.filtered(experimentId);
-  const procedureIds = procedures.map(procedure => procedure.procedureID);
-
+  
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
 
@@ -53,4 +51,4 @@ const ExperimentProcedureCarousel = ({ experimentId, markdown }) => {
     </React.Fragment>
   );
 };
-export default ExperimentProcedureCarousel;
+export default _ExperimentProcedureCarousel;

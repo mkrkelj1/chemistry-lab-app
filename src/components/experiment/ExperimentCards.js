@@ -5,6 +5,8 @@ import Container from "react-bootstrap/Container";
 import ExperimentCard from "./ExperimentCard";
 import ExperimentChemicalsCard from "./ExperimentChemicalsCard";
 import ExperimentProceduresCard from "./ExperimentProceduresCard";
+
+import _ExperimentProceduresCard from "./_ExperimentProceduresCard";
 // Exports: Experiment.js
 
 
@@ -35,8 +37,23 @@ const ExperimentCards = ({experiment}) => {
     </Container>
   );
 
+  const ExpProcCardCarouselTest = (
+    <Container className="p-1">
+      <ExperimentProceduresCard experimentId = {experiment.experimentID} />
+    </Container>
+  );
+
   cards.splice(0, 0, ExpChemCard); // Insert Chemicals card at 0 index
   cards.splice(3, 0, ExpProcCard); // Insert Procedure card at 3 index
+
+
+  /* Entry point for Carousel card - still in dev */
+  const ExpProcCardCarousel = (
+    <Container className="p-1">
+      <_ExperimentProceduresCard experimentId = {experiment.experimentID} />
+    </Container>
+  );
+  cards.splice(0, 0, ExpProcCardCarousel)
 
   return (
   <React.Fragment>
