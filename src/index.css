@@ -72,16 +72,25 @@ a:hover {
 .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: 100%;
+    bottom: 100.5%;
     left: 0;
     z-index: 15;
     display: flex;
     justify-content: center;
     padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 0%;
+    margin-left: 0%;
     list-style: none;
-    background-color: red;
+    background-color: #FAF7F5;
+    height: 50px;
+}
+
+.card-header-procedure {
+  border-radius: 0px;
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+  height: 50px;
 }
 
 .call-out {
@@ -138,15 +147,10 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: inline-block;
 }
 
-.card-header-procedure {
-  border-radius: 0px;
-  background-color: #FAF7F5;
-  width: 100%;
-  text-align: center;
-  height: 50px;
-}
+
 
 .breadcrumb {
   display: flex;

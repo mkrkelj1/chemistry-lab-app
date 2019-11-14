@@ -61,9 +61,7 @@ const _ExperimentProceduresCard = ({ experimentId }) => {
       </Card.Header>
       <Collapse in = {openCard}>
         <div>
-          <Card.Body id = {cardID}>
             <_ExperimentProcedureCarousel procedureIds = {procedureIds} markdown = {markdown}/>
-          </Card.Body>
         </div>
       </Collapse>
     </Card>

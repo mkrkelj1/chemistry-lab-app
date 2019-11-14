@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import Button from "react-bootstrap/Button";
@@ -15,6 +15,10 @@ const iconRight = <FontAwesomeIcon icon={faChevronRight} />;
 
 const _ExperimentProcedureCarousel = ({ procedureIds, markdown }) => {
   const cardID = "procedure-card-body";
+
+
+
+
   
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
@@ -32,11 +36,14 @@ const _ExperimentProcedureCarousel = ({ procedureIds, markdown }) => {
 
   return (
     <React.Fragment>
-      <div className="card-header-procedure">
+      <div className="card-header-procedure" >
         Step {index + 1}
+
+       
       </div>
 
       <Card.Body id={cardID}>
+        
         <Carousel
           activeIndex={index}
           direction={direction}
