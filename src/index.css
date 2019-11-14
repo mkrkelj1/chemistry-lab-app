@@ -56,6 +56,33 @@ a:hover {
   border-left: 2px solid #038391;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    bottom: 200%;
+    background: no-repeat 50%/100% 100%;
+    background-color: red;
+}
+
+.carousel-control-prev, .carousel-control-next {
+      bottom: -90%;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    background-color: red;
+}
 
 .call-out {
   width: 90%;
@@ -89,12 +116,36 @@ a:hover {
   background-color: white; 
 }
 
+.card-footer {
+  background-color: #130A40;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 0 0 .75rem .75rem !important;
+  height: 50px;
+  width: 100%;
+  /*
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  */
+}
 .card-header {
   border-radius: .75rem!important;
   border-bottom: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.card-header-procedure {
+  border-radius: 0px;
+  background-color: #FAF7F5;
+  width: 100%;
+  text-align: center;
+  height: 50px;
 }
 
 .breadcrumb {
@@ -151,7 +202,6 @@ a:hover {
 .nav-link:hover {
   border-top: 2px solid #038391;
 }
-
 
 
 

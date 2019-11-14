@@ -5,6 +5,9 @@ import Container from "react-bootstrap/Container";
 import ExperimentBreadcrumb from "./ExperimentBreadcrumb";
 import ExperimentCards from "./ExperimentCards"
 
+import _ExperimentProceduresCard from "./_ExperimentProceduresCard"
+
+
 
 const Experiment = props => {
   const _courseId = parseInt(props.match.params.id, 10);
@@ -22,6 +25,19 @@ const Experiment = props => {
     <Container className="p-1">
       <h1> {_experiment.name} </h1>
     </Container>
+
+
+
+
+
+    <_ExperimentProceduresCard experimentId = {_experimentId} />
+
+
+
+
+
+
+
     <ExperimentCards experiment = {_experiment} />
   </React.Fragment>
   );
