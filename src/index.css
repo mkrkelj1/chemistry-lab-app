@@ -70,24 +70,18 @@ a:hover {
 }
 
 .carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 100.5%;
-    left: 0;
-    z-index: 15;
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 0%;
-    margin-left: 0%;
-    list-style: none;
-    background-color: #FAF7F5;
-    height: 50px;
+    bottom: 100%;
+    background-color: none;
+    height: 25px;
+}
+
+.carousel-indicators li {
+    background-color: #130A40;
 }
 
 .card-header-procedure {
   border-radius: 0px;
-  background-color: blue;
+  background-color: #FAF7F5;
   width: 100%;
   text-align: center;
   height: 50px;
@@ -147,7 +141,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: inline-block;
 }
 
 

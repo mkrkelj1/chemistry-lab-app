@@ -33,7 +33,6 @@ const navs = navArr.map(item => (
 const NavigationBar = () => (
   <Navbar className="justify-content-between">
     <Navbar.Brand>Organic Chemistry at Barnard</Navbar.Brand>
-
     <Nav>{navs}</Nav>
   </Navbar>
 );
