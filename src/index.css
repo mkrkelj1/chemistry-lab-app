@@ -63,6 +63,8 @@ a:hover {
     bottom: 200%;
     background: no-repeat 50%/100% 100%;
     background-color: red;
+    position: relative;
+    bottom: -5%;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -143,8 +145,6 @@ a:hover {
   align-items: center;
 }
 
-
-
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -179,6 +179,7 @@ a:hover {
   font-family: Arial, sans-serif; 
   color: #130A40;
   border: 1px solid #130A40;
+  text-align:center;
 }
 
 .btn-secondary:hover {
