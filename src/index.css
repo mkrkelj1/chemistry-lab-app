@@ -92,6 +92,7 @@ a:hover {
 .call-out {
   width: 90%;
   max-width: 750px;
+  border-radius: 0;
   height: auto;
   border-left: 2px solid #038391;
   background-color: #FAF5F7; 
@@ -153,7 +154,8 @@ a:hover {
   margin-bottom: 1rem;
   list-style: none;
   background-color: #FAF5f7;
-  border-radius: .25rem;
+  color: #2B2B2B;
+  border-radius: 0;
 }
 
 .btn-primary {
@@ -164,6 +166,7 @@ a:hover {
   background-color: purple;
   background-color: #130A40;
   border-radius: 12px;
+  border: none;
   font-family: Arial, 
       sans-serif;
   color: #FAF5F7;
@@ -186,6 +189,7 @@ a:hover {
   padding-bottom: 10px;
   padding-left: 20px;
   width: auto;
+  margin-top: 20px;
   display: inline-block;
 }
 
