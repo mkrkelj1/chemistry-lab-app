@@ -14,7 +14,7 @@ const CourseCanvasButtons = () => {
   return (
       <div className="p-1">
         <strong>Canvas Pages</strong>
-        <Row>
+        <Row className="max-width">
             {cols}
         </Row>
       </div>

@@ -64,7 +64,7 @@ a:hover {
     background: no-repeat 50%/100% 100%;
     background-color: red;
     position: relative;
-    bottom: -5%;
+    bottom: -4.5%;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -84,7 +84,7 @@ a:hover {
 .card-header-procedure {
   border-radius: 0px;
   background-color: #FAF7F5;
-  width: 100%;
+  width: auto;
   text-align: center;
   height: 50px;
 }
@@ -118,6 +118,7 @@ a:hover {
 .card {
   border: solid 1px #038391;
   border-radius: 15px;
+  max-width: 750px;
   background-color: white; 
 }
 
@@ -178,6 +179,7 @@ a:hover {
   border-radius: 12px; 
   font-family: Arial, sans-serif; 
   color: #130A40;
+  text-decoration: none;
   border: 1px solid #130A40;
   padding-top: 10px;
   padding-right: 20px;
@@ -188,7 +190,8 @@ a:hover {
 }
 
 .btn-secondary:hover {
-  background-color: #DEDBEB
+  background-color: #DEDBEB;
+  color: #130A40;
 }
 
 .icon-div {
@@ -204,4 +207,8 @@ a:hover {
 
 .nav-link:hover {
   border-top: 2px solid #038391;
+}
+
+.max-width {
+  max-width: 750px;
 }
