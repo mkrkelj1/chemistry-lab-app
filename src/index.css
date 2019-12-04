@@ -179,7 +179,12 @@ a:hover {
   font-family: Arial, sans-serif; 
   color: #130A40;
   border: 1px solid #130A40;
-  text-align:center;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  width: auto;
+  display: inline-block;
 }
 
 .btn-secondary:hover {
@@ -200,6 +205,3 @@ a:hover {
 .nav-link:hover {
   border-top: 2px solid #038391;
 }
-
-
-
