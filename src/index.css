@@ -60,15 +60,16 @@ a:hover {
     display: inline-block;
     width: 20px;
     height: 20px;
-    bottom: 200%;
-    background: no-repeat 50%/100% 100%;
-    background-color: red;
+    /* bottom: 200%; */
+    /* background: no-repeat 50%/100% 100%; */
+    /* background-color: red; */
     position: relative;
     bottom: -4.5%;
 }
 
-.carousel-control-prev, .carousel-control-next {
-      bottom: -90%;
+.carousel-control-next, .carousel-control-prev {
+  top: unset;
+  bottom: 14px;
 }
 
 .carousel-indicators {
