@@ -34,8 +34,8 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 
 	const chemicalCard = chemicals.map((chemical, i) =>
 		<React.Fragment>
-			<Card.Title > {chemical.name} </Card.Title>
-			<Card.Subtitle className="mb-2 text-muted"> CAS {chemical.cas} </Card.Subtitle>
+			<Card.Title className="chem-card"> {chemical.name} </Card.Title>
+			<Card.Subtitle className="mb-2 text-muted"> CAS #{chemical.cas} </Card.Subtitle>
 			<Card.Text> {chemical.safety_guideline} </Card.Text>
 			{imageElements(chemical.chemicalID)}
 			<hr />
@@ -58,7 +58,7 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 			<Collapse in = {open} >
 				<div>
 					<Card.Body id = {cardID} >
-						{chemicalCard}
+					{chemicalCard}
 					</Card.Body>
 				</div>
 			</Collapse>
