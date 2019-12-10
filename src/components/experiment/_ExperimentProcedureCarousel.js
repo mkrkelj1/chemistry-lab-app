@@ -15,10 +15,6 @@ const iconRight = <FontAwesomeIcon icon={faChevronRight} />;
 
 const _ExperimentProcedureCarousel = ({ procedureIds, markdown }) => {
   const cardID = "procedure-card-body";
-
-
-
-
   
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
@@ -33,6 +29,16 @@ const _ExperimentProcedureCarousel = ({ procedureIds, markdown }) => {
     setIndex(selectedIndex);
     setDirection(e.direction);
   };
+
+  const bootstrapCarouselUpdate = () => {
+    window.addEventListener('load', function() {
+      const footer = document.getElementById('carousel-footer')
+      const prev = document.getElementsByClassName('carousel-control-prev')[0]
+      const next = document.getElementsByClassName('carousel-control-next')[0]
+      footer.prepend(prev)
+      footer.append(next)
+    })
+  }
 
   return (
     <React.Fragment>
@@ -54,7 +60,9 @@ const _ExperimentProcedureCarousel = ({ procedureIds, markdown }) => {
         </Carousel>
       </Card.Body>
 
-      <Card.Footer className="text-center">This is the footer.</Card.Footer>
+      <Card.Footer id="carousel-footer" className="text-center">This is the footer.</Card.Footer>
+      { bootstrapCarouselUpdate() }
+      
     </React.Fragment>
   );
 };
