@@ -20,20 +20,22 @@ const navArr = [
 ];
 
 const navs = navArr.map(item => (
-  <LinkContainer to={item.route}>
-    <Nav.Link href="#">
-      <a href="#">
+  <div className="anav" >
+  <LinkContainer to={item.route} >
+    <Nav.Link href="#" >
+      <a href="#" > 
         <div className="icon-div">{item.icon}</div>
         {item.location}
       </a>
     </Nav.Link>
   </LinkContainer>
+  </div>
 ));
 
 const NavigationBar = () => (
   <Navbar className="justify-content-between">
     <Navbar.Brand>Organic Chemistry at Barnard</Navbar.Brand>
-    <Nav>{navs}</Nav>
+    <Nav className="a.nav">{navs}</Nav>
   </Navbar>
 );
 
