@@ -7,6 +7,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 // Exports to: ExperimentsCards.js
 
 
+
 const iconToggle = (state) => {
   const iconDown = <FontAwesomeIcon icon={faChevronDown} />
   const iconUp = <FontAwesomeIcon icon={faChevronUp} />
@@ -44,6 +45,7 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 
 	return (
 		<Card>
+
 			<Card.Header 
 				onClick = {() => setOpen(!open)} 
 				aria-controls = {cardID} 
@@ -57,6 +59,7 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 
 			<Collapse in = {open} >
 				<div>
+
 					<Card.Body id = {cardID} >
 					{chemicalCard}
 					</Card.Body>

@@ -1,17 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
-import ReactMarkdown from "react-markdown/with-html"
-import loadable from '@loadable/component'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-
-const path = require('path');
-const cache = {};
-function importAll (r) {
-  r.keys().forEach(key => cache[key] = r(key));
-}
-importAll(require.context("../../assets/markdown/experiments/", true, /\.md$/));
+import { Content, _Content } from "../../ContentAPI"
 
 /*
 Exports to: ExperimentsCards.js
@@ -34,23 +26,10 @@ const iconToggle = (state) => {
 const ExperimentCard = ({ card, experiment }) => {
   const header = card.header
   const cardId = card.cardId
-  const location = card.location
   const experimentId = experiment.experimentID
-  const experimentDir = experiment.experimentDir
-  const [markdown, setValue] = useState([]);
+  const contentId = card.Id
+  const cardContent = Content.get(experimentId, contentId)
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    async function fetchData() {
-      const file_root = "./" + experimentId + "_" + "experiment" + "/"
-      const filename = experimentId + '_' + location + '.md'
-      const filepath = file_root + location + "/" + filename
-      const path = cache[filepath]
-      const markdown = await fetch(path).then(res => res.text());
-      setValue(markdown);
-    }
-    fetchData();
-  }, []);
 
   return (
     <Card>
@@ -67,7 +46,7 @@ const ExperimentCard = ({ card, experiment }) => {
       <Collapse in = { open } >
         <div>
           <Card.Body id = { cardId } >
-              <ReactMarkdown source = { markdown } escapeHtml = {false} />
+            { cardContent }
           </Card.Body>
         </div>
       </Collapse>

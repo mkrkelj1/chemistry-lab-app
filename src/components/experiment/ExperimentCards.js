@@ -48,12 +48,15 @@ const ExperimentCards = ({experiment}) => {
 
 
   /* Entry point for Carousel card - still in dev */
+  /*
   const ExpProcCardCarousel = (
     <Container className="p-1">
       <_ExperimentProceduresCard experimentId = {experiment.experimentID} />
     </Container>
   );
   cards.splice(0, 0, ExpProcCardCarousel)
+ */
+
 
   return (
   <React.Fragment>
