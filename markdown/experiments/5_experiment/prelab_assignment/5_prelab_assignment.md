@@ -1,0 +1,2 @@
+#### Prelab Assignment
+In your notebook, prepare a Table of Physical Constants for benzoic acid, 2-chlorobenzoic acid, salicylic acid (2-hydroxybenzoic acid), naphthalene, 1,4-dimethoxybenzene (hydroquinone dimethyl ether), 1,4-dichlorobenzene, ethyl acetate, and water.

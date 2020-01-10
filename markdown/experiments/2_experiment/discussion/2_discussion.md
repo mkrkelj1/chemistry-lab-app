@@ -1,2 +1,2 @@
 #### Discussion
-
+Draw your own conclusions about the results from all parts of this experiment. Some points to include are the purity of the trimyristin before and after recrystallization and percent recovery. Your discussion should also include a comment on the polarities of solutes and solvents used in this experiment. Be sure to include the melting point of your compound (experimental and literature values) as well as the percent recovery. 
