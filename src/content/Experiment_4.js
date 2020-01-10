@@ -1,5 +1,11 @@
 import React from "react";
 
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+importAll(require.context("../assets/images/", false, /\.png$/));
+
 const prelab_assignment = () => (
   <div>
     <ol>
@@ -28,10 +34,6 @@ const prelab_assignment = () => (
 
 const background = () => (
   <div>
-    {" "}
-    <p>
-      <b>B. THEORETICAL BACKGROUND</b>
-    </p>
     <p>
       Nutmeg powder is a mixture of many essential oils and oleoresins. In this
       experiment, you will extract trimyristin from nutmeg powder and
@@ -156,9 +158,10 @@ const study_questions = () => (
         water does not mix with toluene.
       </li>
       <img
-        src="TrimiristinExtraction_SolubilityTable_StudyQuestion.png"
+        src={cache["./TrimiristinExtraction_SolubilityTable_StudyQuestion.png"]}
         alt="Solubility Table"
       />
+
       <br />
       Please keep your answers to the following questions brief.
       <br />
@@ -229,9 +232,30 @@ const waste_disposal = () => (
   </div>
 );
 
+const procedure = () => {
+  const procedure_1 = () => (
+    <div> 
+      Procedure 1
+    </div>
+  )
+
+  const procedure_2 = () => (
+    <div> 
+      Procedure 2
+    </div>
+  )
+
+  const procedureArray = [procedure_1(), procedure_2()]
+  return procedureArray
+
+}
+
+
+
 const Experiment_4 = {
   prelab_assignment: prelab_assignment(),
   background: background(),
+  procedure: procedure(),
   results: results(),
   study_questions: study_questions(),
   discussion: discussion(),

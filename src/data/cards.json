@@ -13,26 +13,33 @@
    },
    { 
       "Id":3,
+      "header":"Procedure",
+      "cardId":"procedure-body",
+      "location":"procedure"
+   },
+   { 
+      "Id":4,
       "header":"Results",
       "cardId":"results-body",
       "location":"results"
    },
    { 
-      "Id":4,
+      "Id":5,
       "header":"Study Questions",
       "cardId":"study-questions-body",
       "location":"study_questions"
    },
    { 
-      "Id":5,
+      "Id":6,
       "header":"Discussion",
       "cardId":"discussion-body",
       "location":"discussion"
    },
    { 
-      "Id":6,
+      "Id":7,
       "header":"Waste Disposal",
       "cardId":"waste-disposal-body",
       "location":"waste_disposal"
    }
+ 
 ]

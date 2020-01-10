@@ -16,10 +16,11 @@ import Experiment_12 from "./content/Experiment_12";
 const contentMap = {
   1: "prelab_assignment",
   2: "background",
-  3: "results",
-  4: "study_questions",
-  5: "discussion",
-  6: "waste_disposal"
+  3: "procedure",
+  4: "results",
+  5: "study_questions",
+  6: "discussion",
+  7: "waste_disposal"
 };
 
 const experimentMap = {

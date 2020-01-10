@@ -1,5 +1,15 @@
 import React from "react";
 
+
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+importAll(require.context("../assets/images/", false, /\.png$/));
+
+
+
+
 const prelab_assignment = () => (
   <div>
     <p>
@@ -52,7 +62,8 @@ const background = () => (
         C is equal to the ratio of the individual solubilities of C in pure
         solvent, <b>S</b>, and in pure water, <b>W</b>.
       </p>
-      <img src="Extractionof2Unknowns_K.png" alt="K Equation" />
+      <img src={cache["./Extractionof2Unknowns_K.png"]} alt="K Equation" />
+
       <p>
         For extraction of solute from solvent A into solvent B with a given
         volume of solvent B, several extractions each with small portions of
@@ -99,9 +110,11 @@ const background = () => (
         and bases are usually weaker.
       </p>
       <img
-        src="Extractionof2Unknowns_AcidBaseChart.png"
+        src={cache["./Extractionof2Unknowns_AcidBaseChart.png"]}
         alt="Acid-Base Chart"
       />
+
+
       <p>
         Of the three organic acid groups listed above, the sulfonic acids are
         the strongest, followed by the carboxylic acids, and then the phenols.
@@ -161,9 +174,10 @@ const results = () => (
         Calculate total % recovery.
         <p>Total % recovery = % A + % B</p>
         <img
-          src="Extractionof2Unknowns_StudyQuestions_2.png"
+          src={cache["./Extractionof2Unknowns_StudyQuestions_2.png"]}
           alt="Sample Calculations"
         />
+
       </li>
       <li>
         Draw a flow diagram for the extraction and separation you performed on
@@ -183,7 +197,7 @@ const study_questions = () => (
       <li>
         A mixture contains the following three compounds:
         <img
-          src="Extractionsof2Unknowns_StudyQuestions.png"
+          src={cache["./Extractionsof2Unknowns_StudyQuestions.png"]}
           alt="Three Compounds"
         />
         <p>
@@ -282,6 +296,28 @@ const waste_disposal = () => (
     </ol>
   </div>
 );
+
+
+const procedure = () => {
+  const procedure_1 = () => (
+    <div> 
+      Procedure 1
+    </div>
+  )
+
+  const procedure_2 = () => (
+    <div> 
+      Procedure 2
+    </div>
+  )
+
+  const procedureArray = [procedure_1(), procedure_2()]
+  return procedureArray
+
+}
+
+
+
 
 const Experiment_8 = {
   prelab_assignment: prelab_assignment(),

@@ -1,5 +1,14 @@
 import React from "react";
 
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+importAll(require.context("../assets/images/", false, /\.png$/));
+
+
+
+
 const prelab_assignment = () => (
   <div>
     <p>
@@ -51,7 +60,7 @@ const background = () => (
       amount of adsorbant. For convenience and economy, the separation of a
       mixture of ferrocene and acetyl ferrocene in our experiment will be done
       on a semi-micro scale.
-    </p>{" "}
+    </p>
   </div>
 );
 
@@ -103,6 +112,24 @@ const discussion = () => (
 );
 
 const waste_disposal = () => <div> ToDo </div>;
+
+const procedure = () => {
+  const procedure_1 = () => (
+    <div> 
+      Procedure 1
+    </div>
+  )
+
+  const procedure_2 = () => (
+    <div> 
+      Procedure 2
+    </div>
+  )
+
+  const procedureArray = [procedure_1(), procedure_2()]
+  return procedureArray
+
+}
 
 const Experiment_6 = {
   prelab_assignment: prelab_assignment(),

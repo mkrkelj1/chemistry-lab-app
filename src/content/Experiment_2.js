@@ -7,6 +7,8 @@ const study_questions = () => (<h2> N/A </h2>);
 const discussion = () => (<h2> N/A </h2>);
 const waste_disposal = () => (<h2> N/A </h2>);
 
+
+
 const Experiment_2 = {
   prelab_assignment: prelab_assignment(),
   background: background(),

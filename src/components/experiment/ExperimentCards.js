@@ -44,7 +44,8 @@ const ExperimentCards = ({experiment}) => {
   );
 
   cards.splice(0, 0, ExpChemCard); // Insert Chemicals card at 0 index
-  cards.splice(3, 0, ExpProcCard); // Insert Procedure card at 3 index
+  
+  //cards.splice(3, 0, ExpProcCard); // Insert Procedure card at 3 index
 
 
   /* Entry point for Carousel card - still in dev */

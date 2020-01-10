@@ -1,5 +1,13 @@
 import React from "react";
 
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+importAll(require.context("../assets/images/", false, /\.png$/));
+
+
+
 const prelab_assignment = () => (
   <div>
     <ol>
@@ -11,7 +19,7 @@ const prelab_assignment = () => (
         distillate for your distillation.
       </li>
     </ol>
-    <img src="Distillation_SampleTable.png" alt="Sample Table" />
+    <img src={cache["./Distillation_SampleTable.png"]}  alt="Sample Table" />
   </div>
 );
 
@@ -99,7 +107,8 @@ const background = () => (
       condensed) vs. mL of distillate collected for distillations of various
       efficiencies is shown in Figure 1.
     </p>
-    <img src="Distillation_SampleTable.png" alt="Temperature Graph" />
+    <img src={cache["./Distillation_Temp.png"]} alt="Temperature Graph" />
+
     <p>
       In an ideal distillation, the entire lower boiling component distills at
       its boiling point, then the vapor temperature rises sharply to the boiling
@@ -131,7 +140,7 @@ const background = () => (
       expected and are said to exhibit <u>positive deviation</u>. Others display
       lower vapor pressures than expected and are said to exhibit{" "}
       <u>negative deviation</u>.
-    </p>{" "}
+    </p>
   </div>
 );
 
@@ -172,7 +181,7 @@ const discussion = () => (
     <p>
       Factors that contribute to the fractions 1 and 3 for not being pure
       ethylacetate and 1-butanol.
-    </p>{" "}
+    </p>
   </div>
 );
 const waste_disposal = () => (
@@ -211,6 +220,26 @@ const waste_disposal = () => (
     </ol>
   </div>
 );
+
+
+const procedure = () => {
+  const procedure_1 = () => (
+    <div> 
+      Procedure 1
+    </div>
+  )
+
+  const procedure_2 = () => (
+    <div> 
+      Procedure 2
+    </div>
+  )
+
+  const procedureArray = [procedure_1(), procedure_2()]
+  return procedureArray
+
+}
+
 
 const Experiment_10 = {
   prelab_assignment: prelab_assignment(),

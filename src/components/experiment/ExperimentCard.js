@@ -4,6 +4,7 @@ import Collapse from "react-bootstrap/Collapse";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { Content, _Content } from "../../ContentAPI"
+import ExperimentProcedureCarousel from "./ExperimentProcedureCarousel"
 
 /*
 Exports to: ExperimentsCards.js
@@ -22,36 +23,50 @@ const iconToggle = (state) => {
   return state ? iconUp : iconDown
 };
 
-
 const ExperimentCard = ({ card, experiment }) => {
-  const header = card.header
-  const cardId = card.cardId
-  const experimentId = experiment.experimentID
-  const contentId = card.Id
-  const cardContent = Content.get(experimentId, contentId)
+  const header = card.header;
+  const cardId = card.cardId;
+  const experimentId = experiment.experimentID;
+  const contentId = card.Id;
+  const cardContent = Content.get(experimentId, contentId);
   const [open, setOpen] = useState(false);
+
+
+  if (contentId == 3) {
+    return (
+      <ExperimentProcedureCarousel
+        cardContent = {cardContent}
+        open={open}
+        cardId={cardId}
+        header={header}
+        setOpen={setOpen}
+        iconToggle={iconToggle}
+      />
+    );
+  }
 
   return (
     <Card>
-      <Card.Header 
-        onClick = {() => setOpen(!open)} 
-        aria-controls = {cardId} 
-        aria-expanded = {open} 
-        as = "h2"
-        className = "bg-transparent"
+      <Card.Header
+        onClick={() => setOpen(!open)}
+        aria-controls={cardId}
+        aria-expanded={open}
+        as="h2"
+        className="bg-transparent"
       >
-        { header }
+        {header}
         {iconToggle(open)}
       </Card.Header>
-      <Collapse in = { open } >
+      <Collapse in={open}>
         <div>
-          <Card.Body id = { cardId } >
-            { cardContent }
+          <Card.Body id={cardId}>
+            {cardContent}
           </Card.Body>
         </div>
       </Collapse>
     </Card>
   );
 };
+
 
 export default ExperimentCard;
