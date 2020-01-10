@@ -292,6 +292,7 @@ const procedure = () => {
 const Experiment_9 = {
   prelab_assignment: prelab_assignment(),
   background: background(),
+  procedure: procedure(),
   results: results(),
   study_questions: study_questions(),
   discussion: discussion(),

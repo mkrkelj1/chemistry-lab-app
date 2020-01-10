@@ -203,6 +203,10 @@ a:hover {
    text-align: center;
 }
 
+.navbar {
+  height: 60px;
+}
+
 /* .navbar-expand  */
 .navbar-brand {
     font-family: Arial;
@@ -223,7 +227,43 @@ a:hover {
 .max-width {
   max-width: 750px;
 }
+
 .chem-card {
   font-weight: bold;
   font-size: 16px;
+}
+
+/* Mobile breakpoint @ 640px. Why a minor breakpoint? Not sure. */
+@media only screen and (max-device-width: 640px) {
+  /* Do not block content with nav, add space for content*/
+  main {
+    margin-top: 15px;
+    margin-bottom: 75px;
+  }
+
+  /* This should not necessarily be the answer. The navbar-nav can be moved instead. */
+  header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    background: white;
+  }
+ 
+  /* Hide the brand on mobile */
+  .navbar-brand {
+    display: none;
+  }
+
+  .anav a{
+    border-top: unset;
+  }
+  
+  .nav-link:hover {
+    border-top: unset;
+  }
+
 }

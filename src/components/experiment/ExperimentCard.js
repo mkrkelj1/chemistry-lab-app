@@ -4,13 +4,14 @@ import Collapse from "react-bootstrap/Collapse";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { Content, _Content } from "../../ContentAPI"
-import ExperimentProcedureCarousel from "./ExperimentProcedureCarousel"
+import ExperimentProcedureTabs from "./ExperimentProcedureTabs"
 
 /*
 Exports to: ExperimentsCards.js
 Creates Cards: 
  - Prelab Assignment 
- - Theoretical Background, 
+ - Theoretical Background,
+ - Procedure
  - Results
  - Study Questions
  - Discussion
@@ -34,7 +35,7 @@ const ExperimentCard = ({ card, experiment }) => {
 
   if (contentId == 3) {
     return (
-      <ExperimentProcedureCarousel
+      <ExperimentProcedureTabs
         cardContent = {cardContent}
         open={open}
         cardId={cardId}
