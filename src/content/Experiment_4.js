@@ -15,18 +15,27 @@ const prelab_assignment = () => (
         and boiling points of solvents and melting points, and solubilities for
         the solutes. Include a legend for the abbreviations you use.
         <p style={{ marginLeft: 40 }}>
-          Solvents: Acetone, Diethyl ether, Methanol, Toluene, Water
-          <br /> Solutes: Trimyristin, Triphenylmethane
+          <br />
+          <strong>Solvents:</strong> Acetone, Diethyl ether, Methanol, Toluene,
+          Water
+          <br />
+          <strong>Solutes:</strong> Trimyristin, Triphenylmethane
         </p>
       </li>
 
       <p>
         <li>
-          {" "}
-          Copy the table given on page 25 in the <b>Observations </b>
+          Copy the table given on page 27 in the <b>Observations </b>
           section of your notebook, opposite the <b>Procedure </b>
           for the Solubility Tests.
         </li>
+        <br />
+        <strong>Table on page 27, for reference:</strong>
+        <img
+          src={cache["./TrymiristinExtraction_solubilitytable.png"]}
+          alt="Solubility Table"
+          width="90%"
+        />
       </p>
     </ol>
   </div>
@@ -130,17 +139,13 @@ const background = () => (
 
 const results = () => (
   <div>
-    {" "}
-    <p>
-      <b>E. RESULTS</b>
-    </p>
     <ol>
       <li>
         Calculate the % Recovery of pure trimyristin based on the amount of
         crude trimyristin you obtained.
       </li>
       <li>
-        2. Calculate the % Recovery of your crude trimyristin based on the total
+        Calculate the % Recovery of your crude trimyristin based on the total
         amount of trimyristin in your starting sample. Assume that the amount of
         trimyristin in nutmeg is 22% by weight.
       </li>
@@ -160,8 +165,8 @@ const study_questions = () => (
       <img
         src={cache["./TrimiristinExtraction_SolubilityTable_StudyQuestion.png"]}
         alt="Solubility Table"
+        width="90%"
       />
-
       <br />
       Please keep your answers to the following questions brief.
       <br />
@@ -190,10 +195,6 @@ const study_questions = () => (
 
 const discussion = () => (
   <div>
-    {" "}
-    <p>
-      <b>F. DISCUSSION</b>
-    </p>
     <p>
       Draw your own conclusions about the results from all parts of this
       experiment. Some points to include are the purity of the trimyristin
@@ -209,48 +210,235 @@ const discussion = () => (
 );
 const waste_disposal = () => (
   <div>
-    {" "}
-    <p>
-      <b>G. WASTE DISPOSAL</b>
-    </p>
     <p>
       <div class="a">
-        <b>Week 2</b>
+        <b>Week 1</b>
       </div>
     </p>
     <ol>
-      <li><u>Recrystallization of Trimyristin:</u>
-         <br/> Discard the filter paper from recrystallized trimyristin into the solid waste container in the waste hood.
-         <br/> Discard the filtrate into the non-halogenated waste bottle in your hood.
-         <br/> Rinse all the glassware you used with a few drops of acetone and discard these rinsings into the non-halogenated waste bottle in your hood.
+      <li>
+        <u>Solubility Tests:</u>
+        <br /> Discard the contents of the test tubes into the non-halogenated
+        waste bottle in your hood. Rinse the test tubes with a few drops of
+        acetone and discard these rinsings also into the same non-halogenated
+        waste bottle.
       </li>
-      <li><u>Melthing Points:</u>
-         <br/> Used Capillaries: Discard into the plastic beaker labeled “Used Capillaries”.
-         <br/> Discard the weighing paper in the solid waste container in the waste hood.
+      <li>
+        <u>Extraction of Trimyristin:</u>
+        <br /> Discard the filter paper with nutmeg residue into the solid waste
+        container in the waste hood. Discard any nutmeg residue left in the
+        Erlenmeyer flask also into the same solid waste container in the waste
+        hood.
+        <br /> Rinse the funnel and the Erlenmeyer flask with a few drops of
+        acetone and discard these rinsings into the non-halogenated waste bottle
+        in your hood.
       </li>
-   </ol>
+    </ol>
+    <strong>Leave the waste bottle in your hood at the end of the day.</strong>
   </div>
 );
 
 const procedure = () => {
   const procedure_1 = () => (
-    <div> 
-      Procedure 1
+    <div>
+      <p>
+        <b>Recrystallization of Trimyristin</b>
+      </p>
+
+      <table border="1">
+        <tr>
+          <th>Experimental Procedure</th>
+          <th>Safety Precautions</th>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            On a steam bath, heat 20mL of solvent (acetone) in a 125 mL
+            Erlenmeyer flask. Add a boiling chip to the RBF containing crude
+            trimyristin. (Boiling chips should never be added to a hot
+            solution). Add 7 mL of warm solvent to the RBF.
+          </td>
+
+          <td>
+            <p>
+              The steam bath will be very hot, try not to touch the steam bath
+              without wearing oven mitts.
+            </p>
+            <p>
+              Solvent (acetone) is volatile. Avoid inhaling fumes and complete
+              all work in the hood.
+            </p>
+            <p>
+              Be sure to add a boiling chip to the RBF containing the crude
+              product before heating.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Bring the mixture to boiling on the steam bath, and swirl
+            occasionally. Add additional solvent, 1 mL at a time, until solid is
+            completely dissolved. Use only minimum volume of hot solvent
+            necessary to dissolve the crude product.
+          </td>
+
+          <td>
+            <p>The RBF will be hot. Use tongs to handle and swirl the flask.</p>
+            <p>
+              Hot solvent is very volatile. Be careful when handling and avoid
+              inhaling fumes. Be sure to complete all work inside your hood.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Add an extra 2mL of solvent to the RBF to avoid premature
+            crystallization. Transfer this hot solution into a 100 or 150 mL
+            beaker.
+          </td>
+
+          <td>
+            <p>
+              Be careful while heating the solution on the steam bath. Use tongs
+              to hold the flask above the steam.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <strong>
+              The following procedure must be done quickly and efficiently, so
+              that glassware stays hot and the loss of solvent by evaporation is
+              kept to a minimum.
+            </strong>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            When the flask is “emptied,” rinse it with two 5 mL portions of hot
+            solvent. Transfer each rinse to the same beaker. Keep this beaker on
+            the steam bath and bring it to a gentle boil.
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            When the solution comes to a gentle boil, remove the beaker from the
+            steam bath. Carefully set the solution aside and allow it to
+            recrystallize until it cools to <strong>room temperature</strong>.
+            Then, cool it in an ice bath for 10 minutes. While the solution is
+            cooling, set up the vacuum filtration apparatus. Also, cool about 10
+            mL of fresh solvent in a small beaker in an ice bath (to be used in
+            the next step).
+          </td>
+
+          <td>
+            <p>
+              The beaker may be very hot. Use tongs to handle the beaker after
+              heating.
+            </p>
+
+            <p>
+              Make sure to clamp the filtration flask to a ring stand before
+              attaching the vacuum line.
+            </p>
+
+            <p>
+              Do not pace the Büchner funnel until you are really ready to
+              filter.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Scrape the crystals off the walls of the beaker, swirl the beaker,
+            and slowly pour the mixture into the Büchner funnel. As soon as the
+            bulk of the liquid has been sucked through, disconnect the suction
+            hose. Use a small amount of ice-cold solvent to aid in completing
+            the transfer of recrystallized trimyristin to the Büchner funnel.
+            Wash the product. With the suction off, cover the surface of the
+            crystals with a minimum volume of ice-cold fresh solvent.
+            Immediately turn the suction on. Repeat, if necessary, keeping in
+            mind that some trimyristin is lost with each wash. Pour all
+            filtrates into the designated waste container.
+          </td>
+
+          <td>
+            <p>
+              Solvent is volatile. Be careful when handling and avoid inhaling
+              fumes.
+            </p>
+          </td>
+        </tr>
+      </table>
     </div>
-  )
+  );
 
-  const procedure_2 = () => (
-    <div> 
-      Procedure 2
+   const procedure_2 = () => (
+    <div>
+      <p>
+        <b>Melting Points and Weight of Product</b>
+      </p>
+
+      <table border="1">
+        <tr>
+          <th>Experimental Procedure</th>
+          <th>Safety Precautions</th>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Weigh an empty vial, transfer the purified trimyristin, and reweigh. Record the weights.
+          </td>
+
+          <td>
+           
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          Determine the melting points of recrystallized trimyristin and the original crude trimyristin side by side, and record the values.
+          </td>
+
+          <td>
+            <p>Melting point capillaries will be hot. Be careful when removing them from the melting point apparatus</p>
+           
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+           Label the vial with your name, the identity of contents, i.e., “Purified Trimyristin,” lab day, weight of product, % recovery from nutmeg, and melting point of contents.
+          </td>
+
+          <td>
+           
+          </td>
+        </tr>
+
+        <tr>
+          <td >
+            Place the vial containing the recrystallized product in the box for your lab day on the front desk.
+          </td>
+
+          <td>
+           
+          </td>
+        </tr>
+      </table>
     </div>
-  )
-
-  const procedureArray = [procedure_1(), procedure_2()]
-  return procedureArray
-
-}
-
-
+  );
+   
+  const procedureArray = [procedure_1(), procedure_2()];
+  return procedureArray;
+};
 
 const Experiment_4 = {
   prelab_assignment: prelab_assignment(),

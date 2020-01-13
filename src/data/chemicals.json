@@ -164,8 +164,8 @@
          "chemicalID": 24,
          "name": "Norite ",
          "cas": "7440-44-0 ",
-         "safety_guideline": null,
-         "pictogram_ids": [10]
+         "safety_guideline": "May be harmful if inhaled. May cause respiratory tract irritation.May be harmful if absorbed through skin. May cause skin irritation. May cause eye irritation. May be harmful if swallowed.",
+         "pictogram_ids": [2]
        },
        {
          "chemicalID": 25,
@@ -264,5 +264,26 @@
          "cas": "7732-18-5 ",
          "safety_guideline": null,
          "pictogram_ids": [10]
+       },
+         {
+         "chemicalID": 39,
+         "name": "Bromine ",
+         "cas": "7726-95-6",
+         "safety_guideline": "Causes severe skin burns. Causes eye damage. Inhalation can be fatal. Very toxic to aquatic life.",
+         "pictogram_ids": [9, 6, 5]
+       },
+       {
+         "chemicalID": 40,
+         "name": "Dimethyl fumarate",
+         "cas": "624-49-7",
+         "safety_guideline": "Causes skin irritation. May cause an allergic skin reaction. Causes serious eye irritation.",
+         "pictogram_ids": [7]
+       },
+           {
+         "chemicalID": 41,
+         "name": "Dimethyl maleate",
+         "cas": "624-48-6",
+         "safety_guideline": "Harmful if swallowed. Causes skin burns, corrosion, and irritation. Causes severe eye damage. May cause respiratory irritation.",
+         "pictogram_ids": [9, 6, 7]
        }
 ]
