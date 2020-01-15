@@ -23,44 +23,7 @@
          "Meena Rao",
          "Jean Vadakkan"
       ],
-      "text_and_materials":[ 
-         "Chemistry 3328 Introductory Organic Chemistry Laboratory Manual (Spring 2019 Edition)",
-         "Laboratory Notebook with duplicate pages",
-         "Molecular Models",
-         "Calculator",
-         "Flash Drive"
-      ],
-      "optional_texts":[ 
-         "Most, C.F., Experimental Organic Chemistry (Wiley, 1988)",
-         "Pavia,D.L.,Lampman,G.M.,andKriz,G.S.,Introduction to Organic Laboratory Techniques, 2nd ed. (Saunders, 1982)",
-         "Williamson, K.L., Microscale and Macroscale Organic Experiments, 2nd ed. (D.C. Heath, 1994)",
-         "Zubrick, J. W., The Organic Chem Lab Survival Manual, 9th ed. (Wiley,2014)"
-      ]
-   },
-      { 
-      "id":2,
-      "name":"Course 2",
-      "coordinators":[ 
-         { 
-            "name":"Dr. Meena Rao",
-            "office":"Altschul 715",
-            "email":"mrao@barnard.edu"
-         },
-         { 
-            "name":"Dr. Jean Vadakkan",
-            "office":"Altschul 813 C",
-            "email":"jvadakka@barnard.edu"
-         }
-      ],
-      "instructors":[ 
-         "Jacob Alexander",
-         "Craig Allen",
-         "Michael Campbell",
-         "Richard Denton",
-         "Grace Lee",
-         "Meena Rao",
-         "Jean Vadakkan"
-      ],
+      "help_room": [{"location": "Altschul 806", "hours": "Monday – Friday: 12:00 – 1:00 P.M."}],
       "text_and_materials":[ 
          "Chemistry 3328 Introductory Organic Chemistry Laboratory Manual (Spring 2019 Edition)",
          "Laboratory Notebook with duplicate pages",
