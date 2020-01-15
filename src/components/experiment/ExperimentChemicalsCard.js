@@ -59,7 +59,6 @@ const ExperimentChemicalsCard = ( { chemicals, pictogramMap } ) => {
 
 			<Collapse in = {open} >
 				<div>
-
 					<Card.Body id = {cardID} >
 					{chemicalCard}
 					</Card.Body>

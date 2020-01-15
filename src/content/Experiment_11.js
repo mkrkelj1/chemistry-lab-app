@@ -6,10 +6,9 @@ function importAll(r) {
 }
 importAll(require.context("../assets/images/", false, /\.png$/));
 
-
 const prelab_assignment = () => (
   <div>
-    <img src={cache["./Dehydration_Scheme.png"]} alt="Scheme" />
+    <img src={cache["./Dehydration_Scheme.png"]} alt="Scheme" width="40%" />
     <p>
       In this experiment, we will set up an acid-catalyzed dehydration reaction
       of 2-methylcyclohexanol (mixed cis- and trans- isomers) under reflux using
@@ -30,8 +29,10 @@ const prelab_assignment = () => (
       <li>
         Prepare a Table with all required information for calculating
         theoretical yield for this reaction. A sample table showing the required
-        information is on pp.
+        information is shown below.
       </li>
+
+      <img src={cache["./Dehydration_Table.png"]} alt="Scheme" width="95%" />
     </ol>
   </div>
 );
@@ -64,19 +65,22 @@ const background = () => (
       system and the composition of the exiting mobile phase is monitored over
       time, the following would be found:
     </p>
-    <p>
-      Initially, the mobile phase would consist only of the mobile phase
-      component (gas or liquid).
-    </p>
-    <p>After a few minutes, Compound A would be detected.</p>
-    <p>
-      As time passes, Compound A would decrease in amount and then Compound B
-      would be detected.
-    </p>
-    <p>
-      At later times, Compound B would decrease in amount and finally Compound C
-      would be detected.
-    </p>
+
+    <ul>
+      <li>
+        Initially, the mobile phase would consist only of the mobile phase
+        component (gas or liquid).
+      </li>
+      <li>After a few minutes, Compound A would be detected.</li>
+      <li>
+        As time passes, Compound A would decrease in amount and then Compound B
+        would be detected.
+      </li>
+      <li>
+        At later times, Compound B would decrease in amount and finally Compound
+        C would be detected.
+      </li>
+    </ul>
     <p>
       The lapse in time from the injection of a compound to its exit from the
       column is called its “<b>retention time</b>”. Each compound has a
@@ -109,7 +113,11 @@ const background = () => (
       results of a separation such as that described for compounds A, B, and C
       is shown below.
     </p>
-    <img src={cache["./Dehydration_prelabchart.png"]} alt="Dehydration Chart" />
+    <img
+      src={cache["./Dehydration_prelabchart.png"]}
+      alt="Dehydration Chart"
+      width="80%"
+    />
     <p>
       The relative amount of each component (A, B, or C) can be determined by
       calculating the area under the peak corresponding to each component and
@@ -123,7 +131,11 @@ const background = () => (
       width of the peak at half its height. The area is the product of the
       height and the width at half-height.
     </p>
-    <img src={cache["./Dehydration_PeakMathChart.png"]} alt="Peach Math Calculation" />
+    <img
+      src={cache["./Dehydration_PeakMathChart.png"]}
+      alt="Peach Math Calculation"
+      width="80%"
+    />
     <p>The mole % of each component can be determined as follows:</p>
     <p>
       (1) Multiply the areas by the appropriate molar sensitivity factors to get
@@ -137,6 +149,7 @@ const background = () => (
     <img
       src={cache["./Dehydration_PeakPercentageChart.png"]}
       alt="Peak Percentage Chart"
+      width="80%"
     />
     <p>
       Thus, the original mixture consisted of 42.5% A, 26.1% B, and 31.3% C.
@@ -170,7 +183,7 @@ const results = () => (
   </div>
 );
 
-const study_questions = () => <div> To Do </div>;
+const study_questions = () => <div>N/A</div>;
 
 const discussion = () => (
   <div>
@@ -251,23 +264,217 @@ const waste_disposal = () => (
 
 const procedure = () => {
   const procedure_1 = () => (
-    <div> 
-      Procedure 1
+    <div>
+      <p>
+        <strong>Dehydration Reaction</strong>
+      </p>
+
+      <table border="1">
+        <tr>
+          <th>Experimental Procedure</th>
+          <th>Safety Precautions</th>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Set up the reflux apparatus accordingto the lab demonstration.
+          </td>
+
+          <td>
+            <p>
+              Wear your lab coat, goggles, and gloves while in the lab. Conduct
+              all work inside your hood.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Transfer 0.5 mL of 85% phosphoric acid (Caution: phosphoric acid can
+            cause severe burns) into a 5 mL flask (round- bottom or pear-shaped)
+            and add a magnetic stir bar. Mark the liquid level in the flask for
+            future reference. Add 2.5 mL of 2-methylcyclohexanol (mixed
+            isomers), measured accurately with a syringe. Make sure to note
+            density from the reagent bottle.
+          </td>
+
+          <td>
+            <p>
+              Phosphoric acid can cause severe burns. Be very careful when
+              handling it.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Heat the mixture gently on the sand bath. (The part of the flask
+            containing the liquid should be completely covered with sand.) Heat
+            the reaction mixture to reflux (set the Variac setting to 80) for 30
+            minutes.
+          </td>
+
+          <td>
+            <p>
+              Be careful when handling the distillation apparatus and the
+              collected solution as they will both be very hot.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Transfer 0.5 mL of 85% phosphoric acid (Caution: phosphoric acid can
+            cause severe burns) into a 5 mL flask (round- bottom or pear-shaped)
+            and add a magnetic stir bar. Mark the liquid level in the flask for
+            future reference. Add 2.5 mL of 2-methylcyclohexanol (mixed
+            isomers), measured accurately with a syringe. Make sure to note
+            density from the reagent bottle.
+          </td>
+
+          <td>
+            <p>
+              Note the start time of reflux when you notice the first drop of
+              condensate fall back to the reaction flask.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Carefully distill the reaction mixture (start at a Variac setting of
+            70) until the residue in the flask (called the pot residue) has a
+            volume of about 0.5 mL.* Lower the heat if there is excessive
+            foaming or if the temperature rises rapidly after distillation has
+            started. Note the appearance and boiling range of the distillate.
+            Collect the distillate in a centrifuge tube cooled in a beaker of
+            ice.
+          </td>
+
+          <td>
+            <p>
+              *At this point the reaction mixture in the RBF will look amber
+              yellow.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <br/>
+      <p>
+        <strong>Work-up and Isolation of Product</strong>
+      </p>
+
+      <table border="1">
+        <tr>
+          <td width="60%">
+            Dry the distillate over anhydrous potassium carbonate. Shake the
+            mixture occasionally, and let it dry for at least 5 minutes.
+          </td>
+
+          <td>
+            <p>
+              Cap the centrifuge tube tightly before shaking. Be careful not to
+              spill the contents in the centrifuge tube.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Record the tare weight of a clean, dry vial with the cap. Be sure
+            that the vial has a tight-fitting cap.
+          </td>
+
+          <td>
+            <p></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Using a Pasteur pipet, transfer the dry distillate to a clean, dry 5
+            mL RBF. Distill using the short path distillation apparatus as shown
+            in the lab demonstration. Collect the distilled product in the
+            pre-weighed vial cooled in a beaker of ice. Stop distillation when
+            the boiling point reaches 115 °C. DO NOT distill to dryness!
+          </td>
+
+          <td>
+            <p>
+              Be careful when handling the distillation apparatus and the
+              collected solution as they will both be very hot.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Determine the weight of the dried product. Keep the vial capped
+            tightly at all times after weighing, since the alkenes evaporate
+            rapidly.
+          </td>
+
+          <td>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+
+      <br/>
+      <p>
+        <strong>Preparation of GC Sample</strong>
+      </p>
+
+      <table border="1">
+        <tr>
+          <td width="60%">
+            Take one drop of your product in a clean, dry test tube.
+          </td>
+
+          <td>
+            <p>
+              Cap the centrifuge tube tightly before shaking. Be careful not to
+              spill the contents in the centrifuge tube.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Add methylene chloride (dichloromethane) until the test tube is half
+            full. Mix thoroughly.
+          </td>
+
+          <td>
+            <p>
+              Be careful when handling methylene chloride, it is a known
+              carcinogen. Be sure to wear gloves. If the gloves are exposed to
+              methylene chloride, they will pucker. If this occurs, put on a new
+              pair of gloves.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Fill the small vial 3⁄4 full with the prepared solution. Cap the
+            vial. Label the vial with your initials and lab section. Place
+            labeled vials in the box provided.
+          </td>
+
+          <td>
+            <p></p>
+          </td>
+        </tr>
+      </table>
     </div>
-  )
+  );
 
-  const procedure_2 = () => (
-    <div> 
-      Procedure 2
-    </div>
-  )
-
-  const procedureArray = [procedure_1(), procedure_2()]
-  return procedureArray
-
-}
-
-
+  
+  const procedureArray = [procedure_1()];
+  return procedureArray;
+};
 
 const Experiment_11 = {
   prelab_assignment: prelab_assignment(),

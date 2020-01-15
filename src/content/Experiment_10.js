@@ -6,8 +6,6 @@ function importAll(r) {
 }
 importAll(require.context("../assets/images/", false, /\.png$/));
 
-
-
 const prelab_assignment = () => (
   <div>
     <ol>
@@ -19,12 +17,21 @@ const prelab_assignment = () => (
         distillate for your distillation.
       </li>
     </ol>
-    <img src={cache["./Distillation_SampleTable.png"]}  alt="Sample Table" />
+
+    <p>Sample Table:</p>
+    <p>
+      <img
+        src={cache["./Distillation_SampleTable.png"]}
+        alt="Sample Table"
+        width="35%"
+      />
+    </p>
   </div>
 );
 
 const background = () => (
   <div>
+    <strong>1. Distillation</strong>
     <p>
       Distillation is yet another method used to purify and/or separate organic
       compounds. Recrystallization is used to purify compounds that are solids
@@ -105,9 +112,13 @@ const background = () => (
     <p>
       A plot of the stillhead temperature (temperature of the vapor about to be
       condensed) vs. mL of distillate collected for distillations of various
-      efficiencies is shown in Figure 1.
+      efficiencies is shown below.
     </p>
-    <img src={cache["./Distillation_Temp.png"]} alt="Temperature Graph" />
+    <img
+      src={cache["./Distillation_Temp.png"]}
+      alt="Temperature Graph"
+      width="90%"
+    />
 
     <p>
       In an ideal distillation, the entire lower boiling component distills at
@@ -119,12 +130,12 @@ const background = () => (
     <p>
       In a fractional distillation, the early distillate distills at a
       temperature a bit <u>above</u> the boiling point of the lower boiling
-      component. The last distillate comes over at a temperature slightly{" "}
+      component. The last distillate comes over at a temperature slightly
       <u>below</u> the higher boiling component. Liquid mixtures boil at
       temperatures <u>between</u> the boiling points of the components.
     </p>
     <p>
-      n a simple distillation, the initial temperature is higher and the final
+      In a simple distillation, the initial temperature is higher and the final
       temperature is lower than in the fractional distillation. Also, note that
       temperature rise is much more gradual than in the fractional distillation.
     </p>
@@ -164,23 +175,44 @@ const results = () => (
   </div>
 );
 
-const study_questions = () => <div> ToDo </div>;
+const study_questions = () => <div> N/A </div>;
 
 const discussion = () => (
   <div>
-    <p>Additional points to be discussed:</p>
     <p>
-      The shape of your plot of volume vs distillate temperatures. Whether you
-      changed the graduate cylinders at the correct temperatures according to
-      this plot.
+      Follow the procedure for writing a discussion outlined on page 8
+      (referenced below).
     </p>
+
+    <p>In addition, please discuss:</p>
+    <ol>
+      <li>
+        The shape of your plot of volume vs distillate temperatures. Whether you
+        changed the graduate cylinders at the correct temperatures according to
+        this plot.
+      </li>
+      <li>
+        Comparison of Boiling points of fractions 1 and 3 to the literature
+        values of ethyl acetate and 1-butanol.
+      </li>
+      <li>
+        Factors that contribute to the fractions 1 and 3 for not being pure
+        ethylacetate and 1-butanol.
+      </li>
+    </ol>
+
+    <hr />
+
     <p>
-      Comparison of Boiling points of fractions 1 and 3 to the literature values
-      of ethyl acetate and 1-butanol.
-    </p>
-    <p>
-      Factors that contribute to the fractions 1 and 3 for not being pure
-      ethylacetate and 1-butanol.
+      <strong>Discussion:</strong> In the Discussion section, provide a bit of
+      background on your motivation for undertaking the experiment. Also provide
+      some details on how well the experiment worked, and discuss mechanistic
+      issues if you think it appropriate. If you wish to give an overview of how
+      you made structural assignments, this is a good place to do it. However,
+      you do not need to get into all the gory details; just provide the
+      highlights. A paragraph or two is usually enough for the entire Discussion
+      section. The main points that should be included are given for each
+      experiment in the lab manual.
     </p>
   </div>
 );
@@ -217,29 +249,364 @@ const waste_disposal = () => (
           <li>DO NOT WASH WITH WATER.</li>
         </ol>
       </li>
+      <li>
+        <p>
+          {" "}
+          <strong>
+            Leave the waste bottle in your hood at the end of the day.
+          </strong>
+        </p>
+      </li>
     </ol>
   </div>
 );
 
-
 const procedure = () => {
   const procedure_1 = () => (
-    <div> 
-      Procedure 1
+    <div>
+      <p>
+        <b>General Procedures</b>
+      </p>
+      <ol>
+        <li>
+          <b>Boiling Points</b>
+        </li>
+        <p>
+          As with melting points, an experimentally determined boiling point is
+          actually a range of temperatures. An acceptable boiling range for a
+          pure compound is 3 &#176;C. Samples with wider ranges should be
+          redistilled to improve purity.
+        </p>
+        <li>
+          <b>Thermometer Placement and Insulation of the Stillhead</b>
+        </li>
+        <p>
+          Accurate measurement of the temperature of the distillate requires
+          that the thermometer bulb be completely immersed in the vapor that is
+          moving into the condenser. If the thermometer bulb were very small,
+          and no heat loss occurred through the glass of the stillhead, the
+          ideal position for the thermometer is directly opposite the sidearm
+          that leads to the condenser. The thermometer is placed such that the
+          upper edge of the bulb is even with the lower edge of the sidearm.
+          This placement of the thermometer assures that the bulb will be
+          completely immersed in the vapor.
+        </p>
+        <p>
+          If the thermometer is placed too high in the stillhead, its bulb may
+          be only partially immersed in the vapor resulting in an experimental
+          temperature, which is lower than that of the distillate being
+          collected. If the thermometer is placed too low in the stillhead, its
+          bulb will be immersed in vapor further down the column than the vapor
+          that is entering the condenser, resulting in an experimental
+          temperature that is higher than that of the distillate being
+          collected.
+        </p>
+        <li>
+          <b>Notes on the Assembly of Ground Glass Equipment</b>
+        </li>
+        <ol type="a">
+          <li>
+            Do not grease the joints. (Grease is needed only for vacuum work or
+            when basic compounds are used.)
+          </li>
+          <li>
+            Avoid breakage. The correct positions for clamps are at the top of
+            the distillation flask, just under the flare. Use gentle pressure on
+            the clamps to avoid cracking the flask or condenser. (Use rubber
+            liners or pieces of paper on the clamps.)
+          </li>
+          <li>
+            Check the demonstration set-up for proper placement of the
+            thermometer. (See discussion on page 65.)
+          </li>
+          <li>
+            Rubber tubing should be moistened with water, and firmly attached to
+            the condenser and the water faucet. Think about why water is led
+            into the bottom of the condenser. The exit water is led into the cup
+            sink in the hood. A clamp holder loosely attached to the rubber exit
+            tube will help to keep it from slipping out of the sink whenever you
+            turn on the water. When turning on the water, hold the exit tube
+            with your other hand so that you can adjust the water to the correct
+            pressure. There should be only a moderate stream of water. By
+            convention, all water and steam valves turn on counter-clockwise,
+            and off clockwise.
+          </li>
+          <li>
+            Have your instructor check your apparatus before you start your
+            distillation.
+          </li>
+        </ol>
+        <br />
+        <li>
+          <b>Theoretical Background on Gas Chromatography (GC)</b>
+        </li>
+        <p>Please read pages 75-78 of this lab manual.</p>
+      </ol>
     </div>
-  )
+  );
 
   const procedure_2 = () => (
-    <div> 
-      Procedure 2
+    <div>
+      <p>
+        <b>Fractional Distillation</b>
+      </p>
+
+      <table border="1">
+        <tr>
+          <th>Experimental Procedure</th>
+          <th>Safety Precautions</th>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Preheat a heating mantle without a flask for 5 min at 100 volts.
+            Allow it to cool for 5 min before beginning your distillation.
+          </td>
+
+          <td>
+            <p>Wear lab coat, goggles, and gloves when in the lab.</p>
+            <p>Use oven mitts to handle hot heating mantle.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            While your mantle is preheating, assemble your fractional
+            distillation apparatus. (See the demonstration set- up.) Have ready
+            three 25 mL graduated cylinders with stoppers to fit the cylinders.
+            Label the cylinders F1, F2, and F3.
+          </td>
+
+          <td></td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Obtain 30mL of the distillation mixture, and, using a funnel, pour
+            it into a 50 mL round bottom flask. Add a magnetic stir bar and
+            attach the flask to your distillation apparatus. When you believe
+            that you are completely prepared to begin the distillation, have
+            your apparatus checked by an instructor. Then turn on the condenser
+            cooling water.
+          </td>
+
+          <td>
+            <p>
+              The distillation mixture is volatile. Avoid inhalation of an
+              exposure to fumes.
+            </p>
+            <p>
+              Be sure to monitor the water flow rate to avoid disconnection of
+              outlet and inlet tubes.
+            </p>
+
+            <p>
+              Disconnection can cause spillage. Have your distillation apparatus
+              checked by an instructor before beginning the distillation
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            After your apparatus has been checked, begin heating the distilling
+            flask at 80 volts.
+          </td>
+
+          <td>
+            <p>Avoid touching the distillation apparatus as it will be hot.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            When the mixture begins to boil, follow the position of the upper
+            condensing vapor as it moves into the stillhead. When the vapor
+            reaches the thermometer bulb, the temperature reading should rise
+            rapidly to a value near the boiling point of ethyl acetate. (See
+            your Table of Physical Constants.)
+          </td>
+
+          <td>
+            <p>Avoid touching the distillation apparatus as it will be hot.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Record the temperature of the vapor when the first drop of
+            distillate is collected in your graduated cylinder. Consult your
+            instructor if this temperature is:
+            <br />
+            (1) below the b.p. of ethyl acetate or (2) more than 5 &#176;C above
+            the b.p. of ethyl acetate.
+            <br />
+            Temperatures must be recorded to the first decimal place.
+          </td>
+
+          <td>
+            <p>Avoid touching the distillation apparatus as it will be hot.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Adjust the voltage setting of the Variac so as to yield a collection
+            rate (distillation rate) of approximately 1 drop per second. As the
+            distillation progresses, the voltage setting may need to be raised
+            in order to maintain the distillation rate at 1 drop per second.
+            Record the vapor temperature after each mL of distillate has been
+            collected.
+          </td>
+
+          <td>
+            <p>Avoid touching the distillation apparatus as it will be hot.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            When the vapor temperature has risen 5 &#176;C above the observed
+            b.p. of ethyl acetate, switch to the second graduate cylinder. The
+            first cylinder contains Fraction (cut) F1. Stopper it promptly to
+            prevent evaporation.
+          </td>
+
+          <td>
+            <p>Avoid touching the distillation apparatus as it will be hot.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Continue recording vapor temperatures after collection of each mL of
+            distillate.
+          </td>
+
+          <td></td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            When the vapor temperature rises to a point 5 &#176;C below the
+            boiling point of 1-butanol, switch to the third graduate cylinder.
+            Stopper the second graduate cylinder, which contains Fraction (cut)
+            F2.
+          </td>
+
+          <td>
+            <p>
+              Be careful not to spill any of the hot solution when switching the
+              graduated cylinders.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Continue recording temperaturesas before. Discontinue the
+            distillation when a total of 26 mL of distillate has been collected.
+            If the temperature begins to decrease at this point, consult an
+            instructor. The distillate collected during the last part of the
+            distillation is Fraction (cut) F3. Stopper the cylinder at the end
+            of the distillation.
+          </td>
+
+          <td>
+            <p>
+              <strong>CAUTION: Extremely hot surfaces.</strong>
+            </p>
+            <p>Turn off Variac.</p>
+            <p>Lower lab jack.</p>{" "}
+            <p>
+              Wear oven mitts before you touch hot RBF or the one-piece
+              distillation unit.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Be sure to record the volumes and temperature ranges of all three
+            fractions in a table. (See sample table on page 76.)
+          </td>
+
+          <td>
+            <p></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Fractions 1-3 are analyzed using Gas Chromatography (GC).
+          </td>
+
+          <td>
+            <p></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            <b>Preparation of GC Sample</b>
+            <ol>
+              <li>Obtain three clean and drytest tubes.</li>
+              <li>Label test tubes F-1, F-2, F-3.</li>
+              <li>
+                Add one drop of your Fraction into the respective labeled test
+                tubes. Add methylene chloride (dichloromethane) until the test
+                tube is half full. Mix thoroughly the solution in test tubes.
+              </li>
+              <li>
+                Fill the small vial ¾ full with the prepared solution. Cap the
+                vial. Label the vial with your initials and lab section. Place
+                labeled vials in the box.
+              </li>
+            </ol>
+          </td>
+
+          <td>
+            <p>
+              Be careful when handling methylene chloride, it is a known
+              carcinogen. Be sure to wear gloves. If the gloves are exposed to
+              methylene chloride, they will pucker. If this occurs, put on a new
+              pair of gloves.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Discard all three fractions in the designated waste container in
+            your hood.
+          </td>
+
+          <td>
+            <p>
+              The fractions may still be hot. Be careful when handling them.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            Rinse the one-piece distillation apparatus with acetone and return
+            it to the instructor.
+          </td>
+
+          <td>
+            <p>
+              Acetone is volatile. Be sure to conduct all work in your hood.
+            </p>
+          </td>
+        </tr>
+      </table>
     </div>
-  )
+  );
 
-  const procedureArray = [procedure_1(), procedure_2()]
-  return procedureArray
-
-}
-
+  const procedureArray = [procedure_1(), procedure_2()];
+  return procedureArray;
+};
 
 const Experiment_10 = {
   prelab_assignment: prelab_assignment(),

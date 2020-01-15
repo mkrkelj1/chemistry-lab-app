@@ -8,7 +8,7 @@ importAll(require.context("../assets/images/", false, /\.png$/));
 
 const prelab_assignment = () => (
   <div>
-    <img src={cache["./Dehydration_Scheme.png"]} alt="Scheme" />
+    <img src={cache["./Dehydration_Scheme.png"]} alt="Scheme" width="40%" />
     <p>
       In this experiment, we will set up an acid-catalyzed dehydration reaction
       of 2-methylcyclohexanol (mixed cis- and trans- isomers) under reflux using
@@ -29,8 +29,10 @@ const prelab_assignment = () => (
       <li>
         Prepare a Table with all required information for calculating
         theoretical yield for this reaction. A sample table showing the required
-        information is on pp.
+        information is shown below.
       </li>
+
+      <img src={cache["./Dehydration_Table.png"]} alt="Scheme" width="95%" />
     </ol>
   </div>
 );
@@ -63,19 +65,22 @@ const background = () => (
       system and the composition of the exiting mobile phase is monitored over
       time, the following would be found:
     </p>
-    <p>
-      Initially, the mobile phase would consist only of the mobile phase
-      component (gas or liquid).
-    </p>
-    <p>After a few minutes, Compound A would be detected.</p>
-    <p>
-      As time passes, Compound A would decrease in amount and then Compound B
-      would be detected.
-    </p>
-    <p>
-      At later times, Compound B would decrease in amount and finally Compound C
-      would be detected.
-    </p>
+
+    <ul>
+      <li>
+        Initially, the mobile phase would consist only of the mobile phase
+        component (gas or liquid).
+      </li>
+      <li>After a few minutes, Compound A would be detected.</li>
+      <li>
+        As time passes, Compound A would decrease in amount and then Compound B
+        would be detected.
+      </li>
+      <li>
+        At later times, Compound B would decrease in amount and finally Compound
+        C would be detected.
+      </li>
+    </ul>
     <p>
       The lapse in time from the injection of a compound to its exit from the
       column is called its “<b>retention time</b>”. Each compound has a
@@ -108,7 +113,11 @@ const background = () => (
       results of a separation such as that described for compounds A, B, and C
       is shown below.
     </p>
-    <img src={cache["./Dehydration_prelabchart.png"]} alt="Dehydration Chart" />
+    <img
+      src={cache["./Dehydration_prelabchart.png"]}
+      alt="Dehydration Chart"
+      width="80%"
+    />
     <p>
       The relative amount of each component (A, B, or C) can be determined by
       calculating the area under the peak corresponding to each component and
@@ -122,7 +131,11 @@ const background = () => (
       width of the peak at half its height. The area is the product of the
       height and the width at half-height.
     </p>
-    <img src={cache["./Dehydration_PeakMathChart.png"]} alt="Peach Math Calculation" />
+    <img
+      src={cache["./Dehydration_PeakMathChart.png"]}
+      alt="Peach Math Calculation"
+      width="80%"
+    />
     <p>The mole % of each component can be determined as follows:</p>
     <p>
       (1) Multiply the areas by the appropriate molar sensitivity factors to get
@@ -136,6 +149,7 @@ const background = () => (
     <img
       src={cache["./Dehydration_PeakPercentageChart.png"]}
       alt="Peak Percentage Chart"
+      width="80%"
     />
     <p>
       Thus, the original mixture consisted of 42.5% A, 26.1% B, and 31.3% C.
@@ -169,7 +183,7 @@ const results = () => (
   </div>
 );
 
-const study_questions = () => <div> To Do </div>;
+const study_questions = () => <div>N/A</div>;
 
 const discussion = () => (
   <div>
@@ -248,24 +262,34 @@ const waste_disposal = () => (
   </div>
 );
 
-
 const procedure = () => {
   const procedure_1 = () => (
-    <div> 
-      Procedure 1
+    <div>
+      <p>
+        <b>Week 2</b>
+      </p>
+      <ol>
+        <li>
+          <b>Infrared Spectroscopy (IR)</b>
+          <p>
+            Take the IR spectrum of your liquid. Obtain a copy of the IR
+            spectrum of the starting material from your instructor.
+          </p>
+        </li>
+        <li>
+          <b>Gas Chromatography (GC)</b>
+          <p>
+            Process your GC according to the procedure your instructor will
+            provide.
+          </p>
+        </li>
+      </ol>
     </div>
-  )
+  );
 
-  const procedure_2 = () => (
-    <div> 
-      Procedure 2
-    </div>
-  )
-
-  const procedureArray = [procedure_1(), procedure_2()]
-  return procedureArray
-
-}
+  const procedureArray = [procedure_1()];
+  return procedureArray;
+};
 
 
 const Experiment_12 = {

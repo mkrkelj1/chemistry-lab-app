@@ -32,8 +32,8 @@ const ExperimentCard = ({ card, experiment }) => {
   const cardContent = Content.get(experimentId, contentId);
   const [open, setOpen] = useState(false);
 
-
-  if (contentId == 3) {
+  // If more than 1 step in procedure... 
+  if (contentId == 3 && cardContent.length > 1) {
     return (
       <ExperimentProcedureTabs
         cardContent = {cardContent}

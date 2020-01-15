@@ -1,14 +1,10 @@
 import React from "react";
 
-
 const cache = {};
 function importAll(r) {
   r.keys().forEach(key => (cache[key] = r(key)));
 }
 importAll(require.context("../assets/images/", false, /\.png$/));
-
-
-
 
 const prelab_assignment = () => (
   <div>
@@ -62,7 +58,11 @@ const background = () => (
         C is equal to the ratio of the individual solubilities of C in pure
         solvent, <b>S</b>, and in pure water, <b>W</b>.
       </p>
-      <img src={cache["./Extractionof2Unknowns_K.png"]} alt="K Equation" />
+      <img
+        src={cache["./Extractionof2Unknowns_K.png"]}
+        alt="K Equation"
+        width="90%"
+      />
 
       <p>
         For extraction of solute from solvent A into solvent B with a given
@@ -87,7 +87,9 @@ const background = () => (
         (salts).
       </p>
       <li>
-        <b>Acids and Bases in Organic Chemistry</b>
+        <p>
+          <b>Acids and Bases in Organic Chemistry</b>
+        </p>
       </li>
       <p>
         <b>Acids:</b>
@@ -112,7 +114,9 @@ const background = () => (
       <img
         src={cache["./Extractionof2Unknowns_AcidBaseChart.png"]}
         alt="Acid-Base Chart"
+        width="70%"
       />
+
       <p>
         Of the three organic acid groups listed above, the sulfonic acids are
         the strongest, followed by the carboxylic acids, and then the phenols.
@@ -159,8 +163,14 @@ const background = () => (
         of the phase are written inside each box. Operations and/or reagents are
         written under or next to appropriate arrows. Separation of phases is
         shown by a split in the arrow, leading to two boxes. See the sample flow
-        diagram at the end of this experiment.
+        diagram below:
       </p>
+
+      <img
+        src={cache["./Extraction_Flow_Diagram.png"]}
+        alt="Sample Calculations"
+        width="100%"
+      />
     </ol>
   </div>
 );
@@ -174,6 +184,7 @@ const results = () => (
         <img
           src={cache["./Extractionof2Unknowns_StudyQuestions_2.png"]}
           alt="Sample Calculations"
+          width="60%"
         />
       </li>
       <li>
@@ -196,6 +207,7 @@ const study_questions = () => (
         <img
           src={cache["./Extractionsof2Unknowns_StudyQuestions.png"]}
           alt="Three Compounds"
+          width="60%"
         />
         <p>
           An ether solution of this mixture is extracted with sodium bicarbonate
@@ -225,7 +237,7 @@ const discussion = () => (
       Be sure to discuss the role of the base in the extractions and how the
       components are separated. Include the experimental and literature melting
       point values and the % recovery of each component.
-    </p>
+    </p>{" "}
   </div>
 );
 
@@ -241,53 +253,115 @@ const waste_disposal = () => (
         <u>Solid components in the RBFs</u>
       </li>
       <ol type="I">
-        <li>Dissolve both in minimum amount of acetone.</li>
         <li>
-          Transfer into the <u>appropriate</u> waste container (by now you know
-          whether either of the components in your
-          <u>unknown is halogenated or not).</u>
+          Dissolve both in minimum amount of acetone.
         </li>
         <li>
-          Wash with detergent and water. Then rinse it with distilled water.
+          Transfer into the appropriate waste container.
         </li>
+        <li>Wash with detergent and water. Then rinse it with distilled water.</li>
+       
       </ol>
       <li>
         <u>Weighing paper used to prepare sample for melting point</u>
       </li>
       <ol type="I">
-        <li>Brush the solid into the appropriate solid waste container.</li>
-        <li>Discard paper in regular trash.</li>
+        <li>
+         Brush the solid into the solid waste container.
+        </li>
+        <li>
+          Discard paper in the regular trash.
+        </li>
+        
       </ol>
       <li>
         <u>Melting Point Capillaries</u>
       </li>
       <ol type="I">
         <li>Discard into the plastic beaker labeled “Used Capillaries”.</li>
-        <img src={cache["./Extractionof2Unknowns_FlowChart.png"]} alt="Flow Chart" />
       </ol>
+
+      <br/>
+      <p><b>Leave the waste bottles in your hood at the end of the day.</b></p>
+
     </ol>
   </div>
 );
 
-
 const procedure = () => {
+
+
   const procedure_1 = () => (
-    <div> 
-      Procedure 1
+    <div>
+      <p>
+        <b>Week 2: Experimental Procedures</b>
+      </p>
+
+
+
+      <table border="1">
+        <tr>
+          <th>Experimental Procedure</th>
+          <th>Safety Precautions</th>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            a. Weigh the round bottom flask containing the solid neutral component.
+          </td>
+
+          <td>
+            <p></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            b. Weigh the flask containing the solid acid component.
+          </td>
+
+          <td>
+            <p></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            c. Determine the melting points of both the acid and neutral components.
+          </td>
+
+          <td>
+            <p>
+             
+            </p>
+          </td>
+        </tr>
+
+
+
+        <tr>
+          <td width="60%">
+          d. Identify your components by comparing the melting points with the melting points of the known compounds in your Table of Physical Constants. Do a mixed melting point determination, if there is any ambiguity.
+          </td>
+
+          <td>
+            <p>
+             
+            </p>
+          </td>
+        </tr>
+
+         
+      </table>
+
+     
+   
     </div>
-  )
+  );
 
-  const procedure_2 = () => (
-    <div> 
-      Procedure 2
-    </div>
-  )
-
-  const procedureArray = [procedure_1(), procedure_2()]
-  return procedureArray
-
-}
-
+  const procedureArray = [procedure_1()];
+  return procedureArray;
+};
 
 const Experiment_9 = {
   prelab_assignment: prelab_assignment(),

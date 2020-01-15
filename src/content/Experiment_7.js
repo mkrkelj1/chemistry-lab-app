@@ -64,8 +64,8 @@ const study_questions = () => (
 
 const discussion = () => (
   <div>
-    <p>Follow the procedure for writing a discussion outlined on page 8.</p>
-    <p>Page 8, for reference:</p>
+    <p>Follow the procedure for writing a discussion outlined on page 8 (referenced below).</p>
+    <hr/>
     <p>
       <strong>Discussion:</strong> In the Discussion section, provide a bit of
       background on your motivation for undertaking the experiment. Also provide
@@ -150,9 +150,6 @@ const procedure = () => {
 
   const procedure_2 = () => (
     <div>
-      <p>
-        <strong>Experimental Procedure</strong>
-      </p>
 
       <table border="1">
         <tr>

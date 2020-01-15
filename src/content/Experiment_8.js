@@ -1,14 +1,10 @@
 import React from "react";
 
-
 const cache = {};
 function importAll(r) {
   r.keys().forEach(key => (cache[key] = r(key)));
 }
 importAll(require.context("../assets/images/", false, /\.png$/));
-
-
-
 
 const prelab_assignment = () => (
   <div>
@@ -62,7 +58,11 @@ const background = () => (
         C is equal to the ratio of the individual solubilities of C in pure
         solvent, <b>S</b>, and in pure water, <b>W</b>.
       </p>
-      <img src={cache["./Extractionof2Unknowns_K.png"]} alt="K Equation" />
+      <img
+        src={cache["./Extractionof2Unknowns_K.png"]}
+        alt="K Equation"
+        width="90%"
+      />
 
       <p>
         For extraction of solute from solvent A into solvent B with a given
@@ -87,7 +87,9 @@ const background = () => (
         (salts).
       </p>
       <li>
-        <b>Acids and Bases in Organic Chemistry</b>
+        <p>
+          <b>Acids and Bases in Organic Chemistry</b>
+        </p>
       </li>
       <p>
         <b>Acids:</b>
@@ -112,8 +114,8 @@ const background = () => (
       <img
         src={cache["./Extractionof2Unknowns_AcidBaseChart.png"]}
         alt="Acid-Base Chart"
+        width="70%"
       />
-
 
       <p>
         Of the three organic acid groups listed above, the sulfonic acids are
@@ -161,8 +163,14 @@ const background = () => (
         of the phase are written inside each box. Operations and/or reagents are
         written under or next to appropriate arrows. Separation of phases is
         shown by a split in the arrow, leading to two boxes. See the sample flow
-        diagram at the end of this experiment.
+        diagram below:
       </p>
+
+      <img
+        src={cache["./Extraction_Flow_Diagram.png"]}
+        alt="Sample Calculations"
+        width="100%"
+      />
     </ol>
   </div>
 );
@@ -176,8 +184,8 @@ const results = () => (
         <img
           src={cache["./Extractionof2Unknowns_StudyQuestions_2.png"]}
           alt="Sample Calculations"
+          width="60%"
         />
-
       </li>
       <li>
         Draw a flow diagram for the extraction and separation you performed on
@@ -199,6 +207,7 @@ const study_questions = () => (
         <img
           src={cache["./Extractionsof2Unknowns_StudyQuestions.png"]}
           alt="Three Compounds"
+          width="60%"
         />
         <p>
           An ether solution of this mixture is extracted with sodium bicarbonate
@@ -285,39 +294,332 @@ const waste_disposal = () => (
         <li>Keep it in your drawer.</li>
       </ol>
       <li>
-        <ul>Glassware used only for inorganic reagents</ul>
+        <u>Glassware used only for inorganic reagents</u>
         <p>
           <b>DO NOT RINSE WITH ACETONE</b>
-        </p>
-        <p>
-          Wash with detergent and water. Then rinse it with distilled water.
+          <p>
+            Wash with detergent and water. Then rinse it with distilled water.
+          </p>
         </p>
       </li>
     </ol>
   </div>
 );
 
-
 const procedure = () => {
   const procedure_1 = () => (
-    <div> 
-      Procedure 1
+    <div>
+      <p>
+        <b>General Procedures</b>
+      </p>
+
+      <p>
+        <strong>Separatory Funnels</strong>
+      </p>
+      <p>
+        In macroscale extractions, we use a separatory funnel to separate
+        organic and aqueous layers.
+      </p>
+      <p>
+        To fill a separatory funnel, one supports it in an iron ring attached to
+        a ring stand. Before adding any liquid, <b>close the stopcock</b>. (It
+        is closed when it is perpendicular to the separatory funnel, and open
+        when parallel to it.) Just in case the stopcock may not be completely
+        closed, or it may leak a little, make it a habit to always have a
+        container, such as a beaker, under a separatory funnel. The two liquids
+        are added through the top of the separatory funnel. To allow for mixing
+        of the liquids, one-third to one-half of the separatory funnel should be
+        empty. The stopper is replaced. To mix the liquids, first secure the
+        stopper and invert the separatory funnel. Slowly open the stopcock to
+        vent any built-up pressure. Do not point it at your face or at any other
+        person. Then close the stopcock, hold the stopper firmly in, and shake
+        the funnel gently, a few times. Pause, invert, and vent again. Then
+        close the stopcock and shake some more, this time more vigorously. Open
+        the stopcock to vent again. Repeat this a few times, with longer shaking
+        intervals and harder shakes. Then replace the separatory funnel on the
+        iron ring to allow the solutions to separate. The very narrow bottom is
+        designed to allow a good separation of the two liquids.{" "}
+      </p>
+      <p>
+        <u>Precautions:</u> In a closed separatory funnel, pressure can build up
+        and blow out the stopper, unless the funnel is vented by inverting it
+        and opening the stopcock while supporting the stopper firmly against the
+        palm of your hand. Do this frequently.
+      </p>
+      <br />
+      <p>
+        <b>Layer Identification</b>
+      </p>
+      <p>
+        A common problem is determining which layer one wants. Since we almost
+        always have an aqueous layer and an organic layer, you first need to
+        know which is which. Then you have to know which layer contains the
+        solute that you want to keep. The key to the first question is to know
+        the densities of the two solutions. This is one of the reasons that we
+        make a Table of Physical Constants for each experiment. This Table will
+        tell you the densities of the two solutions. Assigned readings also come
+        in handy here. Knowing in which layer a desired compound is found comes
+        from understanding the experiment and thinking about what you are doing.
+      </p>
+      <p>
+        A good method to determine which layer is aqueous and which is organic
+        is to withdraw a few drops of one layer with a dropper and add these
+        drops to about 0.5 mL of water in a test tube. If the layer is organic,
+        the drops will be visible as a second phase; if it is aqueous, a
+        homogeneous solution will result.
+      </p>
+      <p>
+        <u>Always label</u> and <u>save</u> both layers from any extraction
+        until the end of the experiment.
+      </p>
+      <br />
+      <p>
+        <b>Drying the Extracts</b>
+      </p>
+      <p>
+        After an aqueous extraction, organic solvents always contain some
+        dissolved or suspended water, which should be removed before any
+        dissolved compounds are isolated by solvent evaporation. This process is
+        called “drying” the extracts. Drying requires two steps. As a first
+        step, we perform one more extraction in each solution. We extract the
+        water from the organic layer by shaking it with water that is saturated
+        with sodium chloride, also called <b>brine</b>. This works because of an
+        osmotic effect. In the second step, the last traces of water are removed
+        from the organic layer with a drying agent, such as calcium chloride,
+        magnesium sulfate, sodium sulfate, or molecular sieves in their
+        anhydrous forms.
+      </p>
+      <p>
+        The amount of drying agent to use is determined empirically, since the
+        amount of water present is variable. In general, enough drying agent is
+        added to just cover the bottom of a flask, which is about 1/3 to 1/2
+        filled with the solution. The mixture is swirled and examined to be sure
+        that some of the drying agent remains freely suspended in the liquid as
+        it is swirled. If the entire drying agent sticks together, indicating
+        saturation with water, more is added until swirling shows some loose
+        material. Too large an excess of drying agent is to be avoided, since
+        some dissolved material will be lost by adsorption on the surface of the
+        drying agent.
+      </p>
+      <br />
+      <p>
+        <b>Recovery of Compounds</b>
+      </p>
+      <p>
+        After the organic solutions have been dried, the drying agent is removed
+        by gravity filtration, and the solvent is evaporated, to leave the now
+        pure compound.
+      </p>
     </div>
-  )
+  );
 
   const procedure_2 = () => (
-    <div> 
-      Procedure 2
+    <div>
+      <p>
+        <b>Experimental Procedures</b>
+      </p>
+
+      <p>
+        In this experiment, you will be given an unknown that consists of a
+        mixture of two components, an acid and a neutral compound, both solids.
+        You will separate these compounds by an acid/base extraction. You will
+        identify these compounds by their melting points.
+      </p>
+
+      <p>
+        <strong>
+          IMPORTANT! Save all layers in labeled containers until end of lab
+          period!
+        </strong>
+      </p>
+
+      <table border="1">
+        <tr>
+          <th>Experimental Procedure</th>
+          <th>Safety Precautions</th>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            a. Obtain a sample of an unknown mixture. Record the number of the
+            vial.
+          </td>
+
+          <td>
+            <p>Wear lab coat, googles, and gloves while in lab.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            b. Weigh the unknown mixture in the vial on an analytical balance.
+            Transfer the contents of your vial to a 100 mL beaker. Weigh the
+            empty vial.
+          </td>
+
+          <td>
+            <p></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            c. Add 20 mL ethyl acetate to the beaker. Stir to dissolve the
+            unknown mixture. Use a glass funnel to transfer the solution of
+            unknown in ethyl acetate to a 125 mL separatory funnel on a ring.
+            Rinse the beaker with two 10 mL portions of ethyl acetate, and add
+            it to the separatory funnel.
+          </td>
+
+          <td>
+            <p>
+              Solvents are volatile, avoid exposure to and inhalation of fumes.
+              Complete all work in your hood.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <br />
+      <p>
+        <strong>Neutral Component</strong>
+      </p>
+
+      <table border="1">
+        <tr>
+          <td width="60%">
+            a. Add 10 mL aqueous 1.5 M NaOH and shake the separatory funnel.
+            Withdraw the aqueous layer. Repeat with a second 10 mL portion of
+            NaOH.
+          </td>
+
+          <td>
+            <p>
+              Bases are corrosive. Handle the sodium hydroxide carefully. Shake
+              the separatory funnel carefully. Never point the tip towards you
+              or your hood partner. The pressure build-up can cause gas/solution
+              to spurt out. When shaking, make sure to invert the funnel and
+              open the stopcock to release the pressure.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            b. Add 10 mL distilled water to the organic layer in the separatory
+            funnel. Shake the separatory funnel well. Withdraw the aqueous
+            layer. Aqueous layers from steps a and b may be combined in a beaker
+            labeled “Aqueous Layer”. Save this for later extraction of the
+            acidic component.
+          </td>
+
+          <td>
+            <p>See separatory funnel warnings in step a.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            c.
+            <ol>
+              <li>
+                Dry the organic layer in the separatory funnel by shaking with
+                15 mL saturated NaCl solution (brine).
+              </li>
+              <li>Drain the lower aqueous layer and discard.</li>
+            </ol>
+          </td>
+
+          <td>
+            <p>See separatory funnel warnings in step a.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            d.
+            <ol>
+              <li>
+                Drain the organic layer from the separatory funnel into a 125 mL
+                Erlenmeyer flask.
+              </li>
+              <li>
+                Add anhydrous Na<sub>2</sub>SO<sub>4</sub> drying agent until no
+                more clumping is observed. Set the flask aside for several
+                minutes with occasional swirling.
+              </li>
+              <li>
+                Filter this through a fluted filter paper into a tared
+                (pre-weighed) 250 mL round bottom flask. Rinse the Erlenmeyer
+                flask with 3-5 mL of ethylacetate and pour this rinse onto the
+                same filter.
+              </li>
+            </ol>
+          </td>
+
+          <td>
+            <p>Support the funnel on a ring clamped to a ring stand.</p>
+            <p>
+              Ethyl acetate is volatile. Be careful when handling. Avoid
+              exposure to and inhalation of fume.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">e. Remove the solvent using the RotoVap.</td>
+
+          <td>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+
+      <br />
+      <p>
+        <strong>Acidic Component</strong>
+      </p>
+
+      <table border="1">
+        <tr>
+          <td width="60%">
+            a. Add concentrated HCl dropwise to the beaker labeled “Aqueous
+            Layer” from steps <b>a</b> and <b>b</b> on page 53 (from Neutral
+            Component) until the solution is acidic to litmus. Then add a few
+            drops of acid in excess. Check for complete precipitation
+          </td>
+
+          <td>
+            <p>
+              Be very careful when handling concentrated acids. Be sure to wear
+              your lab coat, goggles, and gloves.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="60%">
+            b. Filter the precipitated acid by vacuum filtration. Wash the solid
+            with minimum amount of ice-cold water. Transfer to a pre-weighed 250
+            mL round bottom flask. Dry both components on the high-vac for 5
+            minutes.
+          </td>
+
+          <td>
+            <p>
+              Make sure to clamp the filter flask to a ring stand before
+              attaching the vacuum line. Place the Büchner funnel just before
+              filtering.
+            </p>
+          </td>
+        </tr>
+      </table>
     </div>
-  )
+  );
 
-  const procedureArray = [procedure_1(), procedure_2()]
-  return procedureArray
-
-}
-
-
-
+  const procedureArray = [procedure_1(), procedure_2()];
+  return procedureArray;
+};
 
 const Experiment_8 = {
   prelab_assignment: prelab_assignment(),
