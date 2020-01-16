@@ -4,6 +4,18 @@ import courses from './data/courses.json';
 import experiments from './data/experiments.json'
 import pictograms from './data/pictograms.json'
 import procedures from './data/procedures.json'
+import videos from './data/videos.json'
+
+
+
+const VideosAPI = {
+  videos: videos,
+  all: function() {
+    return this.videos;
+  }
+};
+
+
 
 // Remame this file to DataAPI
 const CardsAPI = {
@@ -154,7 +166,7 @@ const ScheduleAPI = {
 
 
 
-export { CardsAPI, CoursesAPI, ExperimentsAPI, ProceduresAPI, ChemicalsAPI, PictogramsAPI }
+export { CardsAPI, CoursesAPI, ExperimentsAPI, ProceduresAPI, ChemicalsAPI, PictogramsAPI, VideosAPI }
 
 
 

@@ -121,6 +121,15 @@ const procedure = () => {
         Review application of sample on TLC plate, vacuum filtration, and
         melting point determination from the previous experiments.
       </p>
+
+
+      <p><strong><a href="https://www.youtube.com/embed/AlShey92YHU">Thin Layer Chromatography Example</a></strong></p>
+      <p><strong><a href="https://www.youtube.com/embed/L3n2F4L2u1A">Vacuum Filtration Example</a></strong></p>
+<p><strong><a href="https://www.youtube.com/embed/uIYs844G70A">Melting Point Sample Prep</a></strong></p>
+
+<p><strong><a href="https://www.youtube.com/embed/WutSDIYzk4Q">Use of Digimelt</a></strong></p>
+
+
       <p>
         Follow the TLC plate diagram given below for applying your spots and
         monitoring the reaction.

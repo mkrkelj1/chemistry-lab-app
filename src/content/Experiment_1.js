@@ -261,6 +261,7 @@ const procedure = () => {
       <p>
         <strong>a. Filling the Melting Point Capillary Tube</strong>
       </p>
+
       <ul>
         <li>
           Points to remember: Use the spatula attached to each bottle to take
@@ -272,8 +273,18 @@ const procedure = () => {
           compared, they should be taken side by side when possible. Fill one
           m.p. capillary tube for each sample or each mixture, and store all
           tubes in slits in labeled papers.
+
+        
         </li>
+    
+<p><strong><a href="https://www.youtube.com/embed/uIYs844G70A">Melting Point Sample Prep</a></strong></p>
+
+
+
+
+        
       </ul>
+      
       <p>
         <strong>b. The Melting Point</strong>
       </p>
@@ -295,6 +306,11 @@ const procedure = () => {
           Instructions for using the Digimelt apparatus will be available in the
           laboratory.
         </li>
+
+
+
+<p><strong><a href="https://www.youtube.com/embed/WutSDIYzk4Q">Use of Digimelt</a></strong></p>
+
       </ul>
     </div>
   );

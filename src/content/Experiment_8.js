@@ -452,9 +452,13 @@ const procedure = () => {
 
         <tr>
           <td width="60%">
+          <p>
             b. Weigh the unknown mixture in the vial on an analytical balance.
             Transfer the contents of your vial to a 100 mL beaker. Weigh the
             empty vial.
+            </p>
+
+            <p><strong><a href="https://www.youtube.com/embed/TH45oeLtoC0">Use of Balance Example</a></strong></p>
           </td>
 
           <td>
@@ -547,12 +551,26 @@ const procedure = () => {
                 Add anhydrous Na<sub>2</sub>SO<sub>4</sub> drying agent until no
                 more clumping is observed. Set the flask aside for several
                 minutes with occasional swirling.
+
+                <p><strong><a href="https://youtu.be/CFhbOIs-UMA">Drying Organic Chromatography</a></strong></p>
               </li>
+
+
+
+
+
+
+
+
               <li>
                 Filter this through a fluted filter paper into a tared
                 (pre-weighed) 250 mL round bottom flask. Rinse the Erlenmeyer
                 flask with 3-5 mL of ethylacetate and pour this rinse onto the
                 same filter.
+
+
+<p><strong><a href="https://www.youtube.com/embed/T16YyNnohnU">Gravity Filtration Example</a></strong></p>
+
               </li>
             </ol>
           </td>
@@ -567,7 +585,14 @@ const procedure = () => {
         </tr>
 
         <tr>
-          <td width="60%">e. Remove the solvent using the RotoVap.</td>
+          <td width="60%">
+
+
+          <p>e. Remove the solvent using the RotoVap.</p>
+
+<p><strong><a href="https://www.youtube.com/embed/cbt3Xod63ug">Rotovap Example</a></strong></p>
+
+          </td>
 
           <td>
             <p></p>
@@ -599,10 +624,19 @@ const procedure = () => {
 
         <tr>
           <td width="60%">
+
+          <p>
             b. Filter the precipitated acid by vacuum filtration. Wash the solid
             with minimum amount of ice-cold water. Transfer to a pre-weighed 250
             mL round bottom flask. Dry both components on the high-vac for 5
-            minutes.
+            minutes.</p>
+
+            
+<p><strong><a href="https://www.youtube.com/embed/L3n2F4L2u1A">Vacuum Filtration Example</a></strong></p>
+
+
+
+
           </td>
 
           <td>

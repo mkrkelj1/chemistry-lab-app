@@ -328,6 +328,7 @@ const procedure = () => {
 
         <tr>
           <td>
+            <p>
             When the solution comes to a gentle boil, remove the beaker from the
             steam bath. Carefully set the solution aside and allow it to
             recrystallize until it cools to <strong>room temperature</strong>.
@@ -335,6 +336,10 @@ const procedure = () => {
             cooling, set up the vacuum filtration apparatus. Also, cool about 10
             mL of fresh solvent in a small beaker in an ice bath (to be used in
             the next step).
+            </p>
+      
+            <p><strong><a href="https://www.youtube.com/embed/L3n2F4L2u1A">Vacuum Filtration Example</a></strong></p>
+
           </td>
 
           <td>
@@ -405,6 +410,19 @@ const procedure = () => {
         <tr>
           <td>
           Determine the melting points of recrystallized trimyristin and the original crude trimyristin side by side, and record the values.
+
+
+
+       <br/>
+
+<p><strong><a href="https://www.youtube.com/embed/uIYs844G70A">Melting Point Sample Prep</a></strong></p>
+
+
+<p><strong><a href="https://www.youtube.com/embed/WutSDIYzk4Q">Use of Digimelt</a></strong></p>
+
+
+
+
           </td>
 
           <td>

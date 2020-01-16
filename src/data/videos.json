@@ -1,0 +1,100 @@
+[
+       {
+         "id": 1,
+         "url": "https://www.youtube.com/embed/1Lid_NYy1Rw",
+         "title": "Ventilation Hood",
+         "courseId": 1
+       },
+         {
+         "id": 2,
+         "url": "https://www.youtube.com/embed/TH45oeLtoC0",
+         "title": "Use of a Balance",
+         "courseId": 1
+       },
+         {
+         "id": 3,
+         "url": "https://www.youtube.com/embed/WutSDIYzk4Q",
+         "title": "Use of Digimelt",
+         "courseId": 1
+       },
+         {
+         "id": 4,
+         "url": "https://www.youtube.com/embed/uIYs844G70A",
+         "title": "Melting Point Sample Prep",
+         "courseId": 1
+       },
+         {
+         "id": 5,
+         "url": "https://www.youtube.com/embed/T16YyNnohnU",
+         "title": "Gravity Filtration",
+         "courseId": 1
+       },
+         {
+         "id": 6,
+         "url": "https://www.youtube.com/embed/L3n2F4L2u1A",
+         "title": "Vacuum Filtration",
+         "courseId": 1
+       },
+         {
+         "id": 7,
+         "url": "https://www.youtube.com/embed/cbt3Xod63ug",
+         "title": "Rotovap",
+         "courseId": 1
+       },
+         {
+         "id": 8,
+         "url": "https://www.youtube.com/embed/AlShey92YHU",
+         "title": "Thin Layer Chromatography",
+         "courseId": 1
+       },  {
+         "id": 9,
+         "url": "https://www.youtube.com/embed/CFhbOIs-UMA",
+         "title": "Drying Organic Chromatography",
+         "courseId": 1
+       },  {
+         "id": 10,
+         "url": "https://www.youtube.com/embed/MT1HEZ7xSiI",
+         "title": "Distillation Pt 1 (Short Path)",
+         "courseId": 1
+       },  {
+         "id": 11,
+         "url": "https://www.youtube.com/embed/OuIOW27E7Vk",
+         "title": "Distillation Pt 2 (Long Path)",
+         "courseId": 1
+       },  {
+         "id": 12,
+         "url": "https://www.youtube.com/embed/iKRM_6IVXnU",
+         "title": "Heating Methods Pt 1",
+         "courseId": 1
+       },  {
+         "id": 13,
+         "url": "https://www.youtube.com/embed/w0XodUxLwkc",
+         "title": "Heating Methods Pt 2",
+         "courseId": 1
+       },  {
+         "id": 14,
+         "url": "https://www.youtube.com/embed/4V3d4DNqFmY",
+         "title": "Preparation of GC Sample",
+         "courseId": 1
+       },  {
+         "id": 15,
+         "url": "https://www.youtube.com/embed/h3iOCE9Py6A",
+         "title": "Reflux",
+         "courseId": 1
+       }, {
+         "id": 16,
+         "url": "https://www.youtube.com/embed/Lj1T_j3rg3Q",
+         "title": "Column Chromatography Pt 1",
+         "courseId": 1
+       }, {
+         "id": 17,
+         "url": "https://www.youtube.com/embed/V3d_wKfhlXw",
+         "title": "Column Chromatography Pt 2",
+         "courseId": 1
+       }, {
+         "id": 18,
+         "url": "https://www.youtube.com/embed/GSiFEgcmiJ4",
+         "title": "Column Chromatography Pt 3",
+         "courseId": 1
+       }
+]

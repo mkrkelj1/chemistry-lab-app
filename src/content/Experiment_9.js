@@ -327,7 +327,13 @@ const procedure = () => {
 
         <tr>
           <td width="60%">
-            c. Determine the melting points of both the acid and neutral components.
+          <p>
+            c. Determine the melting points of both the acid and neutral components.</p>
+
+<p><strong><a href="https://www.youtube.com/embed/WutSDIYzk4Q">Use of Digimelt</a></strong></p>
+<p><strong><a href="https://www.youtube.com/embed/uIYs844G70A">Melting Point Sample Prep</a></strong></p>
+
+            
           </td>
 
           <td>

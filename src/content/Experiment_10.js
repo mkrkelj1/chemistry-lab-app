@@ -350,6 +350,11 @@ const procedure = () => {
       <p>
         <b>Fractional Distillation</b>
       </p>
+      <p>During this period, you will carry out the separation of 30 mL of a 1:1 mixture of ethyl acetate and 1-butanol using a fractional distillation apparatus.</p>
+
+      <p><strong><a href="https://youtu.be/iKRM_6IVXnU">Heating Methods Pt 1</a></strong></p>
+
+<p><strong><a href="https://youtu.be/OuIOW27E7Vk">Distillation Pt 2 (Long Path)</a></strong></p>
 
       <table border="1">
         <tr>
@@ -549,6 +554,7 @@ const procedure = () => {
         <tr>
           <td width="60%">
             <b>Preparation of GC Sample</b>
+            <p><strong><a href="https://youtu.be/4V3d4DNqFmY">Preparation of GC Sample Example</a></strong></p>
             <ol>
               <li>Obtain three clean and drytest tubes.</li>
               <li>Label test tubes F-1, F-2, F-3.</li>

@@ -277,7 +277,12 @@ const procedure = () => {
 
         <tr>
           <td width="60%">
-            Set up the reflux apparatus accordingto the lab demonstration.
+            <p>Set up the reflux apparatus accordingto the lab demonstration.</p>
+
+<p><strong><a href="https://youtu.be/iKRM_6IVXnU">Heating Methods Pt 1</a></strong></p>
+<p><strong><a href="https://youtu.be/w0XodUxLwkc">Heating Methods Pt 2</a></strong></p>
+<p><strong><a href="https://youtu.be/h3iOCE9Py6A">Reflux Example</a></strong></p>
+
           </td>
 
           <td>
@@ -342,13 +347,16 @@ const procedure = () => {
 
         <tr>
           <td width="60%">
+          <p>
             Carefully distill the reaction mixture (start at a Variac setting of
             70) until the residue in the flask (called the pot residue) has a
             volume of about 0.5 mL.* Lower the heat if there is excessive
             foaming or if the temperature rises rapidly after distillation has
             started. Note the appearance and boiling range of the distillate.
             Collect the distillate in a centrifuge tube cooled in a beaker of
-            ice.
+            ice.</p>
+
+            <p><strong><a href="https://youtu.be/MT1HEZ7xSiI">Distillation Pt 1 (Short Path)</a></strong></p>
           </td>
 
           <td>
@@ -368,8 +376,11 @@ const procedure = () => {
       <table border="1">
         <tr>
           <td width="60%">
+          <p>
             Dry the distillate over anhydrous potassium carbonate. Shake the
-            mixture occasionally, and let it dry for at least 5 minutes.
+            mixture occasionally, and let it dry for at least 5 minutes.</p>
+
+            <p><strong><a href="https://youtu.be/CFhbOIs-UMA">Drying Organic Chromatography</a></strong></p>
           </td>
 
           <td>
@@ -382,8 +393,14 @@ const procedure = () => {
 
         <tr>
           <td width="60%">
+          <p>
             Record the tare weight of a clean, dry vial with the cap. Be sure
             that the vial has a tight-fitting cap.
+            </p>
+
+            <p><strong><a href="https://www.youtube.com/embed/TH45oeLtoC0">Use of Balance Example</a></strong></p>
+
+            
           </td>
 
           <td>
@@ -425,7 +442,7 @@ const procedure = () => {
       <p>
         <strong>Preparation of GC Sample</strong>
       </p>
-
+<p><strong><a href="https://youtu.be/4V3d4DNqFmY">Preparation of GC Sample Example</a></strong></p>
       <table border="1">
         <tr>
           <td width="60%">

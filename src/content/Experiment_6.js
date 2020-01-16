@@ -234,10 +234,16 @@ const procedure = () => {
 
         <tr>
           <td width="60%">
+          <p>
             On an analytical balance, weigh about 0.1500 g (note the exact
             amount to four decimal places) of starting material, a mixture of
             1:1 ferrocene and acetylferrocene, in a 20 mL beaker. Dissolve the
-            sample in 1 mL of methylene chloride.
+            sample in 1 mL of methylene chloride.</p>
+
+
+<p><strong><a href="https://www.youtube.com/embed/TH45oeLtoC0">Use of Balance Example</a></strong></p>
+
+
           </td>
 
           <td>
@@ -255,6 +261,7 @@ const procedure = () => {
       <p>
         <b>TLC Analysis of the 1:1 Mixture of Ferrocene and Acetylferrocene</b>
       </p>
+      <p><strong><a href="https://www.youtube.com/embed/AlShey92YHU">Thin Layer Chromatography Example</a></strong></p>
 
       <table border="1">
         <tr>
@@ -385,6 +392,8 @@ const procedure = () => {
       <p>
         <b>Column Preparation (Packing the Column)</b>
       </p>
+
+      <p><strong><a href="https://www.youtube.com/embed/Lj1T_j3rg3Q">Column Chromatography Pt 1</a></strong></p>
 
       <table border="1">
         <tr>
@@ -534,6 +543,9 @@ const procedure = () => {
       <p>
         <b>Chromatography Procedure</b>
       </p>
+
+<p><strong><a href="https://youtu.be/V3d_wKfhlXw">Column Chromatography Pt 2</a></strong></p>
+<p><strong><a href="https://youtu.be/GSiFEgcmiJ4">Column Chromatography Pt 3</a></strong></p>
 
       <p>
         <b>A. Loading the Sample</b>
@@ -758,7 +770,10 @@ const procedure = () => {
 
         <tr>
           <td width="60%">
+          <p>
             Evaporate the solvent from both fractions using the RotoVap.
+            </p>
+            <p><strong><a href="https://www.youtube.com/embed/cbt3Xod63ug">Rotovap Example</a></strong></p>
           </td>
 
           <td>

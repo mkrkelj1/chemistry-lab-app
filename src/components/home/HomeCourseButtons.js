@@ -8,7 +8,7 @@ const HomeCourseButtons = () => (
     <Container className="p-1">
 	    <row>
 			<Col >
-				<Button variant = "primary" href="/#/courses/1" >
+				<Button variant = "primary" href="https://mkrkelj1.github.io/chemistry-lab-app/#/courses/1" >
 			 		Introduction to Organic Chemistry
 			 	</Button>
 			 </Col>

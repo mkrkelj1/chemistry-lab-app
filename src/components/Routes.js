@@ -4,7 +4,7 @@ import Courses from './course/Courses'
 import Course from './course/Course'
 import Experiments from './experiment/Experiments'
 import Experiment from './experiment/Experiment'
-
+import Videos from './videos/Videos'
 
 // Route matching
 // if /courses --> return all

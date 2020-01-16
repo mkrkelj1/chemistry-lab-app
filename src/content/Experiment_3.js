@@ -320,9 +320,13 @@ const procedure = () => {
       </tr>
 
       <tr>
-        <td width="60%">
+        <td width="60%" >
           Weigh out exactly about 4.0000 g of nutmeg powder on weighing paper.
           Record the exact weight to four decimal places.
+
+<p><strong><a href="https://www.youtube.com/embed/TH45oeLtoC0">Use of Balance Example</a></strong></p>
+
+
         </td>
 
         <td>
@@ -373,6 +377,9 @@ const procedure = () => {
         <td>
           Filter the solution in the Erlenmeyer flask by pouring it quickly and
           carefully onto the filter paper.
+
+<p><strong><a href="https://www.youtube.com/embed/T16YyNnohnU">Gravity Filtration Example</a></strong></p>
+
         </td>
 
         <td></td>
@@ -393,7 +400,14 @@ const procedure = () => {
       </tr>
 
       <tr>
-        <td>Remove diethyl ether using the rotary evaporator (RotoVap).</td>
+        <td>Remove diethyl ether using the rotary evaporator (RotoVap).
+
+<p><strong><a href="https://www.youtube.com/embed/cbt3Xod63ug">Rotovap Example</a></strong></p>
+
+</td>
+
+
+
 
         <td>
           <p>
