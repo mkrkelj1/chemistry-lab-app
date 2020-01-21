@@ -7,7 +7,7 @@ const HomeSeeAllVideosButton = () => (
   
     <Container className="p-1">
       <div style={{display: 'flex', justifyContent: 'center'}}>
-      <Button variant="secondary" href="#" block>
+      <Button variant="secondary" href="https://mkrkelj1.github.io/chemistry-lab-app/#/videos"  block>
         See All Video Tutorials
       </Button>
       </div>
