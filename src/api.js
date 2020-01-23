@@ -12,9 +12,22 @@ const VideosAPI = {
   videos: videos,
   all: function() {
     return this.videos;
+  },
+  
+  get: function(experimentIds) {
+    const filteredVideos = this.videos.filter(video => {
+      return experimentIds.indexOf(video.id) != -1 
+    });
+    return filteredVideos
+  },
+
+  filtered: function(experimentId) {
+    const filteredVideos = this.videos.filter(video => {
+      return video.experimentId.includes(experimentId);
+    });
+    return filteredVideos;
   }
 };
-
 
 
 // Remame this file to DataAPI
