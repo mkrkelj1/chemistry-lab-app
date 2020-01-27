@@ -77,9 +77,11 @@ _Sample Table for the summary of results_
 ***
 # Format for Chemistry 3328 Lab Reports
 
-[Please follow the style shown in this documents below document.](https://docs.google.com/viewer?url=https://github.com/mkrkelj1/chemistry-lab-app/raw/master/src/assets/lab_report_formatting_guidelines.pdf)
+**Please follow the style shown in the documents below.**
 
+[Lab Report Formatting Guidelines](https://docs.google.com/viewer?url=https://github.com/mkrkelj1/chemistry-lab-app/raw/master/src/assets/lab_report_formatting_guidelines.pdf)
 
+[Lab Report Template](https://docs.google.com/viewer?url=https://github.com/mkrkelj1/chemistry-lab-app/raw/master/src/assets/lab_report_template.pdf)
 
 
 
