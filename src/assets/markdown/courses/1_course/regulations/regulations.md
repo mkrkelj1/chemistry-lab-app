@@ -52,6 +52,9 @@ should be closed after using the balance. Please cooperate.
 3. If you spill acids, bases, or other corrosive chemicals, inform the instructor immediately.
 
 ##### G. Use of Reagents
+
+- [Please watch this video on how to properly use the ventilation hood.](https://www.youtube.com/embed/1Lid_NYy1Rw)
+
 1. USE REAGENT BOTTLES ONLY IN THE AREA WHERE THEY ARE
 PROVIDED. Solid reagents for this course will be set out on shelves at
 the front of the room, and occasionally in the hood. Corrosive liquid
@@ -79,3 +82,8 @@ store sponges in your drawer.
 expensive. They should always be put away clean and with stoppers out.
 3. The lab fee covers normal breakage. However, certain pieces of
 apparatus are expensive, and excess breakage will be billed to you.
+***
+## GHS Information Sheet
+
+[Please see this link for GHS pictogram information and descriptions.](https://docs.google.com/viewer?url=https://github.com/mkrkelj1/chemistry-lab-app/raw/master/src/assets/ghs_symbols_information_sheet.pdf)
+
