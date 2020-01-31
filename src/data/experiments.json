@@ -22,7 +22,7 @@
     "endDate": "2020-02-07",
     "name": "Report Writing Workshop, Rotovap and Vacuum Filtration Demonstration and Practice",
     "chemical_ids": [],
-    "videoIds": [],
+    "videoIds": [2,6,7],
     "experimentDir": "2_experiment",
     "background_filename": "",
     "discussion_filename": "",
