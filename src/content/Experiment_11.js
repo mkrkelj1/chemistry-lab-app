@@ -5,6 +5,7 @@ function importAll(r) {
   r.keys().forEach(key => (cache[key] = r(key)));
 }
 importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
 
 const prelab_assignment = () => (
   <div>
@@ -159,6 +160,11 @@ const background = () => (
 
 const results = () => (
   <div>
+  
+<p>
+   <strong><a href={cache["./11_dehydration_coversheet.docx"]}>Link to download report coversheet</a></strong>
+</p>
+
     <ol>
       <li>
         Calculate the percent yield, assuming that the distillate is 100 percent

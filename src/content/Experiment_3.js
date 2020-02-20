@@ -5,6 +5,7 @@ function importAll(r) {
   r.keys().forEach(key => (cache[key] = r(key)));
 }
 importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
 
 const prelab_assignment = () => (
   <div>
@@ -139,6 +140,13 @@ const background = () => (
 
 const results = () => (
   <div>
+  <p>
+   <strong><a href={cache["./3_extraction_week_1_coversheet.docx"]}>Link to download report coversheet</a></strong>
+</p>
+
+
+
+
     <ol>
       <li>
         Calculate the % Recovery of pure trimyristin based on the amount of

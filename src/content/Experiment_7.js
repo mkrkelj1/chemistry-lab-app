@@ -5,6 +5,7 @@ function importAll(r) {
   r.keys().forEach(key => (cache[key] = r(key)));
 }
 importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
 
 const prelab_assignment = () => (
   <div>
@@ -38,7 +39,10 @@ const background = () => (
   </div>
 );
 
-const results = () => <div> N/A </div>;
+const results = () => <div> <p>
+   <strong><a href={cache["./7_isomerization_coversheet.docx"]}>Link to download report coversheet</a></strong>
+</p>
+ </div>;
 
 const study_questions = () => (
   <div>

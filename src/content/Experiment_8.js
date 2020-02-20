@@ -5,6 +5,7 @@ function importAll(r) {
   r.keys().forEach(key => (cache[key] = r(key)));
 }
 importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
 
 const prelab_assignment = () => (
   <div>

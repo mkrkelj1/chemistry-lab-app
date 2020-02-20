@@ -4,7 +4,11 @@ const cache = {};
 function importAll(r) {
   r.keys().forEach(key => (cache[key] = r(key)));
 }
+
 importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
+        
+
 
 const prelab_assignment = () => (
   <div>
@@ -16,6 +20,11 @@ const prelab_assignment = () => (
           substances: (This table should follow the experiment title on the
           first left-hand page of the experiment.)
         </p>
+
+
+
+
+
 
         <ol>
           <li>Benzoic acid</li>
@@ -180,7 +189,10 @@ const background = () => (
 
 const results = () => (
   <div>
-    {" "}
+      <p>
+    <strong><a href={cache["./1_melting_points_coversheet.docx"]}>Link to download report coversheet</a></strong>
+  </p>
+
     <p>
       <strong>Report your Results in a tabular format.</strong>
     </p>
@@ -212,7 +224,12 @@ const study_questions = () => (
 );
 const discussion = () => (
   <div>
-    {" "}
+    
+   
+
+
+
+
     <p>
       Follow the procedure for writing a discussion outlined on page 8. Also, be
       sure to include the experimental and literature melting point values for
