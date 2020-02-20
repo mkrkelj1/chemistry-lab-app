@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/chemistry-lab-app/precache-manifest.e2c9799bdc595547fed246a3c59f4014.js"
+  "/chemistry-lab-app/precache-manifest.6acd9eb703c1adbf543209a5b6bf65b0.js"
 );
 
 self.addEventListener('message', (event) => {

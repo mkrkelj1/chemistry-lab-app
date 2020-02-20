@@ -1,27 +1,59 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3e46c9275d5854a6a8ce9e84b3f6a445",
+    "revision": "9225281946c786e3b11ebe66298c5c31",
     "url": "/chemistry-lab-app/index.html"
   },
   {
-    "revision": "da6ed5e08df548b3444a",
+    "revision": "ed72ea194ac8c50be1f2",
     "url": "/chemistry-lab-app/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "6751dca1c19daf82f0c6",
+    "revision": "48f1b1c8415e0aa0c475",
     "url": "/chemistry-lab-app/static/css/main.e847d471.chunk.css"
   },
   {
-    "revision": "da6ed5e08df548b3444a",
-    "url": "/chemistry-lab-app/static/js/2.b7ebaa50.chunk.js"
+    "revision": "ed72ea194ac8c50be1f2",
+    "url": "/chemistry-lab-app/static/js/2.7169d68b.chunk.js"
   },
   {
-    "revision": "6751dca1c19daf82f0c6",
-    "url": "/chemistry-lab-app/static/js/main.08d18096.chunk.js"
+    "revision": "48f1b1c8415e0aa0c475",
+    "url": "/chemistry-lab-app/static/js/main.285a32e2.chunk.js"
   },
   {
     "revision": "f2991d8b8eea07680d14",
     "url": "/chemistry-lab-app/static/js/runtime~main.e9f9f155.js"
+  },
+  {
+    "revision": "02b3a9476c5a7ba16f7b3c66df7ee7d8",
+    "url": "/chemistry-lab-app/static/media/10_distillation_coversheet.02b3a947.docx"
+  },
+  {
+    "revision": "55ce0eb03941fa840fa5b44244a08e2d",
+    "url": "/chemistry-lab-app/static/media/11_dehydration_coversheet.55ce0eb0.docx"
+  },
+  {
+    "revision": "aa996dcb8fbcece8f056733468735551",
+    "url": "/chemistry-lab-app/static/media/1_melting_points_coversheet.aa996dcb.docx"
+  },
+  {
+    "revision": "107f89f8292c90800644f9ea36782dc5",
+    "url": "/chemistry-lab-app/static/media/3_extraction_week_1_coversheet.107f89f8.docx"
+  },
+  {
+    "revision": "fe04cf7359f15befae760edc1d245402",
+    "url": "/chemistry-lab-app/static/media/4_extraction_week_2_coversheet.fe04cf73.docx"
+  },
+  {
+    "revision": "f89ee6cdbb72d943ca028f253a4b77ff",
+    "url": "/chemistry-lab-app/static/media/6_column_chromatography_coversheet.f89ee6cd.docx"
+  },
+  {
+    "revision": "f2ad0eba09f23295a0d84fd33e16741f",
+    "url": "/chemistry-lab-app/static/media/7_isomerization_coversheet.f2ad0eba.docx"
+  },
+  {
+    "revision": "ca45df5673ef9b30f2ba973cdb7e8711",
+    "url": "/chemistry-lab-app/static/media/9_extraction_two_unknown_coversheet.ca45df56.docx"
   },
   {
     "revision": "ba4d6988a2780ecdf22b60e24baa6070",
@@ -50,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5d095acbdcf226102151b7d425fac56d",
     "url": "/chemistry-lab-app/static/media/Distillation_Temp.5d095acb.png"
+  },
+  {
+    "revision": "28bf4b55125a8f700da6f6ebb9c44457",
+    "url": "/chemistry-lab-app/static/media/Experiment 2.28bf4b55.docx"
   },
   {
     "revision": "510e7006becc23390c64830df7b7e8a1",
