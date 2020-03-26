@@ -99,5 +99,190 @@
          "url": "https://www.youtube.com/embed/GSiFEgcmiJ4",
          "title": "Column Chromatography Pt 3",
          "courseId": 1
-       }
+       },
+       {
+        "id": 19,
+        "title": "Extraction Part 1",
+        "url": "https://www.youtube.com/watch?v=CqEsJZciWaw&list=PLA90BD1FB55D7B7A2",
+        "courseId": 1
+      },
+      {
+        "id": 20,
+        "title": "Extraction Part 2",
+        "url": "https://www.youtube.com/watch?v=FdfA16UraiI&list=PLA90BD1FB55D7B7A2&index=2",
+        "courseId": 1
+      },
+      {
+        "id": 21,
+        "title": "Extraction Part 3",
+        "url": "https://www.youtube.com/watch?v=Amo6wvcL24Q&list=PLA90BD1FB55D7B7A2&index=3",
+        "courseId": 1
+      },
+      {
+        "id": 22,
+        "title": "Extraction Part 4",
+        "url": "https://www.youtube.com/watch?v=2QyZdbD3biM&list=PLA90BD1FB55D7B7A2&index=4",
+        "courseId": 1
+      },
+      {
+        "id": 23,
+        "title": "Extraction Part 5",
+        "url": "https://www.youtube.com/watch?v=R3zcoFjbnvc&list=PLA90BD1FB55D7B7A2&index=5",
+        "courseId": 1
+      },
+      {
+        "id": 24,
+        "title": "Extraction Part 6",
+        "url": "https://www.youtube.com/watch?v=HIlT_jbSM0U&list=PLA90BD1FB55D7B7A2&index=6",
+        "courseId": 1
+      },
+      {
+        "id": 25,
+        "title": "Extraction Part 7",
+        "url": "https://www.youtube.com/watch?v=KqpAIXquc2o&list=PLA90BD1FB55D7B7A2&index=7",
+        "courseId": 1
+      },
+      {
+        "id": 26,
+        "title": "Extraction Part 8",
+        "url": "https://www.youtube.com/watch?v=97zqmHZ436o&list=PLA90BD1FB55D7B7A2&index=8",
+        "courseId": 1
+      },
+      {
+        "id": 27,
+        "title": "Extraction Part 9",
+        "url": "https://www.youtube.com/watch?v=Ko_gV3P5j0k&list=PLA90BD1FB55D7B7A2&index=9",
+        "courseId": 1
+      },
+      {
+        "id": 28,
+        "title": "Extraction Part 10",
+        "url": "https://www.youtube.com/watch?v=c8-ZCm5-paE&list=PLA90BD1FB55D7B7A2&index=10",
+        "courseId": 1
+      },
+      {
+        "id": 29,
+        "title": "Extraction Part 11",
+        "url": "https://www.youtube.com/watch?v=1YvOYkoQgjI&list=PLA90BD1FB55D7B7A2&index=11",
+        "courseId": 1
+      },
+      {
+        "id": 30,
+        "title": "Extraction Part 12",
+        "url": "https://www.youtube.com/watch?v=0Cfs-ZvHcrM&list=PLA90BD1FB55D7B7A2&index=12",
+        "courseId": 1
+      },
+      {
+        "id": 31,
+        "title": "Distillation Part 1",
+        "url": "https://www.youtube.com/watch?v=UA5dd-QmB8U&list=PL43B79AE6807A3F1E&index=1",
+        "courseId": 1
+      },
+      {
+        "id": 32,
+        "title": "Distillation Part 2",
+        "url": "https://www.youtube.com/watch?v=rimTOE_wKYg&list=PL43B79AE6807A3F1E&index=2",
+        "courseId": 1
+      },
+      {
+        "id": 33,
+        "title": "Distillation Part 3",
+        "url": "https://www.youtube.com/watch?v=ElhwixtgsN0&list=PL43B79AE6807A3F1E&index=3",
+        "courseId": 1
+      },
+      {
+        "id": 34,
+        "title": "Distillation Part 4",
+        "url": "https://www.youtube.com/watch?v=X9jv1ZQsUiQ&list=PL43B79AE6807A3F1E&index=4",
+        "courseId": 1
+      },
+      {
+        "id": 35,
+        "title": "Distillation Part 5",
+        "url": "https://www.youtube.com/watch?v=IcsfMq8kXd0&list=PL43B79AE6807A3F1E&index=5",
+        "courseId": 1
+      },
+      {
+        "id": 36,
+        "title": "Distillation Part 6",
+        "url": "https://www.youtube.com/watch?v=2JEMO0KP-pI&list=PL43B79AE6807A3F1E&index=6",
+        "courseId": 1
+      },
+      {
+        "id": 37,
+        "title": "Distillation Part 7",
+        "url": "https://www.youtube.com/watch?v=en3Ad500q5Y&list=PL43B79AE6807A3F1E&index=7",
+        "courseId": 1
+      },
+      {
+        "id": 38,
+        "title": "Distillation Part 8",
+        "url": "https://www.youtube.com/watch?v=OeYJUEDQSVk&list=PL43B79AE6807A3F1E&index=8",
+        "courseId": 1
+      },
+      {
+        "id": 39,
+        "title": "Dehydration Part 1",
+        "url": "https://www.youtube.com/watch?v=FS6716Jk8UA&list=PL3AE8739DCF81D646&index=1",
+        "courseId": 1
+      },
+      {
+        "id": 40,
+        "title": "Dehydration Part 2",
+        "url": "https://www.youtube.com/watch?v=qd-EXeHN4fw&list=PL3AE8739DCF81D646&index=2",
+        "courseId": 1
+      },
+      {
+        "id": 41,
+        "title": "Dehydration Part 3",
+        "url": "https://www.youtube.com/watch?v=CETQvyDDlyg&list=PL3AE8739DCF81D646&index=3",
+        "courseId": 1
+      },
+      {
+        "id": 42,
+        "title": "Dehydration Part 4",
+        "url": "https://www.youtube.com/watch?v=YrtyJfKsnJ4&list=PL3AE8739DCF81D646&index=4",
+        "courseId": 1
+      },
+      {
+        "id": 43,
+        "title": "Dehydration Part 5",
+        "url": "https://www.youtube.com/watch?v=vYPf7csiG-c&list=PL3AE8739DCF81D646&index=5",
+        "courseId": 1
+      },
+      {
+        "id": 44,
+        "title": "Dehydration Part 6",
+        "url": "https://www.youtube.com/watch?v=40ceXBWH768&list=PL3AE8739DCF81D646&index=6",
+        "courseId": 1
+      },
+      {
+        "id": 45,
+        "title": "Dehydration Part 7",
+        "url": "https://www.youtube.com/watch?v=8tY9tPNvazQ&list=PL3AE8739DCF81D646&index=7",
+        "courseId": 1
+      },
+      {
+        "id": 46,
+        "title": "IR Spectroscopy Lecture",
+        "url": "https://www.youtube.com/watch?v=mZ-U7Qpkz8Y",
+        "courseId": 1
+      },
+      {
+        "id": 47,
+        "title": "IR Spectroscopy Demonstration",
+        "url": "https://www.youtube.com/watch?v=-ryC63zdKSM",
+        "courseId": 1
+      }
+
+
+
+
+
+
+
+
+
+
+
 ]

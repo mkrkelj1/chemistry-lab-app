@@ -11,7 +11,7 @@ import Experiment_9 from "./content/Experiment_9";
 import Experiment_10 from "./content/Experiment_10";
 import Experiment_11 from "./content/Experiment_11";
 import Experiment_12 from "./content/Experiment_12";
-
+import Experiment_13 from "./content/Experiment_13";
 
 const contentMap = {
   1: "prelab_assignment",
@@ -27,7 +27,8 @@ const experimentMap = {
   1: Experiment_1, 2: Experiment_2, 3: Experiment_3,
   4: Experiment_4, 5: Experiment_5, 6: Experiment_6,
   7: Experiment_7, 8: Experiment_8, 9: Experiment_9,
-  10: Experiment_10, 11: Experiment_11, 12: Experiment_12
+  10: Experiment_10, 11: Experiment_11, 12: Experiment_12,
+  13: Experiment_13
 };
 
 const Content = {
