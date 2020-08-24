@@ -7,7 +7,6 @@ import procedures from './data/procedures.json'
 import videos from './data/videos.json'
 
 
-
 const VideosAPI = {
   videos: videos,
   all: function() {

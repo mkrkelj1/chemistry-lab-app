@@ -12,6 +12,19 @@ import Experiment_10 from "./content/Experiment_10";
 import Experiment_11 from "./content/Experiment_11";
 import Experiment_12 from "./content/Experiment_12";
 import Experiment_13 from "./content/Experiment_13";
+import Experiment_14 from "./content/Experiment_14";
+import Experiment_15 from "./content/Experiment_15";
+import Experiment_16 from "./content/Experiment_16";
+import Experiment_17 from "./content/Experiment_17";
+import Experiment_18 from "./content/Experiment_18";
+import Experiment_19 from "./content/Experiment_19";
+import Experiment_20 from "./content/Experiment_20";
+import Experiment_21 from "./content/Experiment_21";
+import Experiment_22 from "./content/Experiment_22";
+import Experiment_23 from "./content/Experiment_23";
+import Experiment_24 from "./content/Experiment_24";
+import Experiment_25 from "./content/Experiment_25";
+
 
 const contentMap = {
   1: "prelab_assignment",
@@ -28,7 +41,11 @@ const experimentMap = {
   4: Experiment_4, 5: Experiment_5, 6: Experiment_6,
   7: Experiment_7, 8: Experiment_8, 9: Experiment_9,
   10: Experiment_10, 11: Experiment_11, 12: Experiment_12,
-  13: Experiment_13
+  13: Experiment_13, 
+  14: Experiment_14, 15: Experiment_15, 16: Experiment_16,
+  17: Experiment_17, 18: Experiment_18, 19: Experiment_19,
+  20: Experiment_20, 21: Experiment_21, 22: Experiment_22,
+  23: Experiment_23, 24: Experiment_24, 25: Experiment_25
 };
 
 const Content = {

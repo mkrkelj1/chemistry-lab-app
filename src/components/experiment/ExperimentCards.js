@@ -7,8 +7,6 @@ import ExperimentChemicalsCard from "./ExperimentChemicalsCard";
 import ExperimentVideosCard from "./ExperimentVideosCard";
 
 
-
-
 // Exports: Experiment.js
 
 const ExperimentCards = ({experiment}) => {

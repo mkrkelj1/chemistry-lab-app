@@ -206,20 +206,127 @@
     "study_questions_filename": "",
     "waste_disposal_filename": ""
   },
+ 
+
+
   {
     "experimentID": 14,
     "courseID": 2,
-    "startDate": "2020-01-01",
-    "endDate": "2020-02-01",
-    "name": "Spectroscopy Experiment 1",
-    "chemical_ids": [1,2,3],
-    "videoIds": [4,3],
-    "experimentDir": "13_experiment",
-    "background_filename": "",
-    "discussion_filename": "",
-    "prelab_assignment_filename": "",
-    "results_filename": "",
-    "study_questions_filename": "",
-    "waste_disposal_filename": ""
+    "startDate": "2020-09-09",
+    "endDate": "2020-09-09",
+    "name": "Organizational Meeting Computational Lab Chem Draw and SciFinder Workshops",
+    "experimentDir": "14_experiment",
+    "chemical_ids": [],
+    "videoIds": [54, 55, 1]
+  },
+  {
+    "experimentID": 15,
+    "courseID": 2,
+    "startDate": "2020-09-14",
+    "endDate": "2020-09-14",
+    "name": "Computational Lab Chem Draw and SciFinder Workshops",
+    "experimentDir": "15_experiment",
+    "chemical_ids": [],
+    "videoIds": [54,55, 1]
+  },
+  {
+    "experimentID": 16,
+    "courseID": 2,
+    "startDate": "2020-09-16",
+    "endDate": "2020-09-21",
+    "name": "Synthesis of p-Nitroaniline",
+    "experimentDir": "16_experiment",
+    "chemical_ids": [19, 21, 42, 43, 47, 48, 49, 50, 51, 52],
+    "videoIds": [48, 13, 15, 67, 6, 8,  4, 3,  64]
+  },
+  {
+    "experimentID": 17,
+    "courseID": 2,
+    "startDate": "2020-09-23",
+    "endDate": "2020-09-28",
+    "name": "NMR Workshop",
+    "experimentDir": "17_experiment",
+    "chemical_ids": [],
+    "videoIds": [2,66]
+  },
+  {
+    "experimentID": 18,
+    "courseID": 2,
+    "startDate": "2020-09-30",
+    "endDate": "2020-10-05",
+    "name": "Synthesis of Ferrocene and Acetylferrocene",
+    "experimentDir": "18_experiment",
+    "chemical_ids": [11, 12, 17, 18, 19, 21, 23, 25, 30, 32, 53, 54, 55, 56, 57, 58, 59, 60, 63],
+    "videoIds": [49, 50, 56, 57, 58, 2, 6, 16, 17, 18, 15, 8, 7, 4, 3,  65]
+  },
+  {
+    "experimentID": 19,
+    "courseID": 2,
+    "startDate": "2020-10-07",
+    "endDate": "2020-10-12",
+    "name": "Mass Spectrometry Workshop Synthesis of a Fragrant Ester from  Carboxylic Acid and Alcohol",
+    "experimentDir": "19_experiment",
+    "chemical_ids": [2, 21, 23, 42, 43, 44, 45, 46],
+    "videoIds": [51, 12, 15, 60, 63, 64, 65, 14]
+  },
+  {
+    "experimentID": 20,
+    "courseID": 2,
+    "startDate": "2020-10-14",
+    "endDate": "2020-10-19",
+    "name": "Carbonyl Chemistry: Aldol Condensation Reaction, Keto-Enol Equilibrium",
+    "experimentDir": "20_experiment",
+    "chemical_ids": [10, 19, 21, 30, 31, 37, 83],
+    "videoIds": [61, 62, 2, 60, 7, 66]
+  },
+  {
+    "experimentID": 21,
+    "courseID": 2,
+    "startDate": "2020-10-26",
+    "endDate": "2020-10-28",
+    "name": "Grignard Reaction: Synthesis of Alcohols from Carbonyl Compounds",
+    "experimentDir": "21_experiment",
+    "chemical_ids": [17, 19, 26, 29, 44, 49, 61, 62, 64, 65, 66, 68, 69, 70, 71, 72, 73, 74],
+    "videoIds": [52, 53, 2, 56, 15, 60, 5, 7, 66, 4, 3, 6, 65, 14]
+  },
+  {
+    "experimentID": 22,
+    "courseID": 2,
+    "startDate": "2020-11-04",
+    "endDate": "2020-11-09",
+    "name": "Reduction of an Optically Active Natural Product",
+    "experimentDir": "22_experiment",
+    "chemical_ids": [2, 10, 20, 49, 75, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93],
+    "videoIds": [6, 66, 59, 68, 69, 70]
+  },
+  {
+    "experimentID": 23,
+    "courseID": 2,
+    "startDate": "2020-11-11",
+    "endDate": "2020-11-16",
+    "name": "Group Presentations",
+    "experimentDir": "23_experiment",
+    "chemical_ids": [],
+    "videoIds": []
+  },
+  {
+    "experimentID": 24,
+    "courseID": 2,
+    "startDate": "2020-11-18",
+    "endDate": "2020-11-23",
+    "name": "Group Presentations",
+    "experimentDir": "24_experiment",
+    "chemical_ids": [],
+    "videoIds": []
+  },
+  {
+    "experimentID": 25,
+    "courseID": 2,
+    "startDate": "2020-11-30",
+    "endDate": "2020-12-02",
+    "name": "Group Presentations",
+    "experimentDir": "25_experiment",
+    "chemical_ids": [],
+    "videoIds": []
   }
 ]
