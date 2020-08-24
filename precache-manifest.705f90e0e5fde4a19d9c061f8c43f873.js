@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "586817ac2f11367ef41d9cc90bfe5a3c",
+    "revision": "6c5ad2baaa6d0ff6eb3ddcbb36d28a32",
     "url": "/chemistry-lab-app/index.html"
   },
   {
-    "revision": "ed72ea194ac8c50be1f2",
+    "revision": "82312add2a22d4583532",
     "url": "/chemistry-lab-app/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "52da65436ad1171ba2aa",
+    "revision": "15ef0bd586b7eca6ee4f",
     "url": "/chemistry-lab-app/static/css/main.e847d471.chunk.css"
   },
   {
-    "revision": "ed72ea194ac8c50be1f2",
-    "url": "/chemistry-lab-app/static/js/2.7169d68b.chunk.js"
+    "revision": "82312add2a22d4583532",
+    "url": "/chemistry-lab-app/static/js/2.72edf63f.chunk.js"
   },
   {
-    "revision": "52da65436ad1171ba2aa",
-    "url": "/chemistry-lab-app/static/js/main.794a1f4f.chunk.js"
+    "revision": "15ef0bd586b7eca6ee4f",
+    "url": "/chemistry-lab-app/static/js/main.0ef6f654.chunk.js"
   },
   {
     "revision": "f2991d8b8eea07680d14",
