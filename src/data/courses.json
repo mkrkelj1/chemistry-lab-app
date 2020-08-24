@@ -1,41 +1,80 @@
-[ 
-   { 
+[
+   {
       "id":1,
       "name":"Introduction to Organic Chemistry Laboratory",
-      "coordinators":[ 
-         { 
+      "coordinators":[
+         {
             "name":"Dr. Meena Rao",
             "office":"Altschul 715",
             "email":"mrao@barnard.edu"
          },
-         { 
+         {
             "name":"Dr. Jean Vadakkan",
             "office":"Altschul 813 C",
             "email":"jvadakka@barnard.edu"
          }
       ],
-      "instructors":[ 
+      "instructors":[
          "Craig Allen",
          "Judith Kamm",
          "Meena Rao",
          "Jean Vadakkan"
       ],
-      "help_room": [{"location": "Altschul 806", "hours": "Monday – Friday: 12:00 – 1:00 P.M."}],
-      "text_and_materials":[ 
+      "help_room":[
+         {
+            "location":"Altschul 806",
+            "hours":"Monday – Friday: 12:00 – 1:00 P.M."
+         }
+      ],
+      "text_and_materials":[
          "Chemistry 3328 Introductory Organic Chemistry Laboratory Manual (Spring 2019 Edition)",
          "Laboratory Notebook with duplicate pages",
          "Molecular Models",
          "Calculator",
          "Flash Drive"
       ],
-      "optional_texts":[ 
+      "optional_texts":[
          "Most, C.F., Experimental Organic Chemistry (Wiley, 1988)",
          "Pavia,D.L.,Lampman,G.M.,andKriz,G.S.,Introduction to Organic Laboratory Techniques, 2nd ed. (Saunders, 1982)",
          "Williamson, K.L., Microscale and Macroscale Organic Experiments, 2nd ed. (D.C. Heath, 1994)",
          "Zubrick, J. W., The Organic Chem Lab Survival Manual, 9th ed. (Wiley,2014)"
       ]
+   },
+   {
+      "id":2,
+      "name":"Modern Techniques Of Organic Chemistry Laboratory",
+      "coordinators":[
+         {
+            "name":"Dr. Meena Rao",
+            "office":"Altschul 715",
+            "email":"mrao@barnard.edu"
+         }
+      ],
+      "instructors":[
+         "Craig Allen",
+         "Grace Lee",
+         "Meena Rao"
+      ],
+      "help_room":[
+         {
+            "location":"Zoom Office Hours",
+            "hours":"TBA"
+         }
+      ],
+      "text_and_materials":[
+         "CHEM BC 3333x Modern Techniques Of Organic Chemistry Laboratory Manual (Fall 2020 Electronic Edition)",
+         "Laboratory Notebook",
+         "Molecular Models",
+         "Computer programs: ChemDraw (free version available via Columbia using your UNI), MestReNova"
+      ],
+      "optional_texts":[
+         "Most, C. F. Experimental Organic Chemistry, John Wiley &amp; Sons, New York, 1988.",
+         "Williamson, K. L. Macroscale and Microscale Organic Experiments, D.C. Heath and Company, Lexington, MA, 1989.",
+         "Kemp, W. Organic Spectroscopy, 3rd ed., W. H. Freeman, New York, 1991.",
+         "Zubrick, J. W. The Organic Chemistry Lab Survival Manual, 6th ed., John Wiley &amp; Sons, New York, 2003.",
+         "Pavia, D. L.; Lampman, G. M.; Kriz, G. S., Jr. Introduction to Organic Laboratory Techniques, 3rd ed., Saunders College Publishing, New York, 1988.",
+         "Silverstein, R. M.; Webster, F. X. Spectrometric Identification of Organic Compounds, 6th ed., John Wiley &amp; Sons, New York, 1998.",
+         "Shriner, R. L.; Hermann, C. K. F.; Morrill, T. C.; Curtin, D. Y.; Fuson, R. C. The Systematic Identification of Organic Compounds, 7th ed., John Wiley &amp; Sons, New York, 1998."
+      ]
    }
 ]
-
-
-
