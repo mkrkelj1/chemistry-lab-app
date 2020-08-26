@@ -12,7 +12,13 @@ const procedure = () => {
 const results = () => <h2> N/A </h2>;
 const study_questions = () => <h2> N/A </h2>;
 const discussion = () => <h2> N/A </h2>;
-const waste_disposal = () => <h2> N/A </h2>;
+const waste_disposal = () => (
+  <div>
+    <p>
+      <em>Note</em>: No in-person laboratory work in Fall 2020.{" "}
+    </p>
+  </div>
+);
 
 const Experiment_22 = {
   prelab_assignment: prelab_assignment(),
