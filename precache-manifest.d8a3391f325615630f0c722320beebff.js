@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04a55d70d18bdd3f408b26bcd61c7bb5",
+    "revision": "c5c3473a364c5bf3f2469be90047efc2",
     "url": "/chemistry-lab-app/index.html"
   },
   {
-    "revision": "82312add2a22d4583532",
+    "revision": "87fd99c1acb4d418746a",
     "url": "/chemistry-lab-app/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "bdb7225e483d40c90cc1",
+    "revision": "d78146bdec2460f95a22",
     "url": "/chemistry-lab-app/static/css/main.e847d471.chunk.css"
   },
   {
-    "revision": "82312add2a22d4583532",
-    "url": "/chemistry-lab-app/static/js/2.72edf63f.chunk.js"
+    "revision": "87fd99c1acb4d418746a",
+    "url": "/chemistry-lab-app/static/js/2.b57be71d.chunk.js"
   },
   {
-    "revision": "bdb7225e483d40c90cc1",
-    "url": "/chemistry-lab-app/static/js/main.a38709f9.chunk.js"
+    "revision": "d78146bdec2460f95a22",
+    "url": "/chemistry-lab-app/static/js/main.30a0dfa0.chunk.js"
   },
   {
     "revision": "f2991d8b8eea07680d14",
@@ -32,8 +32,116 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chemistry-lab-app/static/media/11_dehydration_coversheet.55ce0eb0.docx"
   },
   {
+    "revision": "49962a7d20b9f58e18dbaa55025272ab",
+    "url": "/chemistry-lab-app/static/media/16_image10.49962a7d.png"
+  },
+  {
+    "revision": "893ba2dbcf26d9c3c53eab58f6923335",
+    "url": "/chemistry-lab-app/static/media/16_image4.893ba2db.png"
+  },
+  {
+    "revision": "2f6cd7965d0d66c87524c042d758245e",
+    "url": "/chemistry-lab-app/static/media/16_image5.2f6cd796.png"
+  },
+  {
+    "revision": "2b51639aca0a91be68e19a1a2ad5f36a",
+    "url": "/chemistry-lab-app/static/media/16_image8.2b51639a.png"
+  },
+  {
+    "revision": "f3cd6a4fc4adf3f11cffa07d1113ffd4",
+    "url": "/chemistry-lab-app/static/media/16_nitroaniline_coversheet.f3cd6a4f.docx"
+  },
+  {
+    "revision": "f049e98b3d0e4719f03e6a9b3f3248af",
+    "url": "/chemistry-lab-app/static/media/18_ferrocene_coversheet.f049e98b.docx"
+  },
+  {
+    "revision": "7e3af83df2613cdd84d371fe49519330",
+    "url": "/chemistry-lab-app/static/media/18_image1.7e3af83d.png"
+  },
+  {
+    "revision": "bfe1255e95f39b0d9d1e809775dec8ce",
+    "url": "/chemistry-lab-app/static/media/18_image10.bfe1255e.png"
+  },
+  {
+    "revision": "c91b43de5d84a560a2f3c384382232f0",
+    "url": "/chemistry-lab-app/static/media/18_image6.c91b43de.png"
+  },
+  {
+    "revision": "3045eb0ce2e9cad1de3492777f6331f6",
+    "url": "/chemistry-lab-app/static/media/18_image9.3045eb0c.png"
+  },
+  {
+    "revision": "5972ec51f577ba4021568f1a90efc974",
+    "url": "/chemistry-lab-app/static/media/19_esterification_cover_sheet.5972ec51.docx"
+  },
+  {
+    "revision": "e4decb35e476587d54c4c4a976357eec",
+    "url": "/chemistry-lab-app/static/media/19_image10.e4decb35.png"
+  },
+  {
+    "revision": "27ccc05027afc81a72d840d5f601f677",
+    "url": "/chemistry-lab-app/static/media/19_image11.27ccc050.png"
+  },
+  {
+    "revision": "ea86f8b8a2f3b879594de3bb5a72cfb9",
+    "url": "/chemistry-lab-app/static/media/19_image13.ea86f8b8.png"
+  },
+  {
+    "revision": "2f1c971c4a059b49453a0c0a82e3d67e",
+    "url": "/chemistry-lab-app/static/media/19_image14.2f1c971c.png"
+  },
+  {
+    "revision": "74aa048a51dbb49699a9597c9e7b17d1",
+    "url": "/chemistry-lab-app/static/media/19_image5.74aa048a.png"
+  },
+  {
+    "revision": "70c6ad3d469350ee1130877194271652",
+    "url": "/chemistry-lab-app/static/media/19_image6.70c6ad3d.png"
+  },
+  {
+    "revision": "6f529fba3125c2860b03bdcce45c0bbc",
+    "url": "/chemistry-lab-app/static/media/19_image7.6f529fba.png"
+  },
+  {
+    "revision": "7a58f553534a4e76783c978970a0ca45",
+    "url": "/chemistry-lab-app/static/media/19_image9.7a58f553.png"
+  },
+  {
     "revision": "aa996dcb8fbcece8f056733468735551",
     "url": "/chemistry-lab-app/static/media/1_melting_points_coversheet.aa996dcb.docx"
+  },
+  {
+    "revision": "0be9e6a44765e5aa7e491b0f3d993bec",
+    "url": "/chemistry-lab-app/static/media/20_aldol_coversheet.0be9e6a4.docx"
+  },
+  {
+    "revision": "e118b9ee01a77769f6f6dc9f56e1899e",
+    "url": "/chemistry-lab-app/static/media/20_image2.e118b9ee.png"
+  },
+  {
+    "revision": "5a29fc87b1fd61ce4b657206359382de",
+    "url": "/chemistry-lab-app/static/media/20_image3.5a29fc87.png"
+  },
+  {
+    "revision": "fbdef344fcab398cd8e81214770935f6",
+    "url": "/chemistry-lab-app/static/media/20_image4.fbdef344.png"
+  },
+  {
+    "revision": "c4a66367695aac07bbe5d7b4c9fc69fa",
+    "url": "/chemistry-lab-app/static/media/20_image5.c4a66367.png"
+  },
+  {
+    "revision": "5fcbc60301b57e7af1a68ef21e179d07",
+    "url": "/chemistry-lab-app/static/media/20_keto_enol_coversheet.5fcbc603.docx"
+  },
+  {
+    "revision": "6941b6d7de256bfb75e8fa2006e54404",
+    "url": "/chemistry-lab-app/static/media/21_grignard_coversheet.6941b6d7.docx"
+  },
+  {
+    "revision": "7c4e60326e3b82fd373880e5edfb416a",
+    "url": "/chemistry-lab-app/static/media/21_image10.7c4e6032.png"
   },
   {
     "revision": "107f89f8292c90800644f9ea36782dc5",
