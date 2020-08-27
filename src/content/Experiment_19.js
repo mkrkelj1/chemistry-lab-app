@@ -1,5 +1,13 @@
 import React from "react";
 
+const cache = {};
+function importAll(r) {
+  r.keys().forEach((key) => (cache[key] = r(key)));
+}
+
+importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
+
 const prelab_assignment = () => (
   <div>
     {" "}
@@ -33,7 +41,7 @@ const prelab_assignment = () => (
         synthesis.{" "}
       </li>
       <p>
-        <img src="./image14.png" alt="Aspirin" width="90%" />
+        <img src={cache["./19_image14.png"]} alt="Aspirin" width="90%" />
       </p>
       <p style={{ textAlign: "center" }}>
         <strong>Figure 5. Structure of aspirin (acetylsalicylic acid)</strong>
@@ -50,7 +58,7 @@ const prelab_assignment = () => (
       </li>
       <p>
         <img
-          src="./image9.png"
+          src={cache["./19_image9.png"]}
           alt="Figure 6. Mass spectrum of ethyl benzoate"
           width="90%"
         />
@@ -68,7 +76,7 @@ const background = () => (
   <div>
     <h1>Synthesis of a Fragrant Ester from Carboxylic Acid and Alcohol</h1>
     <p>
-      <img src="./image5.png" alt="overall scheme" width="90%" />
+      <img src={cache["./19_image5.png"]} alt="overall scheme" width="90%" />
     </p>
     <h1>Introduction</h1>
     <p>
@@ -86,7 +94,7 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image7.png"
+        src={cache["./19_image7.png"]}
         alt="Figure 1: Esterification reaction"
         width="90%"
       />
@@ -110,7 +118,7 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image10.png"
+        src={cache["./19_image10.png"]}
         alt="Figure 2: Diagram for determining nomenclature of esters"
         width="90%"
       />
@@ -129,7 +137,7 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image11.png"
+        src={cache["./19_image11.png"]}
         alt="Figure 3: A) Phenyl ethanoate B) Ethyl benzoate"
         width="90%"
       />
@@ -154,7 +162,7 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image13.png"
+        src={cache["./19_image13.png"]}
         alt="Figure 4: Diagram showing method of naming methyl 2-methylbutanoate"
         width="90%"
       />
@@ -241,43 +249,78 @@ const procedure = () => {
   return procedureArray;
 };
 
-const results = () => <div> 
-<ol>
-<li>All reports should be uploaded to Canvas under the appropriate heading in the Assignments section. Use only the pdf, doc, or docx file formats for your reports.</li>
-<li>All reports should be written in JACS (Journal of American Chemical Society) format. A sample report is given on pg. 30 of laboratory manual (online edition, Fall 2020).</li>
-</ol>
-<p><strong><a href="./esterification cover sheet.docx">Link to download report coversheet</a></strong></p>
+const results = () => (
+  <div>
+    <ol>
+      <li>
+        All reports should be uploaded to Canvas under the appropriate heading
+        in the Assignments section. Use only the pdf, doc, or docx file formats
+        for your reports.
+      </li>
+      <li>
+        All reports should be written in JACS (Journal of American Chemical
+        Society) format. A sample report is given on pg. 30 of laboratory manual
+        (online edition, Fall 2020).
+      </li>
+    </ol>
+    <p>
+      <strong>
+        <a href={cache["./19_esterification_cover_sheet.docx"]}>
+          Link to download report coversheet
+        </a>
+      </strong>
+    </p>
+  </div>
+);
 
- </div>;
+const study_questions = () => (
+  <div>
+    {" "}
+    <ol>
+      <li>Write a reasonable mechanism for the formation of RCOOR’.</li>
+      <li>
+        Considering that esterification reaction is slow and reversible, how can
+        one drive the reaction to the right?{" "}
+      </li>
+      <li>
+        What is retention time in Gas Chromatography? How will you identify an
+        organic compound using Gas Chromatography?
+      </li>
+    </ol>
+  </div>
+);
 
+const discussion = () => (
+  <div>
+    <p>
+      <em>Note</em>: This is Post-lab Assignment
+    </p>
 
-
-const study_questions = () => <div> <ol>
-<li>Write a reasonable mechanism for the formation of RCOOR’.</li>
-<li>Considering that esterification reaction is slow and reversible, how can one drive the reaction to the right? </li>
-<li>What is retention time in Gas Chromatography? How will you identify an organic compound using Gas Chromatography?</li>
-</ol>
-
-</div>;
-
-
-const discussion = () => <div> 
-
-<p><em>Note</em>: This is Post-lab Assignment</p>
-
-<ol>
-<li>Using data given in video and spectra provided by instructors, write a lab report in the normal format for the synthesis of an ester. You must include procedure and observations from video written as if in the lab. </li>
-<br/>
-<blockquote>a. Note in your report how your calculated percent yield compares to the value given in the video.<br/></blockquote>
-<li>After watching the video, suggest two improved safety measures that the video did not mention or practice.
-</li>
-<li>Go through the procedure and note all the waste you will produce and which of the waste disposal locations (halogenated waste, non-halogenated waste, solid waste, trash bin, glass/sharps) you would put them in. </li>
-</ol>
-
-
-</div>;
-
-
+    <ol>
+      <li>
+        Using data given in video and spectra provided by instructors, write a
+        lab report in the normal format for the synthesis of an ester. You must
+        include procedure and observations from video written as if in the lab.{" "}
+      </li>
+      <br />
+      <blockquote>
+        a. Note in your report how your calculated percent yield compares to the
+        value given in the video.
+        <br />
+      </blockquote>
+      <li>
+        After watching the video, suggest two improved safety measures that the
+        video did not mention or practice.
+      </li>
+      <li>
+        Go through the procedure and note all the waste you will produce and
+        which of the waste disposal locations (halogenated waste,
+        non-halogenated waste, solid waste, trash bin, glass/sharps) you would
+        put them in.{" "}
+      </li>
+    </ol>
+  </div>
+);
 
 const waste_disposal = () => (
   <div>

@@ -1,5 +1,15 @@
 import React from "react";
 
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+
+importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
+        
+
+        
 const prelab_assignment = () => (
   <div>
     {" "}
@@ -28,7 +38,7 @@ const background = () => (
     {" "}
     <h1>Synthesis of Ferrocene and Acetylferrocene</h1>
     <p>
-      <img src="./image10.png" alt="overall scheme" width="90%" />
+      <img   src={cache["./18_image10.png"]}  alt="overall scheme" width="90%" />
     </p>
     <h1>Introduction</h1>
     <p>
@@ -60,7 +70,8 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image9.png"
+       
+        src={cache["./18_image9.png"]}
         alt="Figure 1: Relative acidities of cyclopentadiene and cyclohexadiene"
         width="90%"
       />
@@ -80,7 +91,8 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image6.png"
+       
+        src={cache["./18_image6.png"]}
         alt="Figure 2: The pi-system of the cyclopentadienyl anion comprises a cyclic array of five 2p orbitals"
         width="90%"
       />
@@ -107,7 +119,8 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image1.png"
+        
+        src={cache["./18_image1.png"]}
         alt="Figure 3: Friedel-Crafts acetylation of ferrocene"
         width="90%"
       />
@@ -554,7 +567,7 @@ const results = () => (
     </ol>
     <p>
       <strong>
-        <a href="./ferrocene cover sheet.docx">
+        <a href={cache["./18_ferrocene_coversheet.docx"]}>
           Link to download report cover sheet
         </a>
       </strong>

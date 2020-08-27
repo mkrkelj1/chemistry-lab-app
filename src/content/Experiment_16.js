@@ -1,5 +1,13 @@
 import React from "react";
 
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+
+importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
+        
 
 const tableStyle = {
   borderCollapse: "collapse",
@@ -11,7 +19,6 @@ const tableStyle = {
 
 const prelab_assignment = () => (
   <div>
-    <h2> N/A </h2>
 
     <ol>
       <ol>
@@ -33,7 +40,8 @@ const prelab_assignment = () => (
             spectroscopy.&nbsp;
             <p>
               <img
-                src="./image8.png"
+
+              src={cache["./16_image8.png"]}
                 alt="Acetanilide to p-Nitroaniline"
                 width="90%"
               />
@@ -128,7 +136,7 @@ const background = () => (
       </strong>
     </h1>
     <p>
-      <img src="./image10.png" alt="overall scheme" width="90%" />
+      <img src={cache["./16_image10.png"]} alt="overall scheme" width="90%" />
     </p>
     <h1>Introduction</h1>
     <p>
@@ -141,7 +149,7 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image5.png"
+        src={cache["./16_image5.png"]} 
         alt="Figure 1: Summary of reactions to synthesize p-Nitroaniline"
         width="90%"
       />
@@ -164,7 +172,8 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image4.png"
+   
+        src={cache["./16_image4.png"]} 
         alt="Figure 2. Retrosynthetic analysis of p-Nitroaniline"
         width="90%"
       />
@@ -519,7 +528,7 @@ const results = () => (
     </ol>
     <p>
       <strong>
-        <a href="./nitroaniline cover sheet.docx">
+        <a href={cache["./16_nitroaniline_coversheet.docx"]}>
           Link to download report cover sheet
         </a>
       </strong>

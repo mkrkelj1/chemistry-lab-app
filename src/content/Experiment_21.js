@@ -1,5 +1,16 @@
 import React from "react";
 
+
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+
+importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
+        
+
+        
 const prelab_assignment = () => (
   <div>
     {" "}
@@ -33,7 +44,10 @@ const background = () => (
     {" "}
     <h1>Grignard Reaction: Synthesis of Alcohols from Carbonyl Compounds</h1>
     <p>
-      <img src="./image10.png" alt="Overall Scheme" width="90%" />
+      <img 
+        src={cache["./21_image10.png"]}
+        alt="Overall Scheme" 
+        width="90%" />
     </p>
     <h1>Introduction</h1>
     <p>
@@ -46,14 +60,16 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image11.png"
+     
+        src={cache["./21_image11.png"]}
         alt="Figure 1a: Synthesis of Grignard Reagent"
         width="90%"
       />
     </p>
     <p>
       <img
-        src="./image12.png"
+        
+        src={cache["./21_image12.png"]}
         alt="Figure 1b: Reaction with Carbonyl Compound"
         width="90%"
       />
@@ -75,7 +91,8 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image14.png"
+       
+        src={cache["./21_image14.png"]}
         alt="Equation 1. Preparation of the Grignard reagent, RMgX"
         width="90%"
       />
@@ -465,7 +482,7 @@ const results = () => (
     </ol>
     <p>
       <strong>
-        <a href="./grignard cover sheet.docx">
+        <a href={cache["./21_grignard_coversheet.docx"]}>
           Link to download report cover sheet
         </a>
       </strong>

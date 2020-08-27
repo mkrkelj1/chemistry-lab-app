@@ -1,6 +1,16 @@
 import React from "react";
 
 
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+
+importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
+        
+
+        
 const prelab_assignment = () => (
   <div>
     {" "}
@@ -36,7 +46,10 @@ const background = () => (
   <div>
     <h1>Reduction of an Optically Active Natural Product</h1>
     <p>
-      <img src="./image9.png" alt="overall scheme" width="90%" />
+      <img 
+        src={cache["./22_image9.png"]}
+        alt="overall scheme" 
+        width="90%" />
     </p>
     <h1>Introduction</h1>
     <p>
@@ -72,7 +85,8 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image7.png"
+        
+        src={cache["./22_image7.png"]}
         alt="Figure 1. Functional group transformation of ketone to 2&ordm; alcohol"
         width="90%"
       />
@@ -94,7 +108,8 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image8.png"
+     
+        src={cache["./22_image8.png"]}
         alt="Figure 2. Reduction of camphor"
         width="90%"
       />

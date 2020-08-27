@@ -1,5 +1,16 @@
 import React from "react";
 
+
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+
+importAll(require.context("../assets/images/", false, /\.png$/));
+importAll(require.context("../assets/coversheets/", true, /\.docx$/));
+        
+
+        
 const prelab_assignment = () => (
   <div>
     <p>
@@ -42,7 +53,12 @@ const background = () => (
       steps of aldol reaction and dehydration is called the aldol condensation.
     </p>
     <p>
-      <img src="./image5.png" alt="Figure 1. Aldol Condensation" width="90%" />
+      <img 
+
+      
+      src={cache["./20_image5.png"]}
+      alt="Figure 1. Aldol Condensation"
+      width="90%" />
     </p>
     <p style={{ textAlign: "center" }}>
       <strong>Figure 1. Aldol Condensation</strong>
@@ -76,7 +92,8 @@ const background = () => (
     </p>
     <p>
       <img
-        src="./image4.png"
+       
+         src={cache["./20_image4.png"]}
         alt="Figure 1. Keto-enol tautomerism of ethyl acetoacetate."
         width="90%"
       />
@@ -96,7 +113,7 @@ const background = () => (
       calculations.
     </p>
     <p style={{ textAlign: "center" }}>
-      <img src="./image1.png" alt="Equilibrium constant equation" width="90%" />
+      <img src={cache["./20_image1.png"]} alt="Equilibrium constant equation" width="90%" />
     </p>
     <p>
       <strong>Video</strong>
@@ -145,7 +162,7 @@ const results = () => (
     <p>Report - Aldol Reaction</p>
     <p>
       <strong>
-        <a href="./aldol cover sheet.docx">
+        <a href={cache["./20_aldol_coversheet.docx"]}>
           Link to download report cover sheet
         </a>
       </strong>
@@ -154,7 +171,7 @@ const results = () => (
     <p>Problem Set - Keto - Enol Equilibrium </p>
     <p>
       <strong>
-        <a href="./keto_enol cover sheet.docx">
+        <a href={cache["./20_keto_enol_coversheet.docx"]}>
           Link to download problem set cover sheet
         </a>
       </strong>
@@ -222,7 +239,8 @@ const discussion = () => (
     </p>
     <p>
       <img
-        src="./image3.png"
+        
+        src={cache["./20_image3.png"]}
         alt="Figure 1: 1H NMR spectrum of ethyl acetoacetate"
         width="90%"
       />
@@ -307,7 +325,8 @@ const discussion = () => (
     </p>
     <p>
       <img
-        src="./image2.png"
+    
+        src={cache["./20_image2.png"]}
         alt="Figure 2. Keto-enol tautomerism of dimedone"
         width="90%"
       />
