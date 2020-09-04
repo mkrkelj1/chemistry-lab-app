@@ -8,6 +8,7 @@ function importAll(r) {
 importAll(require.context("../assets/images/", false, /\.png$/));
 importAll(require.context("../assets/coversheets/", true, /\.docx$/));
         
+//16_table_1
 
 const tableStyle = {
   borderCollapse: "collapse",
@@ -19,9 +20,6 @@ const tableStyle = {
 
 const prelab_assignment = () => (
   <div>
-
-    <ol>
-      <ol>
         <ol>
           <li>
             Find a journal article from this year detailing the multistep
@@ -61,70 +59,16 @@ const prelab_assignment = () => (
             your answer.
           </li>
         </ol>
-      </ol>
-    </ol>
+   
+    <p>
+              <img
 
-    <table style={tableStyle}>
-      <tbody>
-        <tr>
-          <td style={{ width: "282px" }} colspan="4">
-            <p style={{ textAlign: "center" }}>acetanilide</p>
-          </td>
+              src={cache["./16_table_1.png"]}
+                alt="Table 1"
+                width="100%"
+              />
+            </p>
 
-          <td style={{ width: "283px" }} colspan="4">
-            <p style={{ textAlign: "center" }}>
-              <em>p</em>-nitroaniline
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td style={{ width: "48px" }}>
-            <p>Motion</p>
-          </td>
-          <td style={{ width: "47px" }}>
-            <p>PM3</p>
-            <p>
-              (cm<sup>-1</sup>)
-            </p>
-          </td>
-          <td style={{ width: "47px" }}>
-            <p>Scaled</p>
-            <p>
-              (cm<sup>-1</sup>)
-            </p>
-          </td>
-          <td style={{ width: "47px" }}>
-            <p>Exp.</p>
-            <p>value</p>
-            <p>
-              (cm<sup>-1</sup>)
-            </p>
-          </td>
-          <td style={{ width: "48px" }}>
-            <p>Motion</p>
-          </td>
-          <td style={{ width: "47px" }}>
-            <p>PM3</p>
-            <p>
-              (cm<sup>-1</sup>)
-            </p>
-          </td>
-          <td style={{ width: "47px" }}>
-            <p>Scaled</p>
-            <p>
-              (cm<sup>-1</sup>)
-            </p>
-          </td>
-          <td style={{ width: "48px" }}>
-            <p>Exp.</p>
-            <p>value</p>
-            <p>
-              (cm<sup>-1</sup>)
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 );
 

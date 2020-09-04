@@ -11,7 +11,7 @@ const Home = () => (
 	    <HomeHeading />
 	    <HomeCourseButtons />
     	<HomeVideoTutorials />
-    	<HomeImagePlaceholders />
+    	{/* <HomeImagePlaceholders /> */}
     	<HomeSeeAllVideosButton />
     </React.Fragment>
 )

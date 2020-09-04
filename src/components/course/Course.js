@@ -25,7 +25,7 @@ const Course = props => {
         <Container className="p-1">
           <CourseHeading course = { _course } />
           <CourseCurrent courseId = { _courseId } />
-          <CourseCanvasButtons />
+          <CourseCanvasButtons courseId = { _courseId } />
           <div className="p-1"></div>
           <CourseExperimentSchedule courseId = { _courseId } />
           <CourseNotebooksReports courseId = { _courseId } location = {"notebook"} />

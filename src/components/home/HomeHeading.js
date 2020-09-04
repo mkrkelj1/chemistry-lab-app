@@ -9,7 +9,7 @@ const HomeHeading = () => (
 		<p>
 		</p>
 
-		<h2>For Spring 2020 Students</h2>
+		<h2>For Fall 2020 Students</h2>
 		<p>View this week's experiment, your lab manual, and other course information</p>
 	</Container>
 );

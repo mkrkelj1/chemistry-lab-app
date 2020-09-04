@@ -449,8 +449,8 @@ const results = () => (
       </li>
     </ol>
     <p>
-      <strong>
-        <a href="./camphor cover sheet.docx">
+    <strong>
+        <a href={cache["./22_camphor_coversheet.docx"]}>
           Link to download report cover sheet
         </a>
       </strong>
