@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "219585eb8e1e20350ee04b72b48fb03a",
+    "revision": "899a93df150375bf5c873a1eaf0dec0e",
     "url": "/chemistry-lab-app/index.html"
   },
   {
-    "revision": "c61c06ed4dd55389574f",
+    "revision": "d6e4e2768ae8871e722e",
     "url": "/chemistry-lab-app/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "70b469a3b5dd2277c1bf",
+    "revision": "553ed53bcbc9d9dff2e2",
     "url": "/chemistry-lab-app/static/css/main.e847d471.chunk.css"
   },
   {
-    "revision": "c61c06ed4dd55389574f",
-    "url": "/chemistry-lab-app/static/js/2.0ae1483b.chunk.js"
+    "revision": "d6e4e2768ae8871e722e",
+    "url": "/chemistry-lab-app/static/js/2.c5d8f576.chunk.js"
   },
   {
-    "revision": "70b469a3b5dd2277c1bf",
-    "url": "/chemistry-lab-app/static/js/main.e863846b.chunk.js"
+    "revision": "553ed53bcbc9d9dff2e2",
+    "url": "/chemistry-lab-app/static/js/main.bf8ecb24.chunk.js"
   },
   {
     "revision": "f2991d8b8eea07680d14",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f3cd6a4fc4adf3f11cffa07d1113ffd4",
     "url": "/chemistry-lab-app/static/media/16_nitroaniline_coversheet.f3cd6a4f.docx"
+  },
+  {
+    "revision": "2117c1a2e64f241520f970508249d8ad",
+    "url": "/chemistry-lab-app/static/media/16_table_1.2117c1a2.png"
   },
   {
     "revision": "f049e98b3d0e4719f03e6a9b3f3248af",
@@ -142,6 +146,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7c4e60326e3b82fd373880e5edfb416a",
     "url": "/chemistry-lab-app/static/media/21_image10.7c4e6032.png"
+  },
+  {
+    "revision": "842f7b730f62e42f101a9dbf6bb1eaa3",
+    "url": "/chemistry-lab-app/static/media/22_camphor_coversheet.842f7b73.docx"
   },
   {
     "revision": "7c973bec8937dda3824e53de04453c7c",
@@ -316,8 +324,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chemistry-lab-app/static/media/molecule2.2cdf56dd.jpg"
   },
   {
-    "revision": "09185b2f7653a0c70c0d3a6be3053880",
-    "url": "/chemistry-lab-app/static/media/notebook.09185b2f.md"
+    "revision": "6a7c675262bed855e7177a63e144192f",
+    "url": "/chemistry-lab-app/static/media/notebook.6a7c6752.md"
   },
   {
     "revision": "6bac3df9500f6b1d86ecec138894a30a",
